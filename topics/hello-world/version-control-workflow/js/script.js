@@ -59,7 +59,7 @@ function draw() {
     noStroke();
     // Make it yellow (RGB)
     fill(254,255,186);
-    // Draw a 100x100 circle at the mouse position
-    ellipse(mouseX, mouseY, 100, 100);
+    // Draw a 1000x1000 circle at the mouse position
+    ellipse(mouseX, mouseY, 1000, 1000);
     pop();
 }
