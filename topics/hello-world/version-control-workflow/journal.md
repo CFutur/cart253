@@ -1,12 +1,1 @@
-# Hi chat
-
-
-
-
-
-
-
-
-
-[My reflective journal](journal.md)
-
+this is THE read me
