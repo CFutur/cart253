@@ -12,7 +12,7 @@
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
- ![cfutur's website screenshot](/topics/prototyping-website/images/screenshot%20at%20the%20beginning%20of%20my%20website.png/)
+ ![cfutur's website screenshot](/topics/prototyping-website/images/screenshot.png/)
 
 
  
