@@ -2,7 +2,7 @@
 
 ![cfutur's banner](/topics/prototyping-website/images/banner.png/)
 
-### This is the link to my journal :)
+**This is the link to my journal :)**
 
 [My reflective journal](journal.md)
 
