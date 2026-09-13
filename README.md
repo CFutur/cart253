@@ -1,6 +1,7 @@
 # CFutur's website
 
 ![cfutur's banner](/topics/prototyping-website/images/banner.png/)
+-----------------------------------------------------------------------------------------------
 
 **This is the link to my journal :)**
 
