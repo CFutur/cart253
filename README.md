@@ -2,14 +2,14 @@
 
 ![cfutur's banner](/topics/prototyping-website/images/banner.png/)
 -----------------------------------------------------------------------------------------------
-*Links to my web-presences*
+**Links to my web-presences**
 
-**This is the link to my journal :)**
+*This is the link to my journal :)*
 
 [My reflective journal](journal.md)
 
  ----------------------------------------------------------------------------------------------
-*Links to my prototypes*
+**Links to my prototypes**
 
 nothing right now..... :(
 -----------------------------------------------------------------------------------------------
