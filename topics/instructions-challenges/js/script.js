@@ -26,7 +26,7 @@ function draw() {
     // No stroke on our beautiful landscape
     noStroke()
 
-    drawPrairie()
+    drawPrairie();
 
 }
 
@@ -35,7 +35,7 @@ function draw() {
 *Draws mountains and flowers using functions
 * */
 
-function DrawPrairie() {
+function drawPrairie() {
     drawMountains();
     drawSunset();
     drawFlowers();
