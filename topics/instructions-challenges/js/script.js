@@ -18,8 +18,10 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws our landscape with mountains 
 */
 function draw() {
+    // Orange background for sunset
+    background(255, 172, 28)
 
 }
