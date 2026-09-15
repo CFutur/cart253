@@ -36,9 +36,10 @@ function draw() {
 * */
 
 function drawPrairie() {
-    drawMountains();
     drawSunset();
+    drawMountains();
     drawFlowers();
+
 }
 
 /**
@@ -47,22 +48,29 @@ function drawPrairie() {
 
 function drawMountains() {
     push();
+    fill(36, 60, 36);
+    ellipse(360, 400, 700, 400);
+    fill(48, 80, 48);
+    ellipse(200, 400, 700, 400);
     fill(84, 140, 84);
-    ellipse(200, 300, 200);
+    ellipse(650, 400, 700, 400);
     pop();
-
-
-
 
 }
 
 /**
- * Draw the sunset with different colours of orange for depth
+ * Draw the sunset with different colours of orange for depth and a sun
  */
 
 function drawSunset() {
-
-
+    push();
+    fill(255, 127, 80);
+    ellipse(400, 200, 1000, 300);
+    fill(248, 131, 121);
+    ellipse(400, 300, 1000, 300);
+    fill(253, 218, 13);
+    ellipse(400, 300, 400);
+    pop();
 
 }
 
@@ -72,7 +80,12 @@ function drawSunset() {
 
 function drawFlowers() {
 
-
+    push();
+    fill(255)
+    ellipse(200, 300, 30, 20)
+    ellipse(160, 300, 30, 20)
+    ellipse(160, 300, 30, 20)
+    ellipse(160, 300, 30, 20)
 
 
 }
