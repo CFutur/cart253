@@ -1,18 +1,19 @@
 /**
- * Title of Project
- * Author Name
+ * Mountainside Sunset
+ * Clara Fioramore, Justine Cormier
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A calm sunset washing over mountains with flowers in a prairie. 
+ * 
  */
 
 "use strict";
 
+
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creating the canvas
 */
 function setup() {
-
+    createCanvas(800, 400)
 }
 
 
