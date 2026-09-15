@@ -48,7 +48,7 @@ function DrawPrairie() {
 function drawMountains() {
     push();
     fill(84, 140, 84);
-    ellipse(200, 300, 400);
+    ellipse(200, 300, 200);
     pop();
 
 
