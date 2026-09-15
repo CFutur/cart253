@@ -39,6 +39,7 @@ function drawPrairie() {
     drawSunset();
     drawMountains();
     drawFlowers();
+    drawKirby();
 
 }
 
@@ -82,10 +83,53 @@ function drawFlowers() {
 
     push();
     fill(255)
+    //Right white petal
     ellipse(200, 300, 30, 20)
+    //left white petal
     ellipse(160, 300, 30, 20)
-    ellipse(160, 300, 30, 20)
-    ellipse(160, 300, 30, 20)
+    //up white petal
+    ellipse(180, 280, 20, 30)
+    //down white petal
+    ellipse(180, 320, 20, 30)
+    //flower yellow center
+    fill(246, 200, 111);
+    ellipse(180, 300, 20, 20);
 
+
+    push();
+    fill(255)
+    //Right white petal
+    ellipse(690, 250, 20, 10)
+    //left white petal
+    ellipse(670, 250, 20, 10)
+    //up white petal
+    ellipse(680, 240, 10, 20)
+    //down white petal
+    ellipse(680, 260, 10, 20)
+    //flower yellow center
+    fill(246, 200, 111);
+    ellipse(680, 250, 10, 10);
+
+}
+
+/*
+*Drawing Kirby with function
+*/
+
+function drawKirby() {
+    push();
+    strokeWeight(2);
+    stroke(251, 130, 170);
+    fill(251, 181, 207);
+    //full body
+    ellipse(500, 300, 100, 100);
+    //right arm
+    ellipse(550, 300, 30, 20);
+    //left arm
+    ellipse(450, 310, 30, 20);
+    fill(0);
+    ellipse(480, 290, 15, 25);
+    ellipse(515, 290, 15, 25);
+    pop();
 
 }
