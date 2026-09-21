@@ -12,7 +12,7 @@
  ----------------------------------------------------------------------------------------------
 **Links to my prototypes**
 
-[My first prototype](\cart253\topics\prototypes\prototype-1\);
+[My first prototype](\cart253\topics\prototypes\prototype-1\)
 -----------------------------------------------------------------------------------------------
 
 This website is simply to show off my amazing skills in coding and present all the prototypes we will be doing in class. I will also use this website to show off my personality through me designing it. Because I want to make my website useful AND cute. Non-negotiable. 
