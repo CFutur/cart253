@@ -1,6 +1,6 @@
 # CFutur's website
 
-![cfutur's banner](/topics/prototyping-website/images/banner.png/)
+![cfutur's banner](/topics/prototypes/images/banner.png/)
 
 -----------------------------------------------------------------------------------------------
 **Links to my web-presences**
