@@ -1,9 +1,9 @@
 /**
- * Title of Project
- * Author Name
+ * A dog and his collar
+ * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This project is about a small dog in the background and how you can move his collar aorund to place it correctly on the puppy
+ * 
  */
 
 "use strict";
