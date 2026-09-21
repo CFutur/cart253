@@ -13,7 +13,7 @@
 **Links to my prototypes**
 
 nothing right now..... 
-[My first prototype](script.js)
+[My first prototype](cart253/topics/prototypes/prototype-1/)
 
 -----------------------------------------------------------------------------------------------
 
