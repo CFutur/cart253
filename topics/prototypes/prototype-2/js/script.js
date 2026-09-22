@@ -63,9 +63,9 @@ function draw() {
 //Draw a dogs face, eyes, ears and snoot using functions
 
 function drawDog(){
+    drawFace();
     drawEye();
     drawSnoot();
-    drawFace();
     drawEars();
 
 }
@@ -77,7 +77,11 @@ function drawEye(){
     push();
     //Left white eyeball
     fill(255);
-    ellipse(300, 300, 100, 100)
+    ellipse(350, 300, 150, 150)
+    ellipse(650, 300, 150, 150)
+    fill(0);
+    ellipse(350, 300, 100, 100)
+    ellipse(650, 300, 100, 100)
     pop();
 
 
@@ -90,7 +94,20 @@ function drawFace(){
 push();
 //fill with golden retriever golden colour
 fill(215, 148, 46);
-ellipse(500, 300, 250, 250);
+ellipse(500, 300, 400, 400);
 pop();
 
 }
+
+//time to do the dogs nose, in the middle
+
+function drawSnoot(){
+ push();
+  fill(255, 100, 100);
+  triangle(190, 340, 210, 340, 200, 360);
+  pop();
+
+}
+
+
+
