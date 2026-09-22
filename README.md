@@ -14,17 +14,17 @@
 
 **Playing around with planets**
 
-[My first prototype](\cart253\topics\prototypes\prototype-1\)
+[prototype #1](\cart253\topics\prototypes\prototype-1\)
 
-https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1
+[prototype 1 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1)
 
 ![1 prototype](/topics/prototypes/images/abstract-planet.png)
 
 **Feeding a bird**
 
-[My second prototype](\cart253\topics\prototypes\prototype-2\)
+[prototype #2](\cart253\topics\prototypes\prototype-2\)
 
-https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-2
+[prototype 2 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-2)
 
 ![2 prototype](/topics/prototypes/images/feeding-bird.png)
 
