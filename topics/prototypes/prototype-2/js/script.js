@@ -29,48 +29,38 @@ function draw() {
 
     drawDog();
 
-    // Draw a small green planet at mouse position
+    
+     //* Draw multiple small seed shaped and coloured differently
     push();
     // No line around the shape
     noStroke();
-    // Make it green
-    fill(20,80,81);
-    // Draw a 110x110 planet mouse position
-    ellipse(mouseX, mouseY, 110, 110);
-    //make another planet on x axis dark blue
-    fill(28,37,60)
-    ellipse(mouseX, mouseX, 150, 150)
-    //make a last planet on y axis red
-    fill(60,28,49)
-    ellipse(mouseY, mouseY, 80, 80)
+    // Make the main one beige
+    fill(199, 177, 143);
+    // Draw a 10x10
+    ellipse(mouseX, mouseY, 20, 20);
+    //make the x axis one black
+    fill(41, 38, 34)
+    ellipse(mouseX, mouseX, 20, 20)
+    //make the last seed on the y axis red brown
+    fill(115, 53, 24);
+    ellipse(mouseY, mouseY, 20, 20)
     pop();
-
-     //* Draw a long thin circle as a collar for the cursor
-   // push();
-    // No line around the shape
-    //noStroke();
-    // Make it red
-   // fill(210, 43, 43);
-    // Draw a 110x10
-   // ellipse(mouseX, mouseY, 110, 110);
-    //add a small golden circle acting as a bell in the middle and a bit lowered
-   // fill(255, 224, 46)
-    //ellipse(mouseX, mouseY, 150, 150)
-   // pop();
 
 }
 
 //Draw a dogs face, eyes, ears and snoot using functions
 
 function drawDog(){
+    drawBody();
+    drawWings();
     drawFace();
     drawEye();
-    drawSnoot();
-    drawEars();
+    drawBeak();
+    
 
 }
 
-//Drawing the doggies eyes
+//Drawing the birdies eyes
 
 //Starting with the two white eyeballs
 function drawEye(){
@@ -87,28 +77,50 @@ function drawEye(){
 
 }
 
-//Just drawing the simple circle for the dog's face
+//Just drawing the simple circle for the bird's face
 
 function drawFace(){
 
 push();
-//fill with golden retriever golden colour
+//fill with golden colour
 fill(215, 148, 46);
 ellipse(500, 300, 400, 400);
 pop();
 
 }
 
-//time to do the dogs nose, in the middle
+//time to do the birds beak, in the middle
 
-function drawSnoot(){
+function drawBeak(){
  push();
   fill(28, 1, 0);
-  triangle(450, 300, 500, 400, 550, 300);
-  ellipse(500, 350, 100, 100)
+  triangle(445, 380, 500, 440, 555, 380);
+  ellipse(500, 355, 120, 120)
   pop();
 
 }
 
+//drawing the bird's body
+
+function drawBody(){
+push();
+fill(215, 148, 46);
+ellipse(500, 450, 400, 350)
+pop();
 
 
+}
+
+// Draw both wings for bird with lighter colour
+
+function drawWings(){
+
+push();
+fill(168, 116, 35);
+ellipse(350, 500, 150, 300);
+ellipse(650, 500, 150, 300);
+
+
+
+
+}
