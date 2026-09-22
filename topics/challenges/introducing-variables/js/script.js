@@ -7,6 +7,8 @@
 
 "use strict";
 
+let holeSize = 100;
+
 /**
  * Creating a canvas
 */
@@ -25,7 +27,7 @@ function draw() {
     push();
     fill(mouseX, mouseY, 0);
     noStroke();
-    ellipse(width / 2, height / 2, mouseX, mouseY, 100, 100)
+    ellipse(180, 100, holeSize)
     pop();
 
 }
