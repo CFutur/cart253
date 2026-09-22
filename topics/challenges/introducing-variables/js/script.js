@@ -8,16 +8,24 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creating a canvas
 */
 function setup() {
+    createCanvas(1000, 480)
 
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws a circle in center of canvas
 */
 function draw() {
+    background(0);
+    // Draw the circle
+    push();
+    fill(mouseX, mouseY, 0);
+    noStroke();
+    ellipse(width / 2, height / 2, mouseX, mouseY, 100, 100)
+    pop();
 
 }
