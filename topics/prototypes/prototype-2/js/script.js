@@ -103,8 +103,9 @@ pop();
 
 function drawSnoot(){
  push();
-  fill(255, 100, 100);
-  triangle(190, 340, 210, 340, 200, 360);
+  fill(28, 1, 0);
+  triangle(450, 300, 500, 400, 550, 300);
+  ellipse(500, 350, 100, 100)
   pop();
 
 }
