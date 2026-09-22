@@ -10,7 +10,7 @@
 [My reflective journal](journal.md)
 
  ----------------------------------------------------------------------------------------------
-## Links to my prototypes
+## Links to my 3 prototypes instructions
 
 **Playing around with planets**
 
@@ -18,9 +18,15 @@
 
 https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1
 
+![1 prototype](/topics/prototypes/images/abstract-planet.png)
+
 **Feeding a bird**
 
 [My second prototype](\cart253\topics\prototypes\prototype-2\)
+
+https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-2
+
+![2 prototype](/topics/prototypes/images/feeding-bird.png)
 
 
 -----------------------------------------------------------------------------------------------
