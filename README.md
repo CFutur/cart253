@@ -3,14 +3,14 @@
 ![cfutur's banner](/topics/prototypes/images/banner.png/)
 
 -----------------------------------------------------------------------------------------------
-##Links to my web-presences
+## Links to my web-presences
 
 *This is the link to my journal*
 
 [My reflective journal](journal.md)
 
  ----------------------------------------------------------------------------------------------
-## Links to my prototypes**
+## Links to my prototypes
 
 **Playing around with planets**
 
