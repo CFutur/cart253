@@ -18,7 +18,7 @@
 
 [prototype 1 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1)
 
-![1 prototype](/topics/prototypes/images/abstract-planet.png)
+<img src="/topics/prototypes/images/abstract-planet.png" alt="drawing" width="100"/>
 
 **Feeding a bird**
 
