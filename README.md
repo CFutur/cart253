@@ -3,19 +3,19 @@
 ![cfutur's banner](/topics/prototypes/images/banner.png/)
 
 -----------------------------------------------------------------------------------------------
-**Links to my web-presences**
+##Links to my web-presences
 
 *This is the link to my journal*
 
 [My reflective journal](journal.md)
 
  ----------------------------------------------------------------------------------------------
-**Links to my prototypes**
+## Links to my prototypes**
 
-## Playing around with planets
+**Playing around with planets**
 [My first prototype](\cart253\topics\prototypes\prototype-1\)
 
-## Feeding a bird
+**Feeding a bird**
 [My second prototype](\cart253\topics\prototypes\prototype-2\)
 
 
