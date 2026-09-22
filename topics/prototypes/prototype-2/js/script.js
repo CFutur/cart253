@@ -2,8 +2,7 @@
  * A dog and his collar
  * Clara Fioramore
  * 
- * This project is about a small dog in the background and how you can move his collar aorund to place it correctly on the puppy
- * 
+ * This project is about a small bird whos getting fed bird seeds
  */
 
 "use strict";
