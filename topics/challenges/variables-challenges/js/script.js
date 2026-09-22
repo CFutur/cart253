@@ -32,7 +32,21 @@ let sky = {
 
 }
 
+//let cute peaceful bird fly accross the screen gently while making our guy mad as hell cause he sucks
+let bird = {
+  //position and size 
+  x: 400,
+  y: 80,
+  size: 20,
+  //colour
+  fill: {
+    r: 255,
+    g: 255,
+    b: 255
 
+  }
+
+}
 
 
 
@@ -59,6 +73,19 @@ function draw() {
   sky.fill.r -= 1;
   sky.fill.g -= 1;
   sky.fill.b -= 1;
+
+
+  // make bird move
+  bird.x -= 1;
+  //bird.y = i;
+
+  //draw bird as white littke dot
+
+  push();
+  noStroke();
+  fill(bird.fill.r, bird.fill.g, bird.fill.b);
+  ellipse(bird.x, bird.y, bird.size);
+  pop();
 
   // Draw Mr. Furious as a coloured circle
   push();
