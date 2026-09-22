@@ -48,7 +48,7 @@ function draw() {
 
 }
 
-//Draw a dogs face, eyes, ears and snoot using functions
+//Draw a birds face, body, eyes and beak using functions
 
 function drawDog(){
     drawBody();
@@ -119,8 +119,6 @@ push();
 fill(168, 116, 35);
 ellipse(350, 500, 150, 300);
 ellipse(650, 500, 150, 300);
-
-
-
+(pop);
 
 }
