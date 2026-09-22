@@ -16,6 +16,8 @@
 
 [My first prototype](\cart253\topics\prototypes\prototype-1\)
 
+https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1
+
 **Feeding a bird**
 
 [My second prototype](\cart253\topics\prototypes\prototype-2\)
