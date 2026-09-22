@@ -42,9 +42,14 @@ let bird = {
   fill: {
     r: 255,
     g: 255,
-    b: 255
+    b: 255,
 
-  }
+  },
+
+  anger: 0
+
+
+
 
 }
 
@@ -57,6 +62,9 @@ let bird = {
  */
 function setup() {
   createCanvas(400, 400);
+
+  mrFurious.anger += 0.1;
+  mrFurious.anger = constrain(mrFurious.anger, 0, 100);
 }
 
 /**
@@ -73,6 +81,19 @@ function draw() {
   sky.fill.r -= 1;
   sky.fill.g -= 1;
   sky.fill.b -= 1;
+
+  //make mister angry league of legend player 
+
+
+
+  const shakeAmount = map(mrFurious.anger, 0, 100, 0, 10, true);
+
+  const headX = mrFurious.x + random(-shakeAmount, shakeAmount);
+  const headY = mrFurious.y + random(-shakeAmount, shakeAmount);
+
+  //mrFurious.y = random(0, height)
+
+
 
 
   // make bird move
