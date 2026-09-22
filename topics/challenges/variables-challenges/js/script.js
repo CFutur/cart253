@@ -20,6 +20,23 @@ let mrFurious = {
     b: 225
   }
 };
+//let the sky turn from blue to black
+let sky = {
+  //colour background
+  fill: {
+    r: 160,
+    g: 180,
+    b: 200
+
+  }
+
+}
+
+
+
+
+
+
 
 /**
  * Create the canvas
@@ -30,10 +47,19 @@ function setup() {
 
 /**
  * Draw (and update) Mr. Furious
- */
+*/
 function draw() {
-  background(160, 180, 200);
-  
+  background(sky.fill.r, sky.fill.g, sky.fill.b);
+
+  //make the little dude more red and angryyyy
+
+  mrFurious.fill.g -= 1;
+  mrFurious.fill.b -= 1;
+  //Sky goes from blue to black from ANGGERER
+  sky.fill.r -= 1;
+  sky.fill.g -= 1;
+  sky.fill.b -= 1;
+
   // Draw Mr. Furious as a coloured circle
   push();
   noStroke();
