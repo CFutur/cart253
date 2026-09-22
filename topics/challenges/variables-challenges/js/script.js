@@ -63,8 +63,8 @@ let bird = {
 function setup() {
   createCanvas(400, 400);
 
-  mrFurious.anger += 0.1;
-  mrFurious.anger = constrain(mrFurious.anger, 0, 100);
+  //mrFurious.anger += 0.1;
+  //mrFurious.anger = constrain(mrFurious.anger, 0, 100);
 }
 
 /**
@@ -86,12 +86,13 @@ function draw() {
 
 
 
-  const shakeAmount = map(mrFurious.anger, 0, 100, 0, 10, true);
+  //const shakeAmount = map(mrFurious.anger, 0, 100, 0, 10, true);
 
-  const headX = mrFurious.x + random(-shakeAmount, shakeAmount);
-  const headY = mrFurious.y + random(-shakeAmount, shakeAmount);
+  // const headX = mrFurious.x + random(-shakeAmount, shakeAmount);
+  //const headY = mrFurious.y + random(-shakeAmount, shakeAmount);
 
-  //mrFurious.y = random(0, height)
+  mrFurious.y += random(-20, 20)
+  mrFurious.x += random(-20, 20);
 
 
 
