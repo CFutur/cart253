@@ -38,8 +38,6 @@
 
 
 
-
-
 -----------------------------------------------------------------------------------------------
 
 This website is simply to show off my amazing skills in coding and present all the prototypes we will be doing in class.

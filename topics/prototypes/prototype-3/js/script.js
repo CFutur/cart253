@@ -28,7 +28,6 @@ function draw() {
 
 function drawFace() {
     drawEyes();
-    drawSmile();
 
 }
 

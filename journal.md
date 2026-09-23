@@ -11,7 +11,7 @@ Honestly this assignment was fun. The back and forth can drive you a bit insane 
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
- ![cfutur's website screenshot](/topics/prototyping-website/images/screenshot.png/)
+ ![cfutur's website screenshot](/topics/prototypes/images/screenshot.png/)
 
 
  
