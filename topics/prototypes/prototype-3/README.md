@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# Creepy face
 
-AUTHOR NAME
+Clara Fioramore
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 

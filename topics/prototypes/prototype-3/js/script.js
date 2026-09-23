@@ -1,24 +1,44 @@
 /**
- * Title of Project
- * Author Name
+ * very cutesie prototype
+ * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * this project is a very cute face not creepy at all
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * this is to create my beautiful canvas
 */
 function setup() {
-
+    createCanvas(1000, 50)
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * this will draw two eyes within a dark canvas
 */
 function draw() {
+    //black background.
+    background(0)
+
+    drawFace();
+
+}
+
+function drawFace() {
+    drawEyes();
+    drawSmile();
+
+}
+
+
+function drawEyes() {
+    //draw the size of them and colour (white and black pupil)
+    push();
+    fill(255, 255, 255);
+    ellipse(300, 25, 30, 30)
+
+
 
 }
