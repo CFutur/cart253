@@ -20,8 +20,6 @@
 
 ![1 prototype](/topics/prototypes/images/abstract-planet.png)
 
-<img src="/topics/prototypes/images/feeding-bird.png" width="100" height="100" />
-
 **Feeding a bird**
 
 [prototype #2](\cart253\topics\prototypes\prototype-2\)
@@ -29,6 +27,17 @@
 [prototype 2 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-2)
 
 ![2 prototype](/topics/prototypes/images/feeding-bird.png)
+
+**Two very creepy eyes**
+
+[prototype #3](\cart253\topics\prototypes\prototype-3\)
+
+[prototype 3 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-3)
+
+![3 prototype](/topics/prototypes/images/scary-eyes.png)
+
+
+
 
 
 -----------------------------------------------------------------------------------------------
