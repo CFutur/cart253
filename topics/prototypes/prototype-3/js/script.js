@@ -37,8 +37,11 @@ function drawEyes() {
     //draw the size of them and colour (white and black pupil)
     push();
     fill(255, 255, 255);
-    ellipse(300, 25, 30, 30)
-
+    ellipse(300, 25, 150, 60)
+    ellipse(700, 25, 150, 60)
+    fill(0);
+    ellipse(300, 25, 100, 40)
+    ellipse(700, 25, 100, 40)
 
 
 }
