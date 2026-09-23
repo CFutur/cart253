@@ -18,7 +18,7 @@
 
 [prototype 1 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1)
 
-<img src="/topics/prototypes/images/abstract-planet.png" alt="drawing" width="100"/>
+<img src="/topics/prototypes/images/abstract-planet.png" alt="drawing" width="30"/>
 
 **Feeding a bird**
 
