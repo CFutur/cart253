@@ -20,35 +20,28 @@ let face = {
         r: 64,
         g: 40,
         b: 27
-    }
+    },
 };
 
-//let the mouth turn from smile to frown
-let mouth = {
-    //colour mouth
-    fill: {
-        r: 0,
-        g: 0,
-        b: 0
-
-
-    }
-
-
-
-
+let sky = {
+    //colour
+    r: 66,
+    g: 41,
+    b: 89
 
 }
 
+//let the mouth turn from smile to frown
+//let mouth = {
+//position and size.... i wanna add a line.
+//line(30, 20, 85, 75);
 
-
-
-
-
-
-
-
-
+//colour mouth
+//fill: {
+//  r: 0,
+//  g: 0,
+// b: 0
+// },
 
 
 
@@ -60,13 +53,13 @@ function setup() {
     createCanvas(1000, 1000)
 
 
-
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draw mister sick guy
 */
 function draw() {
+    backgorund(sky.fill.r, sky.fill.g, sky.fill.b);
 
 }
