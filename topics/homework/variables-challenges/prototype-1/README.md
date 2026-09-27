@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Oh no..! I think I'm going to puke...!
 
-AUTHOR NAME
+Clara Fioramore
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This program is simply a prototype to work with variables in colour, movements and and gradation of colours. 
 
 ## Attribution
 
