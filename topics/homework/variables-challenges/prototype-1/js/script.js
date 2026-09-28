@@ -25,11 +25,19 @@ let face = {
     }
 };
 
+
+let eyes = {
+    //position and size
+    x: 450,
+    y: 
+    
+}
+/** 
 let bottomface = {
     //position and size
     x: 900,
-    y: 375,
-    size: 300,
+    y: 425,
+    size: 400,
     //colour
     fill: {
         r: 64,
@@ -37,7 +45,7 @@ let bottomface = {
         b: 27
     }
 };
-
+*/
 
 let sky = {
     //colour
@@ -77,9 +85,9 @@ function draw() {
     background(sky.fill.r, sky.fill.g, sky.fill.b);
 
 
-    face.fill.g += 0.1;
+    face.fill.g += 0.09;
     // face.fill.g = constrain(mrFurious.fill.g, 0, 100);
-    face.fill.r -= 0.1;
+    face.fill.r -= 0.09;
     // face.fill.r = constrain(mrFurious.fill.r, 0, 100);
 
 
@@ -97,10 +105,12 @@ function draw() {
     pop();
 
 
-    //draw the bottom of the mans face
-    push();
+    /** 
+    * draw the bottom of the mans face
+    *push();
     noStroke();
     fill(bottomface.fill.r, bottomface.fill.g, bottomface.fill.b);
     ellipse(bottomface.x, bottomface.y, bottomface.size);
     pop();
+*/
 }

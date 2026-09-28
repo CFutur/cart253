@@ -29,7 +29,6 @@ let sky = {
     b: 200
 
   }
-
 }
 
 //let cute peaceful bird fly accross the screen gently while making our guy mad as hell cause he sucks
