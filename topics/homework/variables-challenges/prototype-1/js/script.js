@@ -15,8 +15,8 @@ let circlePositionX = 200;
 let circlePositionY = 200;
 
 // Speed variables
-let circleSpeedX = 2;
-let circleSpeedY = 3;
+let circleSpeedX = 20;
+let circleSpeedY = 100;
 
 // Radius variable
 let circleRadius = 25;
@@ -26,7 +26,7 @@ let circleHue = 0;
 
 function setup() {
     // Create 400x400 canvas
-    createCanvas(400, 400);
+    createCanvas(1000, 1000);
 
     // Cover canvas with white
     background(255);
@@ -37,7 +37,7 @@ function setup() {
     // Draw rectangles on either side of the canvas
     noStroke();
     fill(128);
-    rect(0, 0, 100, height);
+    rect(300, 0, 100, height);
     rect(300, 0, 100, height);
 
     // Use Hue Saturation Brightness for colors on circle trail
@@ -54,7 +54,7 @@ function setup() {
 
 function draw() {
     // Set stroke color using current hue
-    stroke(circleHue, 80, 90);
+    stroke(circleHue, 3, 9);
 
     // If circle's x position is between 100 and 300
     if (circlePositionX >= 100 && circlePositionX <= 300) {
@@ -83,7 +83,7 @@ function draw() {
     // If hue has reached maximum value
     if (circleHue >= 360) {
         // Reset hue to 0
-        circleHue = 0;
+        circleHue = 24;
     }
 
     // If circle is beyond left or right edge
