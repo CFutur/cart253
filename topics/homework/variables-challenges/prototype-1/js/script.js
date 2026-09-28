@@ -10,141 +10,97 @@
 
 //our guy is going to turn from him to green, hopefully maybe only the top half of his face 
 
+// Position variables
+let circlePositionX = 200;
+let circlePositionY = 200;
 
+// Speed variables
+let circleSpeedX = 2;
+let circleSpeedY = 3;
 
-let face = {
-    //position and size
-    x: 900,
-    y: 375,
-    size: 500,
-    //colour
-    fill: {
-        r: 64,
-        g: 40,
-        b: 27
-    }
-};
+// Radius variable
+let circleRadius = 25;
 
+// Hue variable
+let circleHue = 0;
 
-let lefteye = {
-    //position and size
-    x: 750,
-    y: 375,
-    size: 250,
-    //colour
-    fill: {
-        r: 255,
-        g: 255,
-        b: 255
-    }
-};
-
-let righteye = {
-    //position and size
-    x: 1050,
-    y: 375,
-    size: 250,
-    //colour
-    fill: {
-        r: 255,
-        g: 255,
-        b: 255
-    }
-};
-
-
-let rotationZ = 0;
-/** 
-let bottomface = {
-    //position and size
-    x: 900,
-    y: 425,
-    size: 400,
-    //colour
-    fill: {
-        r: 64,
-        g: 40,
-        b: 27
-    }
-};
-*/
-
-let sky = {
-    //colour
-    fill: {
-        r: 66,
-        g: 41,
-        b: 89
-    }
-}
-//let the mouth turn from smile to frown
-//let mouth = {
-//position and size.... i wanna add a line.
-//line(30, 20, 85, 75);
-
-//colour mouth
-//fill: {
-//  r: 0,
-//  g: 0,
-// b: 0
-// },
-
-
-
-
-/**
- * This is to create my canvas
-*/
 function setup() {
-    createCanvas(1800, 750, WEBGL);
+    // Create 400x400 canvas
+    createCanvas(400, 400);
+
+    // Cover canvas with white
+    background(255);
+
+    // Draw ellipses using their radius
+    ellipseMode(RADIUS);
+
+    // Draw rectangles on either side of the canvas
+    noStroke();
+    fill(128);
+    rect(0, 0, 100, height);
+    rect(300, 0, 100, height);
+
+    // Use Hue Saturation Brightness for colors on circle trail
+    colorMode(HSB);
+
+    // Set stroke weight to 4 units
+    strokeWeight(4);
+
+    // Create screen reader accessible description
+    describe(
+        'A circle starts in the center of the canvas. When the user holds the mouse down, the circle bounces around the canvas, its inside switches between black and white, and its outline fades between colors, leaving a rainbow trail.'
+    );
 }
 
-
-/**
- * Draw mister sick guy
-*/
 function draw() {
-    background(sky.fill.r, sky.fill.g, sky.fill.b);
+    // Set stroke color using current hue
+    stroke(circleHue, 80, 90);
 
+    // If circle's x position is between 100 and 300
+    if (circlePositionX >= 100 && circlePositionX <= 300) {
+        // Set fill color to black
+        fill(0);
 
-    face.fill.g += 0.05;
-    // face.fill.g = constrain(mrFurious.fill.g, 0, 100);
-    face.fill.r -= 0.05;
-    // face.fill.r = constrain(mrFurious.fill.r, 0, 100);
+        // Otherwise
+    } else {
+        // Set fill color to white
+        fill(255);
+    }
 
+    // Draw circle at current position
+    circle(circlePositionX, circlePositionY, circleRadius);
 
-    lefteye.rotation.x += 0.05;
+    // If mouse is held down, animate the sketch
+    if (mouseIsPressed === true) {
+        // Add speed to circle's position to make it move
+        circlePositionX = circlePositionX + circleSpeedX;
+        circlePositionY = circlePositionY + circleSpeedY;
 
+        // Increase hue by 1
+        circleHue = circleHue + 1;
+    }
 
+    // If hue has reached maximum value
+    if (circleHue >= 360) {
+        // Reset hue to 0
+        circleHue = 0;
+    }
 
+    // If circle is beyond left or right edge
+    if (
+        circlePositionX < circleRadius ||
+        circlePositionX > width - circleRadius
+    ) {
+        // Reverse horizontal speed
+        circleSpeedX = -circleSpeedX;
+    }
 
-
-    //Draw the face of our sick guy
-    push();
-    noStroke();
-    fill(face.fill.r, face.fill.g, face.fill.b);
-    ellipse(face.x, face.y, face.size);
-    pop();
-
-    //Draw the left eye of the man
-    push();
-    fill(lefteye.fill.r, lefteye.fill.g, lefteye.fill.b);
-    ellipse(lefteye.x, lefteye.y, lefteye.size);
-    pop();
-
-    //Draw the right eye of the man
-    push();
-    fill(righteye.fill.r, righteye.fill.g, righteye.fill.b);
-    ellipse(righteye.x, righteye.y, righteye.size);
-    pop();
-
-
-    /** 
-    * draw the bottom of the mans face
-    *push();
-    noStroke();
-    fill(bottomface.fill.r, bottomface.fill.g, bottomface.fill.b);
-    ellipse(bottomface.x, bottomface.y, bottomface.size);
-    pop();
-*/
+    // If circle is beyond top or bottom edge
+    if (
+        circlePositionY < circleRadius ||
+        circlePositionY > height - circleRadius
+    ) {
+        // Reverse vertical speed
+        circleSpeedY = -circleSpeedY;
+    }
 }
