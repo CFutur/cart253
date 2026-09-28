@@ -26,12 +26,34 @@ let face = {
 };
 
 
-let eyes = {
+let lefteye = {
     //position and size
-    x: 450,
-    y: 
-    
-}
+    x: 750,
+    y: 375,
+    size: 250,
+    //colour
+    fill: {
+        r: 255,
+        g: 255,
+        b: 255
+    }
+};
+
+let righteye = {
+    //position and size
+    x: 1050,
+    y: 375,
+    size: 250,
+    //colour
+    fill: {
+        r: 255,
+        g: 255,
+        b: 255
+    }
+};
+
+
+let rotationZ = 0;
 /** 
 let bottomface = {
     //position and size
@@ -74,7 +96,7 @@ let sky = {
  * This is to create my canvas
 */
 function setup() {
-    createCanvas(1800, 750);
+    createCanvas(1800, 750, WEBGL);
 }
 
 
@@ -85,13 +107,13 @@ function draw() {
     background(sky.fill.r, sky.fill.g, sky.fill.b);
 
 
-    face.fill.g += 0.09;
+    face.fill.g += 0.05;
     // face.fill.g = constrain(mrFurious.fill.g, 0, 100);
-    face.fill.r -= 0.09;
+    face.fill.r -= 0.05;
     // face.fill.r = constrain(mrFurious.fill.r, 0, 100);
 
 
-
+    lefteye.rotation.x += 0.05;
 
 
 
@@ -102,6 +124,18 @@ function draw() {
     noStroke();
     fill(face.fill.r, face.fill.g, face.fill.b);
     ellipse(face.x, face.y, face.size);
+    pop();
+
+    //Draw the left eye of the man
+    push();
+    fill(lefteye.fill.r, lefteye.fill.g, lefteye.fill.b);
+    ellipse(lefteye.x, lefteye.y, lefteye.size);
+    pop();
+
+    //Draw the right eye of the man
+    push();
+    fill(righteye.fill.r, righteye.fill.g, righteye.fill.b);
+    ellipse(righteye.x, righteye.y, righteye.size);
     pop();
 
 
