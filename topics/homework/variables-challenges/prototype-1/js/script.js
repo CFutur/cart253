@@ -10,6 +10,8 @@
 
 //our guy is going to turn from him to green, hopefully maybe only the top half of his face 
 
+
+
 let face = {
     //position and size
     x: 900,
@@ -22,6 +24,20 @@ let face = {
         b: 27
     }
 };
+
+let bottomface = {
+    //position and size
+    x: 900,
+    y: 375,
+    size: 300,
+    //colour
+    fill: {
+        r: 64,
+        g: 40,
+        b: 27
+    }
+};
+
 
 let sky = {
     //colour
@@ -73,11 +89,18 @@ function draw() {
 
 
 
-
     //Draw the face of our sick guy
     push();
     noStroke();
     fill(face.fill.r, face.fill.g, face.fill.b);
     ellipse(face.x, face.y, face.size);
+    pop();
+
+
+    //draw the bottom of the mans face
+    push();
+    noStroke();
+    fill(bottomface.fill.r, bottomface.fill.g, bottomface.fill.b);
+    ellipse(bottomface.x, bottomface.y, bottomface.size);
     pop();
 }
