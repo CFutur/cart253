@@ -49,11 +49,23 @@ let righteye = {
         r: 255,
         g: 255,
         b: 255
-    },
+    }
 };
 
+let leftpupil = {
+    //position and size
+    x: 750,
+    y: 375,
+    size: 100,
+    //colour
+    r: 75,
+    g: 116,
+    b: 250,
+
+};
 
 let rotationZ = 0;
+
 /** 
 let bottomface = {
     //position and size
@@ -77,6 +89,22 @@ let sky = {
         b: 89
     }
 }
+
+let vomit = {
+    //position and size
+    x: 850,
+    y: 560,
+    w: 100,
+    h: 300,
+    //colour
+    fill: {
+        r: 160,
+        g: 255,
+        b: 59,
+    }
+}
+
+
 //let the mouth turn from smile to frown
 //let mouth = {
 //position and size.... i wanna add a line.
@@ -107,23 +135,20 @@ function draw() {
     background(sky.fill.r, sky.fill.g, sky.fill.b);
 
 
-    face.fill.g += 0.05;
+    face.fill.g += 0.08;
     // face.fill.g = constrain(mrFurious.fill.g, 0, 100);
-    face.fill.r -= 0.05;
+    face.fill.r -= 0.08;
     // face.fill.r = constrain(mrFurious.fill.r, 0, 100);
 
-    /*
-        rotateZ(radians(rotationZ));
-        rotationZ = (rotationZ + 1) % 360;
-    */
 
-    //just trying to add another object
+
+    /*just trying to add another object
     push();
     noStroke();
     fill(12, 34, 78);
     square(34);
     pop();
-
+*/
 
     //Draw the face of our sick guy
     push();
@@ -144,8 +169,35 @@ function draw() {
     ellipse(righteye.x, righteye.y, righteye.size);
     pop();
 
-    rotateZ(radians(rotationZ));
-    rotationZ = (rotationZ + 1) % 360;
+    //draw the left pupil
+    push();
+    noStroke();
+    fill(leftpupil.r, leftpupil.g, leftpupil.b);
+    ellipse(leftpupil.x, leftpupil.y, leftpupil.size);
+    pop();
+
+
+    /*
+        rotateZ(radians(rotationZ));
+        rotationZ = (rotationZ + 1) % 360;
+    */
+    //draw the vomit coming out
+    push();
+    noStroke();
+    //fill(vomit.fill.r, vomit.fill.g, vomit.fill.b);
+    //rect(vomit.x, vomit.y, vomit.w, vomit.h);
+    pop();
+
+    translate();
+
+    // Calculate the x-coordinate.
+    let xx = frameCount * 0.9;
+
+    // Translate the origin.
+    translate(0, xx);
+    fill(vomit.fill.r, vomit.fill.g, vomit.fill.b);
+    rect(vomit.x, vomit.y, vomit.w, vomit.h);
+    pop();
 
 
     /** 
