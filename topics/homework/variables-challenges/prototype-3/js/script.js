@@ -35,7 +35,7 @@ const dot = {
     fill: "#538f73",
 }
 
-const rightEarUser = {
+const user = {
     x: undefined, // these two will be defined by my mouse
     y: undefined, //
     size: 100,
@@ -69,6 +69,7 @@ function draw() {
     mouseWhiskers();
     mouseNose();
     mouseRightEar();
+    moveUser();
 }
 
 /*
@@ -120,4 +121,17 @@ function Dot() {
     fill(dot.fill);
     ellipse(dot.x, dot.y, dot.size);
     pop();
+}
+
+function moveUser() {
+    const d = dist(user.x, user.y, dot.x, dot.y);
+    const overlap = (d < user.size / 2 + dot.size / 2);
+    if (overlap) {
+        if (user.x >= overlap && user.x <= puck.x) { puck.x += 1; }
+        else if (user.x >= puck.x) { puck.x -= 1; }
+
+        if (user.y >= overlap && user.y <= puck.y) { puck.y += 1; }
+        else if (user.y >= puck.y) { puck.y -= 1; }
+
+    }
 }
