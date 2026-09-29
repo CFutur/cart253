@@ -114,6 +114,7 @@ function setup() {
 */
 function draw() {
     background(sky.r, sky.g, sky.b);
+    ovalOne();
 
     //draw the first oval
     push();
