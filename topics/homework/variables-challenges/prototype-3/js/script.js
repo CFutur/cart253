@@ -28,7 +28,7 @@ const nose = {
     fill: "#755a69",
 }
 
-const Dot = {
+const dot = {
     x: 600,
     y: 400,
     size: 100,
@@ -61,11 +61,63 @@ function draw() {
     background(83, 143, 115);
     //move the mouse's ear on our user circle
     moveUser();
-    //Draw the mouse and all its elements
+    //This is simply a dot the user has to touch for the ear to turn grey
     Dot();
+    //Draw the mouse and all its elements
     mouseLeftEar();
     mouseHead();
     mouseWhiskers();
     mouseNose();
     mouseRightEar();
+}
+
+/*
+Now setting the user to be the mouse (like cursor)
+*/
+function moveUser() {
+    user.x = mouseX;
+    user.y = mouseY;
+}
+
+// Display the mouse's left ear
+
+function mouseLeftEar() {
+    push();
+    noStroke();
+    fill(leftEar.fill);
+    ellipse(leftEar.x, leftEar.y, leftEar.size);
+    pop();
+}
+
+function mouseHead() {
+    push();
+    noStroke();
+    fill(head.fill);
+    ellipse(head.x, head.y, head.size);
+    pop();
+}
+
+function mouseWhiskers() {
+    push();
+    line(400, 600, 500, 700);
+    line(100, 100, 200, 200);
+    stroke("#ffffff");
+    strokeWeight(0.5);
+    pop();
+}
+
+function mouseNose() {
+    push();
+    noStroke();
+    fill(nose.fill);
+    ellipse(nose.x, nose.y, nose.size);
+    pop();
+}
+
+function Dot() {
+    push();
+    noStroke();
+    fill(dot.fill);
+    ellipse(dot.x, dot.y, dot.size);
+    pop();
 }
