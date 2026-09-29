@@ -12,7 +12,12 @@ let ovalone = {
     //position and size
     x: 200,
     y: 600,
-    size: 200
+    w: 200,
+    h: 600,
+    //colour
+    r: 149,
+    g: 229,
+    b: 245
 }
 
 
@@ -35,4 +40,12 @@ function setup() {
 */
 function draw() {
     background(sky.r, sky.g, sky.b);
+
+    //draw the first oval
+    push();
+    noStroke();
+    fill(ovalone.r, ovalone.g, ovalone.b);
+    ellipse(ovalone.x, ovalone.y, ovalone.w, ovalone.h);
+
+    pop();
 }
