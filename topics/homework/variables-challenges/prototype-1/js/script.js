@@ -40,11 +40,9 @@ let vomit = { x: 850, y: 560, w: 100, h: 300, RGB: { r: 160, g: 255, b: 59 } }
 /* FUNCTIONS */
 
 /**
- * This is to create my canvas
+ * This is to create my canvas and also add a button that will only work when clicked on
  * 
- * SETUP() will run once, when the program starts. It's used to 
- * define initial environment properties such as screen size and 
- * background color and to load media such as images and fonts as the program starts.
+ * 
 */
 function setup() {
     createCanvas(1800, 750);

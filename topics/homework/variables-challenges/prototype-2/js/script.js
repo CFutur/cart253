@@ -8,7 +8,7 @@
 
 "use strict";
 
-//let speed = frameCount * 0.2;
+let rectoneSpeed = frameCount * 0.2;
 
 let ovalone = {
     //position and size
@@ -143,17 +143,22 @@ function draw() {
     noStroke();
     fill(ovalfour.r, ovalfour.g, ovalfour.b);
     ellipse(ovalfour.x, ovalfour.y, ovalfour.w, ovalfour.h);
+    //translate(ellipsex, 50);
     pop();
 
     push();
     noStroke();
     fill(rectangleone.r, rectangleone.g, rectangleone.b);
     rect(rectangleone.x, rectangleone.y, rectangleone.w, rectangleone.h)
+    rectoneSpeed += 0.5;
+    translate(rectoneSpeed, 0);
+    pop();
 
     push();
     noStroke();
     fill(rectangletwo.r, rectangletwo.g, rectangletwo.b);
     rect(rectangletwo.x, rectangletwo.y, rectangletwo.w, rectangletwo.h)
+    pop();
 
     push();
     noStroke();
