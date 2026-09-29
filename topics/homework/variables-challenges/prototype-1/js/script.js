@@ -1,211 +1,143 @@
 /**
  * Oh no..! I think I'm going to puke...
- * Clara Fioramore
- * 
- * This project is the first prototype to dip my toes in the water of colour gradation, 
+    * Clara Fioramore
+        *
+ * This project is the first prototype to dip my toes in the water of colour gradation,
  * movement and rotation while using variables
- */
+    */
 
 "use strict";
 
-//our guy is going to turn from him to green, hopefully maybe only the top half of his face 
+//our guy is going to turn from him to green, hopefully maybe only the top half of his face
 
 
-
-let face = {
-    //position and size
-    x: 900,
-    y: 375,
-    size: 500,
-    //colour
-    fill: {
-        r: 64,
-        g: 40,
-        b: 27
-    }
-};
-
-
-let lefteye = {
-    //position and size
-    x: 750,
-    y: 375,
-    size: 250,
-    //colour
-    fill: {
-        r: 255,
-        g: 255,
-        b: 255
-    }
-};
-
-let righteye = {
-    //position and size
-    x: 1050,
-    y: 375,
-    size: 250,
-    //colour
-    fill: {
-        r: 255,
-        g: 255,
-        b: 255
-    }
-};
-
-let leftpupil = {
-    //position and size
-    x: 750,
-    y: 375,
-    size: 100,
-    //colour
-    r: 75,
-    g: 116,
-    b: 250,
-
-};
+/* VARIABLES */
 
 let rotationZ = 0;
+let isSick = false; // This is our "switch" (False = still, True = moving)
+let vomitSpeed = 0; // We will increase this only when isSick is true
+let btn;            // Variable to hold our button
 
-/** 
-let bottomface = {
-    //position and size
-    x: 900,
-    y: 425,
-    size: 400,
-    //colour
-    fill: {
-        r: 64,
-        g: 40,
-        b: 27
-    }
-};
-*/
+/* OBJECTS */
 
-let sky = {
-    //colour
-    fill: {
-        r: 66,
-        g: 41,
-        b: 89
-    }
-}
+/*                       RED    GREEN  BLUE */
+let sky = { RGB: { r: 66, g: 41, b: 89 } }
 
-let vomit = {
-    //position and size
-    x: 850,
-    y: 560,
-    w: 100,
-    h: 300,
-    //colour
-    fill: {
-        r: 160,
-        g: 255,
-        b: 59,
-    }
-}
+/*Circles for the face, eyes and pupils of our sick guy*/
+/*                 X axis   Y axis        Diameter   RED     GREEN   BLUE */
+let face = { x: 900, y: 375, size: 500, RGB: { r: 64, g: 40, b: 27 } };
+let lefteye = { x: 750, y: 375, size: 250, RGB: { r: 255, g: 255, b: 255 } };
+let righteye = { x: 1050, y: 375, size: 250, RGB: { r: 255, g: 255, b: 255 } };
+let leftpupil = { x: 750, y: 375, size: 100, RGB: { r: 75, g: 116, b: 250 } };
+let rightpupil = { x: 1050, y: 375, size: 100, RGB: { r: 75, g: 116, b: 250 } };
+let bottomface = { x: 900, y: 425, size: 400, RGB: { r: 64, g: 40, b: 27 } };
+
+/*Rectangle for the vomit of our sick guy*/
+/*                 X axis   Y axis  Width   Height        RED     GREEN   BLUE */
+let vomit = { x: 850, y: 560, w: 100, h: 300, RGB: { r: 160, g: 255, b: 59 } }
 
 
-//let the mouth turn from smile to frown
-//let mouth = {
-//position and size.... i wanna add a line.
-//line(30, 20, 85, 75);
-
-//colour mouth
-//fill: {
-//  r: 0,
-//  g: 0,
-// b: 0
-// },
-
-
-
+/* FUNCTIONS */
 
 /**
  * This is to create my canvas
+ * 
+ * SETUP() will run once, when the program starts. It's used to 
+ * define initial environment properties such as screen size and 
+ * background color and to load media such as images and fonts as the program starts.
 */
 function setup() {
     createCanvas(1800, 750);
+
+    // 1. Create the button
+    btn = createButton('Make him sick!');
+    // 2. Position the button next to the face
+    btn.position(1200, 375);
+    // 3. Tell the button what to do when clicked
+    btn.mousePressed(goSick);
 }
 
+// This function runs ONLY when the button is clicked
+function goSick() {
+    isSick = true;
+    btn.html('Oh no!'); // Change the button text
+}
 
 /**
  * Draw mister sick guy
+ * 
+ * DRAW() is called directly after setup(), and continuously executes 
+ * the lines of code contained inside its block until the program is stopped or noLoop() is called.
 */
 function draw() {
-    background(sky.fill.r, sky.fill.g, sky.fill.b);
+
+    /*Background*/
+    background(sky.RGB.r, sky.RGB.g, sky.RGB.b);
 
 
-    face.fill.g += 0.08;
-    // face.fill.g = constrain(mrFurious.fill.g, 0, 100);
-    face.fill.r -= 0.08;
-    // face.fill.r = constrain(mrFurious.fill.r, 0, 100);
-
-
-
-    /*just trying to add another object
-    push();
-    noStroke();
-    fill(12, 34, 78);
-    square(34);
-    pop();
-*/
-
+    /* FACE */
+    /* START */
+    push(); // "Sub-section" for just the face of our sick guy.
+    if (isSick) {
+        face.RGB.g += 0.50;
+        // face.RGB.g = constrain(mrFurious.RGB.g, 0, 100);
+        face.RGB.r -= 0.50;
+        // face.RGB.r = constrain(mrFurious.RGB.r, 0, 100);
+    }
     //Draw the face of our sick guy
-    push();
-    noStroke();
-    fill(face.fill.r, face.fill.g, face.fill.b);
+    fill(face.RGB.r, face.RGB.g, face.RGB.b);
     ellipse(face.x, face.y, face.size);
     pop();
+    /* END */
 
+
+    /* EYES */
+    /* START */
+    push(); // "Sub-section" for just the eyes of our sick guy.
     //Draw the left eye of the man
-    push();
-    fill(lefteye.fill.r, lefteye.fill.g, lefteye.fill.b);
+    fill(lefteye.RGB.r, lefteye.RGB.g, lefteye.RGB.b);
     ellipse(lefteye.x, lefteye.y, lefteye.size);
-    pop();
-
     //Draw the right eye of the man
-    push();
-    fill(righteye.fill.r, righteye.fill.g, righteye.fill.b);
+    fill(righteye.RGB.r, righteye.RGB.g, righteye.RGB.b);
     ellipse(righteye.x, righteye.y, righteye.size);
     pop();
+    /* END */
 
-    //draw the left pupil
+
+    /* PUPILS */
+    /* START */
+    push(); // "Sub-section" for just the pupils of our sick guy.
+    noStroke();
+    fill(leftpupil.RGB.r, leftpupil.RGB.g, leftpupil.RGB.b);
+    fill(rightpupil.RGB.r, rightpupil.RGB.g, rightpupil.RGB.b);
+
+    // --- LEFT PUPIL (ROTATING) ---
     push();
-    noStroke();
-    fill(leftpupil.r, leftpupil.g, leftpupil.b);
-    ellipse(leftpupil.x, leftpupil.y, leftpupil.size);
+    translate(lefteye.x, lefteye.y);
+    if (isSick) {
+        rotate(rotationZ);
+        rotationZ += 0.05;
+        ellipse(40, 0, leftpupil.size); // Orbiting
+    } else {
+        ellipse(0, 0, leftpupil.size);  // Centered
+    }
     pop();
-
-
-    /*
-        rotateZ(radians(rotationZ));
-        rotationZ = (rotationZ + 1) % 360;
-    */
-    //draw the vomit coming out
-    push();
-    noStroke();
-    //fill(vomit.fill.r, vomit.fill.g, vomit.fill.b);
-    //rect(vomit.x, vomit.y, vomit.w, vomit.h);
+    ellipse(rightpupil.x, rightpupil.y, rightpupil.size);
     pop();
-
-    translate();
-
-    // Calculate the x-coordinate.
-    let xx = frameCount * 0.9;
-
-    // Translate the origin.
-    translate(0, xx);
-    fill(vomit.fill.r, vomit.fill.g, vomit.fill.b);
-    rect(vomit.x, vomit.y, vomit.w, vomit.h);
-    pop();
+    /* END */
 
 
-    /** 
-    * draw the bottom of the mans face
-    *push();
-    noStroke();
-    fill(bottomface.fill.r, bottomface.fill.g, bottomface.fill.b);
-    ellipse(bottomface.x, bottomface.y, bottomface.size);
-    pop();
-*/
+    /* VOMIT */
+    /* START */
+    if (isSick) {
+        push(); // "Sub-section" for just the vomit of our sick guy.
+        noStroke();
+        vomitSpeed += 0.5; // Increase the speed of the vomit
+        // Translate the origin.
+        translate(0, vomitSpeed);
+        fill(vomit.RGB.r, vomit.RGB.g, vomit.RGB.b);
+        rect(vomit.x, vomit.y, vomit.w, vomit.h);
+        pop();
+    }
+    /* END */
 }
