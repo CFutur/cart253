@@ -9,6 +9,22 @@
 "use strict";
 
 
+let bonhomme = false;
+const snowMan = {
+    //position and size
+    //x: 
+}
+
+const snowflake = {
+    //position and size
+    x: 0,
+    y: 0,
+    size: 5,
+    //colour
+    fill: "#ffffff"
+}
+
+
 const mountainOne = {
     //position and size
     x: 800,
@@ -40,6 +56,7 @@ const mountainThree = {
 
 function setup() {
     createCanvas(1000, 1000);
+
 }
 
 
@@ -47,6 +64,7 @@ function setup() {
 //idk whatmy draw will be yet sad; y
 
 function draw() {
+    noStroke();
     background("#2e6f8d")
 
 
@@ -55,11 +73,29 @@ function draw() {
 
     snowMountain();
     snowflakes();
-    bottomSnowman();
-    middleSnowman();
-    topSnowman();
+    if ((mouseIsPressed)) {
+
+        snowman();
+        bonhomme = true
+    }
+    else if (bonhomme) {
+        snowman();
+    };
+
 }
 
+function snowman() {
+
+    push();
+    noStroke();
+    fill("#ffffff")
+    ellipse(350, 800, 150, 150);
+    ellipse(350, 700, 100, 100);
+    ellipse(350, 630, 70, 70);
+    pop();
+
+
+}
 
 function snowMountain() {
     push();
@@ -70,10 +106,37 @@ function snowMountain() {
     ellipse(mountainOne.x, mountainOne.y, mountainOne.w, mountainOne.h);
     fill("#82c3ca");
     ellipse(mountainTwo.x, mountainTwo.y, mountainTwo.w, mountainTwo.h);
+
+
+    // Sending a simple text message
+    console.log("Application started successfully.");
+
+
+
+    // Sending a debug-specific level log
+    console.debug("User session data fetched.");
     pop();
 }
 
 function snowflakes() {
-    strokeweight(5);
-    point(x, y);
+    push();
+    noStroke();
+    fill("#ffffff");
+    ellipse(random(1, 1000), random(1, 1000), 30, 30);
+    ellipse(random(1, 1000), random(1, 1000), 30, 30);
+    ellipse(random(1, 1000), random(1, 1000), 30, 30);
+    ellipse(random(1, 1000), random(1, 1000), 30, 30);
+    ellipse(random(1, 1000), random(1, 1000), 30, 30);
+    ellipse(random(1, 1000), random(1, 1000), 30, 30);
+    ellipse(random(1, 1000), random(1, 1000), 30, 30);
+    dodo(250);
+    // await new Promise(r => settimeout(r, 2000));
+    //velocity -= snowflake.x, snowflake.y;
+    pop();
 }
+
+function dodo(ms) {
+    const start = Date.now();
+    while (Date.now() - start < ms) { }
+}
+

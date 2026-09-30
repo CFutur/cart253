@@ -45,15 +45,13 @@
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/variables-challenges/prototype-1)
 
 
+### Christmas is coming!
 
+![5 prototype](/topics/images/snow-scenery.png)
 
+[View online](https://CFutur.github.io/cart253/topics/homework/variables-challenges/prototype-2)
 
-
-
-
-
-
-
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/variables-challenges/prototype-2)
 
 ### Mouse's ear
 
