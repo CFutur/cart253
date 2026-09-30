@@ -10,7 +10,7 @@
 [My reflective journal](journal.md)
 
 ----------------------------------------------------------------------------------------------
-## Links to my 3 prototypes instructions
+## Instructions prototypes
 
 ### Playing around with planets
 
