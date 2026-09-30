@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * It's TIMEEEEE (mariah carey reference)
+ * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is a small project about making a snoman appear in the falling snow (you might need to click more than once for it to appear)
  */
 
 "use strict";
@@ -61,7 +60,7 @@ function setup() {
 
 
 
-//idk whatmy draw will be yet sad; y
+//draw all parts of our beautiful scenery
 
 function draw() {
     noStroke();

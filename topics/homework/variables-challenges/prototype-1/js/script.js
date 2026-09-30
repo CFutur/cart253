@@ -64,9 +64,7 @@ function goSick() {
 /**
  * Draw mister sick guy
  * 
- * DRAW() is called directly after setup(), and continuously executes 
- * the lines of code contained inside its block until the program is stopped or noLoop() is called.
-*/
+ */
 function draw() {
 
     /*Background*/
@@ -74,7 +72,6 @@ function draw() {
 
 
     /* FACE */
-    /* START */
     push(); // "Sub-section" for just the face of our sick guy.
     if (isSick) {
         face.RGB.g += 0.50;
@@ -86,12 +83,11 @@ function draw() {
     fill(face.RGB.r, face.RGB.g, face.RGB.b);
     ellipse(face.x, face.y, face.size);
     pop();
-    /* END */
+
 
 
     /* EYES */
-    /* START */
-    push(); // "Sub-section" for just the eyes of our sick guy.
+    push();
     //Draw the left eye of the man
     fill(lefteye.RGB.r, lefteye.RGB.g, lefteye.RGB.b);
     ellipse(lefteye.x, lefteye.y, lefteye.size);
@@ -99,12 +95,10 @@ function draw() {
     fill(righteye.RGB.r, righteye.RGB.g, righteye.RGB.b);
     ellipse(righteye.x, righteye.y, righteye.size);
     pop();
-    /* END */
 
 
     /* PUPILS */
-    /* START */
-    push(); // "Sub-section" for just the pupils of our sick guy.
+    push();
     noStroke();
     fill(leftpupil.RGB.r, leftpupil.RGB.g, leftpupil.RGB.b);
     fill(rightpupil.RGB.r, rightpupil.RGB.g, rightpupil.RGB.b);
@@ -122,13 +116,11 @@ function draw() {
     pop();
     ellipse(rightpupil.x, rightpupil.y, rightpupil.size);
     pop();
-    /* END */
 
 
     /* VOMIT */
-    /* START */
     if (isSick) {
-        push(); // "Sub-section" for just the vomit of our sick guy.
+        push();
         noStroke();
         vomitSpeed += 0.5; // Increase the speed of the vomit
         // Translate the origin.
@@ -137,5 +129,4 @@ function draw() {
         rect(vomit.x, vomit.y, vomit.w, vomit.h);
         pop();
     }
-    /* END */
 }
