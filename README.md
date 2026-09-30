@@ -16,8 +16,6 @@
 
 ![1 prototype](/topics/prototypes/images/abstract-planet.png)
 
-https://pippinbarr.github.io/cart253/assignments/instructions/scary-clown/)
-
 [View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-1/)
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1)
