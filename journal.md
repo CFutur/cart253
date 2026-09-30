@@ -9,6 +9,15 @@ Honestly this assignment was fun. The back and forth can drive you a bit insane 
 
 ![bird seeds screen](/topics/prototypes/images/feeding-bird.png)
 
+## 2026-09-29
+Honestly I had a lot of struggles with this assignment. I think my brain has difficulty understanding where my lines of code go: "In draw, in setup, alone? etc". So playing around with what feels like dark magic is really hard. I find it so rewarding when something goes right but I think I'll familiarize myself more with just understanding javascript before the next homework so i can be sure of what goes where and only have to doubt my syntax or something else that isnt related to being doubtful of all my lines of code. 
+
+My dad also helped me especially with project 2 and a bit with project 3, and he made me do it his way a bit, so i learned a different perspective. I also learned that hes old and gets angry that some old language of javascript doesnt apply anymore... 
+
+Honestly I'd love to make a small game with my prototype number 3 where when you manage to place the object where it is needed, their face gets more complete before the next level shows up. 
+
+![mouse with face](/topics/images/mouse-prototype-face.png)
+
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
  ![cfutur's website screenshot](/topics/prototypes/images/screenshot.png)
