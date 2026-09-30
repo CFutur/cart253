@@ -12,31 +12,29 @@
 ----------------------------------------------------------------------------------------------
 ## Links to my 3 prototypes instructions
 
-**Playing around with planets**
-
-[prototype #1](\cart253\topics\prototypes\prototype-1\)
-
-[prototype 1 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1)
+### Playing around with planets
 
 ![1 prototype](/topics/prototypes/images/abstract-planet.png)
 
-**Feeding a bird**
+[View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-1/)
 
-[prototype #2](\cart253\topics\prototypes\prototype-2\)
+[View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1)
 
-[prototype 2 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-2)
+### Feeding a bird
 
 ![2 prototype](/topics/prototypes/images/feeding-bird.png)
 
-**Two very creepy eyes**
+[View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-2/)
 
-[prototype #3](\cart253\topics\prototypes\prototype-3\)
+[View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-2)
 
-[prototype 3 in repositery](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-3)
+### Two very creepy eyes
 
 ![3 prototype](/topics/prototypes/images/scary-eyes.png)
 
+[View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-3/)
 
+[View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-3)
 
 -----------------------------------------------------------------------------------------------
 
