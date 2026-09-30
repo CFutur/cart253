@@ -21,4 +21,4 @@ Honestly I'd love to make a small game with my prototype number 3 where when you
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
- ![cfutur's website screenshot](/topics/prototypes/images/screenshot.png)
+ ![cfutur's website screenshot](/topics/prototypes/images/screenshot.png);
