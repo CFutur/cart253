@@ -12,7 +12,7 @@
 ----------------------------------------------------------------------------------------------
 ## Links to my 3 prototypes instructions
 
-###Playing around with planets
+### Playing around with planets
 
 ![1 prototype](/topics/prototypes/images/abstract-planet.png)
 
@@ -20,7 +20,7 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-1)
 
-###Feeding a bird
+### Feeding a bird
 
 ![2 prototype](/topics/prototypes/images/feeding-bird.png)
 
@@ -28,7 +28,7 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-2)
 
-###Two very creepy eyes
+### Two very creepy eyes
 
 ![3 prototype](/topics/prototypes/images/scary-eyes.png)
 
