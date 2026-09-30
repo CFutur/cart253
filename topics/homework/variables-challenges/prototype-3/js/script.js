@@ -10,35 +10,35 @@
 const leftEar = {
     x: 200,
     y: 400,
-    size: 100,
+    size: 300,
     fill: "#3b3b3b",
 }
 
 const head = {
     x: 400,
-    y: 600,
-    size: 200,
+    y: 550,
+    size: 400,
     fill: "#3b3b3b",
 }
 
 const nose = {
     x: 400,
     y: 650,
-    size: 50,
+    size: 70,
     fill: "#755a69",
 }
 
 const dot = {
     x: 600,
     y: 400,
-    size: 100,
+    size: 300,
     fill: "#538f73",
 }
 
 const user = {
     x: undefined, // these two will be defined by my mouse
     y: undefined, //
-    size: 100,
+    size: 300,
     fill: "#ca050574",
     fills: {
         noOverlap: "#ca050574",
@@ -58,7 +58,7 @@ function setup() {
  * this function contains all of my objet that will be drawn.
 */
 function draw() {
-    background(83, 143, 115);
+    background("#538f73");
     //move the mouse's ear on our user circle
     moveUser();
     //This is simply a dot the user has to touch for the ear to turn grey
@@ -68,16 +68,25 @@ function draw() {
     mouseHead();
     mouseWhiskers();
     mouseNose();
-    mouseRightEar();
+    drawUser();
     moveUser();
 }
 
-/*
-Now setting the user to be the mouse (like cursor)
-*/
-function moveUser() {
-    user.x = mouseX;
-    user.y = mouseY;
+function drawUser() {
+    push();
+    noStroke();
+    fill(user.fill);
+    ellipse(user.x, user.y, user.size);
+    pop();
+
+    const d = dist(user.x, user.y, dot.x, dot.y);
+    const overlap = (d < user.size / 50 + dot.size / 50);
+    if (overlap) {
+        user.fill = user.fills.overlap;
+    }
+    else {
+        user.fill = user.fills.noOverlap;
+    }
 }
 
 // Display the mouse's left ear
@@ -90,20 +99,24 @@ function mouseLeftEar() {
     pop();
 }
 
+function mouseWhiskers() {
+    push();
+    line(400, 650, 500, 700);
+    line(400, 650, 550, 650);
+    line(400, 650, 500, 600);
+    line(400, 650, 300, 700);
+    line(400, 650, 250, 650);
+    line(400, 650, 300, 600);
+    stroke("#ffffff");
+    strokeWeight(0.5);
+    pop();
+}
+
 function mouseHead() {
     push();
     noStroke();
     fill(head.fill);
     ellipse(head.x, head.y, head.size);
-    pop();
-}
-
-function mouseWhiskers() {
-    push();
-    line(400, 600, 500, 700);
-    line(100, 100, 200, 200);
-    stroke("#ffffff");
-    strokeWeight(0.5);
     pop();
 }
 
@@ -124,14 +137,6 @@ function Dot() {
 }
 
 function moveUser() {
-    const d = dist(user.x, user.y, dot.x, dot.y);
-    const overlap = (d < user.size / 2 + dot.size / 2);
-    if (overlap) {
-        if (user.x >= overlap && user.x <= puck.x) { puck.x += 1; }
-        else if (user.x >= puck.x) { puck.x -= 1; }
-
-        if (user.y >= overlap && user.y <= puck.y) { puck.y += 1; }
-        else if (user.y >= puck.y) { puck.y -= 1; }
-
-    }
+    user.x = mouseX
+    user.y = mouseY;
 }
