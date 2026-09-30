@@ -34,7 +34,7 @@ https://pippinbarr.github.io/cart253/assignments/instructions/scary-clown/)
 
 ![3 prototype](/topics/prototypes/images/scary-eyes.png)
 
-[View online](\cart253\topics\prototypes\prototype-3\)
+[View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-3/)
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-3)
 
