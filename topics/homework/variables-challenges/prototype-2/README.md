@@ -1,13 +1,12 @@
-# TITLE OF PROJECT
+# Winter scenery
 
-AUTHOR NAME
+Clara Fioramore
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
-
+This is simply a project to make a snowman appear (may take a few clicks, since I messed up the boolean a bit )
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
