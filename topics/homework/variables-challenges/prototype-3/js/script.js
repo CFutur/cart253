@@ -71,7 +71,7 @@ function draw() {
     drawUser();
     moveUser();
 }
-
+//this is to draw the circle on the cursor
 function drawUser() {
     push();
     noStroke();
@@ -98,7 +98,7 @@ function mouseLeftEar() {
     ellipse(leftEar.x, leftEar.y, leftEar.size);
     pop();
 }
-
+//drawing all the 6 whiskers
 function mouseWhiskers() {
     push();
     line(400, 650, 500, 700);
@@ -111,7 +111,7 @@ function mouseWhiskers() {
     strokeWeight(0.5);
     pop();
 }
-
+// drawing mouse's head
 function mouseHead() {
     push();
     noStroke();
@@ -119,7 +119,7 @@ function mouseHead() {
     ellipse(head.x, head.y, head.size);
     pop();
 }
-
+//draw mouses's nose
 function mouseNose() {
     push();
     noStroke();
@@ -127,7 +127,7 @@ function mouseNose() {
     ellipse(nose.x, nose.y, nose.size);
     pop();
 }
-
+//drawing invisible dot where the ear is needed
 function Dot() {
     push();
     noStroke();
@@ -135,7 +135,7 @@ function Dot() {
     ellipse(dot.x, dot.y, dot.size);
     pop();
 }
-
+//this is simply to associate the x and y coordinates on my cursor
 function moveUser() {
     user.x = mouseX
     user.y = mouseY;
