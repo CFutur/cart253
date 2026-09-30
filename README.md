@@ -26,7 +26,7 @@ https://pippinbarr.github.io/cart253/assignments/instructions/scary-clown/)
 
 ![2 prototype](/topics/prototypes/images/feeding-bird.png)
 
-[View online](\cart253\topics\prototypes\prototype-2\)
+[View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-2/)
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-2)
 
