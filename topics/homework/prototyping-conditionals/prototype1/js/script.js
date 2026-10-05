@@ -7,11 +7,15 @@
 
 "use strict";
 
+
+
+
+
 /**
  * This is simply to create our startup canvas.
 */
 function setup() {
-    createCanvas(900, 200)
+    createCanvas(800, 800);
 }
 
 
@@ -21,4 +25,17 @@ function setup() {
 function draw() {
     background("#92b5ff")
 
+    drawTriangle();
 }
+
+
+
+
+
+function drawTriangle() {
+    push();
+    fill("#c5b48f")
+    triangle(400, 150, 100, 700, 700, 700);
+    pop();
+}
+
