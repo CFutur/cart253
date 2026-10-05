@@ -1,24 +1,24 @@
 /**
- * Title of Project
- * Author Name
+ * Confusion
+ * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This website is made to make you go mad. No escape. Only buttons
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * This is simply to create our startup canvas.
 */
 function setup() {
-
+    createCanvas(900, 200)
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * This draw will simply be to have our buttons in it. 
 */
 function draw() {
+    background("#92b5ff")
 
 }
