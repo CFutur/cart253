@@ -44,7 +44,6 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/variables-challenges/prototype-1)
 
-
 ### Christmas is coming!
 
 ![5 prototype](/topics/images/snow-scenery.png)
@@ -61,6 +60,13 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/variables-challenges/prototype-3)
 
+### READY, SET, GO!
+
+![9 prototype](/topics/images/roadlight-prototype.png)
+
+[View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals)
 -----------------------------------------------------------------------------------------------
 
 This website is simply to show off my amazing skills in coding and present all the prototypes we will be doing in class.
