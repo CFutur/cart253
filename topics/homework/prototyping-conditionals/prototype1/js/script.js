@@ -8,7 +8,7 @@
 "use strict";
 //this is the goalLeft variable
 const goalLeft = {
-    x: 2,
+    x: 400,
     y: 350,
     size: 450,
     fill: "#ffffffb5",
@@ -37,7 +37,7 @@ const user = {
     fills: {
         sad: "#102b96", // blue for sadness cause no goal
         happy: "#f4e329", // joy for happiness cause goal!!
-        angry: "#e50909" // angry cause he scored in his own goal
+        angry: "#e50909", // angry cause he scored in his own goal
     }
 };
 
