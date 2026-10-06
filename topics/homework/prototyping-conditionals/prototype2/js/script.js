@@ -7,29 +7,50 @@
 
 "use strict";
 
+const petal1 = {
+    x: 100,
+    y: 100,
+    size: 100,
+    fill: "#ffffff"
+}
+
+const petal2 = {
+    x: 100,
+    y: 100,
+    size: 100,
+    fill: "#ffffff"
+}
 
 
-const eyesOpen = {
-    fill: "#fafafa",
-    x: 300,
-    y: 400,
+const petal3 = {
+    x: 100,
+    y: 100,
     size: 100,
-    x: 300,
-    y: 400,
-    size: 100,
-    fill: "#fafafa"
+    fill: "#ffffff"
 }
-const eyesClosed = {
-    x: 300,
-    y: 400,
+
+const petal4 = {
+    x: 100,
+    y: 100,
     size: 100,
-    x: 300,
-    y: 400,
-    size: 100,
+    fill: "#ffffff"
 }
+
+
+
+const petal5 = {
+    x: 100,
+    y: 100,
+    size: 100,
+    fill: "#ffffff"
+}
+
+
+
+
 /**
  * this is to create my beautiful canvas
-*/
+ */
 function setup() {
     createCanvas(1000, 1000)
 }
@@ -39,37 +60,6 @@ function setup() {
  * this will draw two eyes within a dark canvas 
 */
 function draw() {
-    //black background.
-    background("#aaaaaa")
-
-    if (mouseIsPressed) {
-        eyesClosed = eyesClosed.fill;
-    }
-    else {
-        eyesOpen = eyesOpen.fill;
-    }
+    background("#368641")
 
 }
-/**
-function drawEyesOpen() {
-    //draw the size of them and colour (white and black pupil)
-    push();
-    fill(255, 255, 255);
-    ellipse(300, 25, 150, 60)
-    ellipse(700, 25, 150, 60)
-    /**fill(0);
-    ellipse(300, 25, 100, 40)
-    ellipse(700, 25, 100, 40)
-    pop();
-}
-
-function drawEyesClosed() {
-    push();
-    fill(0, 0, 0);
-    ellipse(300, 25, 150, 60);
-    ellipse(700, 25, 150, 60);
-    //line(225, 25, 375, 25);
-    //line(625, 25, 775, 25);
-    pop();
-}
-*/
