@@ -67,6 +67,7 @@
 [View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals)
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals)
+
 -----------------------------------------------------------------------------------------------
 
 This website is simply to show off my amazing skills in coding and present all the prototypes we will be doing in class.
