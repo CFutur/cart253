@@ -7,6 +7,10 @@
 
 "use strict";
 
+let btn;
+
+//let img;
+
 let eyesOpen = {
     x: 300,
     y: 400,
@@ -14,7 +18,7 @@ let eyesOpen = {
     fill: "#fafafa"
 }
 
-let btn;
+//let btn;
 
 
 /**
@@ -22,15 +26,17 @@ let btn;
 */
 async function setup() {
     createCanvas(800, 800);
+    btn = createButton('Click anywhere else but here');
 
-    if (mouseIsPressed) {
-        eyesOpen();
-    }
+    btn.position(350, 400);
 
-    btn = createButton('no');
+    btn.mousePressed(explosion);
 
-    btn.size(100, 50);
+    //btn = createButton('no');
+
+    //btn.size(100, 50);
 }
+
 
 /**
  * This draw will simply be to have our buttons in it. 
@@ -38,17 +44,26 @@ async function setup() {
 function draw() {
     background("#92b5ff")
 
-    drawTriangle();
-    drawEyesOpen();
+    // drawTriangle();
 }
 
-
-//function 
-
+function explosion() {
+    background("#050202")
+}
+/** 
+function drawEyesOpen() {
+    push();
+    fill(eyesOpen.fill);
+    ellipse(eyesOpen.x, eyesOpen.y, eyesOpen.size);
+    pop();
+}
+*/
+/** 
 function drawTriangle() {
     push();
     fill("#c5b48f")
     triangle(400, 150, 100, 700, 700, 700);
     pop();
 }
+    */
 
