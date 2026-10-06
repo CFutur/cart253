@@ -1,3 +1,7 @@
+https://cfutur.github.io/cart253/topics/challenges/events/
+
+
+
 # CFutur's website
 
 ![cfutur's banner](/topics/prototypes/images/banner.png/)
