@@ -20,7 +20,6 @@ const eyesOpen = {
     fill: "#fafafa"
 }
 const eyesClosed = {
-    fill: "#000000",
     x: 300,
     y: 400,
     size: 100,

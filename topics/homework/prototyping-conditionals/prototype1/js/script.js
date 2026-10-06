@@ -11,7 +11,7 @@
  * This is simply to create our startup canvas.
 */
 function setup() {
-    createCanvas(800, 800);
+    createCanvas(1500, 700);
 }
 
 
@@ -20,4 +20,44 @@ function setup() {
 */
 function draw() {
     background("#aec3f2")
+
+    drawGoalLeft();
+    drawGoalRight();
+}
+
+
+function drawGoalLeft() {
+    push();
+    fill("#ffffffb5")
+    ellipse(2, 350, 450)
+    //the rgb of the stroke, thickness and positions of both
+    stroke(223, 17, 17)
+    strokeWeight(9)
+    line(55, 100, 75, 150)
+    line(55, 600, 75, 550)
+    //added the no stroke under so my rect wouldnt have a black border
+    noStroke();
+    fill("#df1111")
+    //position, widght and height of all of my bars to make a net
+    rect(50, 100, 10, 500)
+    rect(70, 150, 10, 400)
+    pop();
+}
+
+function drawGoalRight() {
+    push();
+    fill("#ffffffb5")
+    ellipse(1498, 350, 450)
+    //the rgb of the stroke, thickness and positions of both
+    stroke(223, 17, 17)
+    strokeWeight(9)
+    line(1405, 100, 1405, 150)
+    line(1405, 600, 1405, 550)
+    //added the no stroke under so my rect wouldnt have a black border
+    noStroke();
+    fill("#df1111")
+    //position, widght and height of all of my bars to make a net
+    rect(1450, 100, 10, 500)
+    rect(1430, 150, 10, 400)
+    pop();
 }
