@@ -65,6 +65,14 @@ https://cfutur.github.io/cart253/topics/instructions-challenges/
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/variables-challenges/prototype-3)
 
+### Hockey game!
+
+![7 prototype](/topics/images/hockey-game.png)
+
+[View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals/prototype1)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype1)
+
 ### READY, SET, GO!
 
 ![9 prototype](/topics/images/roadlight-prototype.png)
