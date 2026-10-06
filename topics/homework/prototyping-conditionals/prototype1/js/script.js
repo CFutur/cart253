@@ -12,8 +12,6 @@ const target = {
     y: 300,
     size: 50.5,
     fill: "#6aff41",
-}
-
 };
 
 const puck = {
