@@ -11,7 +11,7 @@
 let score = 0;
 
 // Is the game over?
-let gameOver = true;
+let gameOver = false;
 
 /**
  * Create the canvas
@@ -60,5 +60,27 @@ function displayScore() {
     text(floor(score), width / 2, height / 2);
     pop();
 }
+function keyPressed(event) {
+    gameOver = true;
+    console.log(event.key);
+}
 
+function mousePressed() {
+    gameOver = true;
+}
+
+function mouseDragged() {
+    gameOver = true;
+}
+
+function mouseWheel() {
+    gameOver = true;
+}
+
+
+
+
+topics / challenges / events / js
+
+https://github.com/CFutur/cart253/topics/challenges/events/)
 

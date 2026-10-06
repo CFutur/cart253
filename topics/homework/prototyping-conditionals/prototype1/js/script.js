@@ -8,7 +8,7 @@
 "use strict";
 //this is the goalLeft variable
 const goalLeft = {
-    x: 400,
+    x: 2,
     y: 350,
     size: 450,
     fill: "#ffffffb5",
@@ -64,8 +64,11 @@ function draw() {
     drawUser();
     drawPuck();
     movePuck();
-    checkGoalLeft();
-    checkGoalRight();
+    if (puck.x >= width / 3) {
+        checkGoalRight();
+    }
+    else { checkGoalLeft(); }
+
 }
 
 /**
