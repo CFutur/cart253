@@ -76,11 +76,3 @@ function mouseDragged() {
 function mouseWheel() {
     gameOver = true;
 }
-
-
-
-
-topics / challenges / events / js
-
-https://github.com/CFutur/cart253/topics/challenges/events/)
-
