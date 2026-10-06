@@ -51,8 +51,8 @@ function drawGoalRight() {
     //the rgb of the stroke, thickness and positions of both
     stroke(223, 17, 17)
     strokeWeight(9)
-    line(1405, 100, 1405, 150)
-    line(1405, 600, 1405, 550)
+    line(1455, 100, 1435, 150)
+    line(1455, 600, 1435, 550)
     //added the no stroke under so my rect wouldnt have a black border
     noStroke();
     fill("#df1111")
