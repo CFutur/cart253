@@ -7,6 +7,31 @@
 
 "use strict";
 
+const target = {
+    x: 300,
+    y: 300,
+    size: 50.5,
+    fill: "#6aff41",
+}
+
+};
+
+const puck = {
+    x: 200,
+    y: 200,
+    size: 100,
+    fill: "#000000"
+};
+
+
+const user = {
+    x: undefined, // will be mouseX
+    y: undefined, // will be mouseY
+    size: 75,
+    fill: "#000000"
+};
+
+
 /**
  * This is simply to create our startup canvas.
 */
