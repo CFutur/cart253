@@ -19,6 +19,16 @@ Honestly I'd love to make a small game with my prototype number 3 where when you
 
 ![mouse with face](/topics/images/mouse-prototype-face.png)
 
+
+## 2026-10-06
+What is cool is definitely being able to lean closer to the video game artifcat than before. Every step we take in class feels a little bit more like video game controls and gameplay and that gives me hope I'll be able to create a little video game at the end of this semester to use and to improve and to learn even further.
+
+I think the hockey game could be improved by a game where when the ball crosses the other side you have to play the other player on the left or right. Kinda like a ping-pong game but hockey themed. Oh Canada I guess. 
+
+![ping pong hockey game](/topics/images/ping-pong-hockey.png)
+
+
+
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
  ![cfutur's website screenshot](/topics/prototypes/images/screenshot.png);
