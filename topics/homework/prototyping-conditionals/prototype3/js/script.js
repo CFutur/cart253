@@ -12,8 +12,10 @@ const light1 = {
     y: 300,
     size: 100,
     fill: "#000000",
-    fill: {
-        red: "#ff0000"
+    fills: {
+        black: "#000000",
+        red: "#ff0000",
+
     }
 }
 
@@ -22,8 +24,10 @@ const light2 = {
     y: 300,
     size: 100,
     fill: "#000000",
-    fill: {
+    fills: {
+        black: "#000000",
         yellow: "#ffff00"
+
     }
 }
 const light3 = {
@@ -31,7 +35,8 @@ const light3 = {
     y: 300,
     size: 100,
     fill: "#000000",
-    fill: {
+    fills: {
+        fill: "#000000",
         green: "#00ff00"
     }
 }
@@ -59,6 +64,15 @@ function setup() {
     createCanvas(900, 900);
 }
 
+function checkInput() {
+    if (mouseIsPressed) {
+        light1.fill = light1.fill.red;
+    }
+
+    else {
+        light1.fill = light1.fill.black;
+    }
+}
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
@@ -67,10 +81,46 @@ function draw() {
     background("#20335a");
 
     drawPole();
-    drawBox();
+    //drawBox();
     drawLights();
-    checkInput();
+    checkInput1();
+    checkInput2();
+    checkInput3();
+
 }
+
+
+
+function checkInput1() {
+    if (keyIsDown(LEFT_ARROW)) {
+        light1.fill = light1.fills.red;
+    }
+
+    else {
+        light1.fill = light1.fills.black;
+    }
+}
+
+function checkInput2() {
+
+    if (keyIsDown(UP_ARROW)) {
+        light2.fill = light2.fills.yellow;
+    }
+    else {
+        light2.fill = light2.fills.black;
+    }
+}
+
+function checkInput3() {
+
+    if (keyIsDown(RIGHT_ARROW)) {
+        light3.fill = light3.fills.green;
+    }
+    else {
+        light3.fill = light3.fills.black;
+    }
+}
+
 
 function drawLights() {
     push();
@@ -89,26 +139,17 @@ function drawLights() {
     pop();
 }
 
+
 function drawPole() {
     push();
     fill(pole.fill);
     rect(pole.x, pole.y, pole.w, pole.h);
     pop();
 }
-
+/*
 function drawBox() {
     push();
     fill(box.fill);
     rect(box.x, box.y, box.w, box.h);
     pop();
-}
-
-function checkInput() {
-    if (keyIsPressed) {
-        if (keyCode === 32) { // Spacebar
-            light1.fill = light1.fill.red;
-            light2.fill = light2.fill.yellow;
-            light3.fill = light3.fill.green;
-        }
-    }
-}
+}*/
