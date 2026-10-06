@@ -1,5 +1,6 @@
 https://cfutur.github.io/cart253/topics/challenges/events/
 
+https://cfutur.github.io/cart253/topics/instructions-challenges/
 
 
 # CFutur's website
