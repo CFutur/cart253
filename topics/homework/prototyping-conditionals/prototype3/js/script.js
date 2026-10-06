@@ -2,11 +2,14 @@
  * Ready, set, go!
  * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is a project about traffic lights and how interesting they are woahhh
+ * 
+ * Controls include LEFT arrow, UP arrow and RIGHT arrow!
  */
 
 "use strict";
+
+//this is my first light on the left that is black but will turn red
 const light1 = {
     x: 200,
     y: 300,
@@ -18,7 +21,7 @@ const light1 = {
 
     }
 }
-
+//this is my second light in the middle that is black but will turn yellow
 const light2 = {
     x: 400,
     y: 300,
@@ -30,6 +33,7 @@ const light2 = {
 
     }
 }
+//this is my third light on the right that is black but will turn green
 const light3 = {
     x: 600,
     y: 300,
@@ -41,6 +45,7 @@ const light3 = {
     }
 }
 
+//this is simply to draw my pole
 const pole = {
     x: 100,
     y: 200,
@@ -49,6 +54,7 @@ const pole = {
     fill: "#000000"
 }
 
+// this is to draw the box containing the lights
 const box = {
     x: 100,
     y: 200,
@@ -58,24 +64,15 @@ const box = {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * This sets up my canvas
 */
 function setup() {
     createCanvas(900, 900);
 }
 
-function checkInput() {
-    if (mouseIsPressed) {
-        light1.fill = light1.fill.red;
-    }
-
-    else {
-        light1.fill = light1.fill.black;
-    }
-}
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * my draw has my pole, box, lights and all the controller inputs 
 */
 function draw() {
     background("#20335a");
@@ -90,7 +87,7 @@ function draw() {
 }
 
 
-
+//if player presses left arrow, black left light will turn red
 function checkInput1() {
     if (keyIsDown(LEFT_ARROW)) {
         light1.fill = light1.fills.red;
@@ -100,7 +97,7 @@ function checkInput1() {
         light1.fill = light1.fills.black;
     }
 }
-
+//if player presses up arrow, black middle light will turn yellow
 function checkInput2() {
 
     if (keyIsDown(UP_ARROW)) {
@@ -111,6 +108,7 @@ function checkInput2() {
     }
 }
 
+//if player presses up right, black right light will turn green
 function checkInput3() {
 
     if (keyIsDown(RIGHT_ARROW)) {
