@@ -81,7 +81,7 @@ function draw() {
     background("#20335a");
 
     drawPole();
-    //drawBox();
+    drawBox();
     drawLights();
     checkInput1();
     checkInput2();
@@ -146,10 +146,10 @@ function drawPole() {
     rect(pole.x, pole.y, pole.w, pole.h);
     pop();
 }
-/*
+
 function drawBox() {
     push();
     fill(box.fill);
     rect(box.x, box.y, box.w, box.h);
     pop();
-}*/
+}
