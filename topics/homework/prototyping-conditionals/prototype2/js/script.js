@@ -180,22 +180,22 @@ function drawMiddle() {
 
 //check input 1-5 allows each petal to 1- turn pink when hovering, 2- disappear when clicking them, 3- have different indivual messages for each of them
 function checkInput() {
-
-
+    //this tells us the two bodies for the overlap
     const distance = dist(mouseX, mouseY, petal1.x, petal1.y)
-
+        ``//this tells us the distance needed for overlap
     const mouseIsOverlapping = (distance < petal1.size / 2)
-
+    //this is for the movement ontop of petals: if the x or y doesnt equal 0, then its moving
     const mouseIsMoving = (movedX !== 0 || movedY !== 0);
-
+    //if the mouse is ontop of the petal and moving, then petal turns pink
     if (mouseIsOverlapping && mouseIsMoving) {
         petal1.fill = petal1.fills.pink
     }
-
+    //else if the mouse is pressed and the mouse is ontop of our petal, turn the petal green and give us a message ontop
     else if (mouseIsPressed && mouseIsOverlapping) {
         petal1.fill = petal1.fills.green, text('They love me <3', 190, 150), textSize(80), fill("#59bcfa");
     }
-
+    //the rest of the time the petal stays white.
+    //rinse and repeat for the other checkinput. 
     else {
         petal1.fill = petal1.fills.white;
     }
