@@ -1,8 +1,10 @@
 /**
- * very cutesie prototype (now with some conditionals on it)
+ * They love me, they love me not...
  * Clara Fioramore
  * 
- * this project is a very cute face not creepy at all that can BLINK
+ * this project is inspired by flowers and valentine (i know halloween is coming, but flowers are cute.)
+ * 
+ * some help taken from the "Creature Loves Massage Project" from Pippin Barr to understand how to have the mouse hover over an object and affect it
  */
 
 "use strict";
@@ -182,7 +184,7 @@ function drawMiddle() {
 function checkInput() {
     //this tells us the two bodies for the overlap
     const distance = dist(mouseX, mouseY, petal1.x, petal1.y)
-        ``//this tells us the distance needed for overlap
+    //this tells us the distance needed for overlap
     const mouseIsOverlapping = (distance < petal1.size / 2)
     //this is for the movement ontop of petals: if the x or y doesnt equal 0, then its moving
     const mouseIsMoving = (movedX !== 0 || movedY !== 0);

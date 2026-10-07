@@ -1,4 +1,4 @@
-# TITLE OF PROJECT
+# They love me, they love me not...
 
 AUTHOR NAME
 
@@ -6,7 +6,9 @@ AUTHOR NAME
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This project is about the thing of picking petal and figuring out if someone loves you or not.
+
+You can hover over the petals and also click and hold to reveal a message for each of them
 
 ## Attribution
 
