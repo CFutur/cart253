@@ -2,8 +2,12 @@
  * Playing Hockey
  * Clara Fioramore
  * 
- * This website is made to make you go mad. No escape. Only buttons
+ * This website is meant for funsies, nothing else :)
+ * 
+ * IMPORTANT!!!
+ * might need to unzoom to see the full thing, I made my canvas too big....woops
  */
+
 
 "use strict";
 //this is the goalLeft variable

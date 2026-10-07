@@ -10,6 +10,9 @@ This is a hockey game where shooting in your own goal will make the player mad b
 
 The puck is simply controlled with a push user puck dynamic. The player will turn yellow or red. 
 
+IMPORTANT!!!
+ might need to unzoom to see the full thing, I made my canvas too big....woops
+
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
