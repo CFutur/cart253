@@ -6,14 +6,14 @@
  */
 
 "use strict";
-
+// this is variable for the middle of the flower
 const middle = {
     x: 500,
     y: 500,
     size: 250,
     fill: "#ede54a"
 }
-
+//variable for petal #1 to 5
 const petal1 = {
     x: 500,
     y: 320,
@@ -75,7 +75,7 @@ const petal5 = {
         green: "#368641",
     }
 }
-
+//this tells our code that the x and y of user is our cursor
 const user = {
     x: undefined, //will be mouse X
     y: undefined, //will be mouse Y
@@ -92,7 +92,7 @@ function setup() {
 
 
 /**
- * this will draw two eyes within a dark canvas 
+ * this will draw my background, my 5 petals, the middle of the flower, a thing to move our user, the circle of our user, and all the check input that allows us to make the petal turn pink when hovering over them and disappear when clicking them
 */
 function draw() {
     background("#368641")
@@ -121,7 +121,7 @@ function moveUser() {
     user.x = mouseX;
     user.y = mouseY;
 }
-
+//draws our "circle" (i didnt want one, i just needed our mouse to have a body to alter the petals)
 function drawUser() {
     push();
     noStroke();
@@ -129,7 +129,7 @@ function drawUser() {
     ellipse(user.x, user.y, user.size);
     pop();
 }
-
+//this is simply drawing all of the petals 1-5
 function drawPetal1() {
     push();
     noStroke();
@@ -169,7 +169,7 @@ function drawPetal5() {
     ellipse(petal5.x, petal5.y, petal5.size)
     pop();
 }
-
+//drawing the yellow middle
 function drawMiddle() {
     push();
     noStroke();
@@ -178,7 +178,7 @@ function drawMiddle() {
     pop();
 }
 
-
+//check input 1-5 allows each petal to 1- turn pink when hovering, 2- disappear when clicking them, 3- have different indivual messages for each of them
 function checkInput() {
 
 
