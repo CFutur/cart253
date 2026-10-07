@@ -68,11 +68,19 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype1)
 
+### They love me, they love me not...
+
+![8 prototype](/topics/images/theyloveme-theylovemenot.png)
+
+[View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals/prototype2)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype2)
+
 ### READY, SET, GO!
 
 ![9 prototype](/topics/images/roadlight-prototype.png)
 
-[View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals)
+[View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals/prototype3)
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype3)
 

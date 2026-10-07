@@ -5,6 +5,10 @@
  * this project is inspired by flowers and valentine (i know halloween is coming, but flowers are cute.)
  * 
  * some help taken from the "Creature Loves Massage Project" from Pippin Barr to understand how to have the mouse hover over an object and affect it
+ * 
+ * 
+ * IMPORTANT!!!
+might need to unzoom to see the full thing, i think my canvas was too big.
  */
 
 "use strict";
