@@ -79,8 +79,6 @@ const petal5 = {
 const user = {
     x: undefined, //will be mouse X
     y: undefined, //will be mouse Y
-    size: 10,
-    fill: "#ff0623"
 }
 
 
@@ -114,7 +112,6 @@ function draw() {
     checkInput3();
     checkInput4();
     checkInput5();
-
 }
 
 
@@ -181,9 +178,6 @@ function drawMiddle() {
     pop();
 }
 
-function displayMessage1() {
-    "I love you honey"
-}
 
 function checkInput() {
 
@@ -196,11 +190,10 @@ function checkInput() {
 
     if (mouseIsOverlapping && mouseIsMoving) {
         petal1.fill = petal1.fills.pink
-        function displayMessage1();
     }
 
     else if (mouseIsPressed && mouseIsOverlapping) {
-        petal1.fill = petal1.fills.green
+        petal1.fill = petal1.fills.green, text('They love me <3', 190, 150), textSize(80), fill("#59bcfa");
     }
 
     else {
@@ -219,7 +212,7 @@ function checkInput2() {
     }
 
     else if (mouseIsPressed && mouseIsOverlapping) {
-        petal2.fill = petal2.fills.green
+        petal2.fill = petal2.fills.green, text('They love me not </3', 170, 150), textSize(80), fill("#822020");
     }
 
     else {
@@ -239,7 +232,7 @@ function checkInput3() {
     }
 
     else if (mouseIsPressed && mouseIsOverlapping) {
-        petal3.fill = petal3.fills.green
+        petal3.fill = petal3.fills.green, text('They love me infinitely <3', 70, 150), textSize(80), fill("#fa8dd0");
     }
 
     else {
@@ -259,7 +252,7 @@ function checkInput4() {
     }
 
     else if (mouseIsPressed && mouseIsOverlapping) {
-        petal4.fill = petal4.fills.green
+        petal4.fill = petal4.fills.green, text('They despise me...', 170, 150), textSize(80), fill("#022803");
     }
 
     else {
@@ -278,7 +271,7 @@ function checkInput5() {
     }
 
     else if (mouseIsPressed && mouseIsOverlapping) {
-        petal5.fill = petal5.fills.green
+        petal5.fill = petal5.fills.green, text('They love me, perhaps?', 100, 150), textSize(80), fill("#faa836");
     }
 
     else {
