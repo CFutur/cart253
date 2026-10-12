@@ -1,24 +1,47 @@
 /**
- * Title of Project
- * Author Name
+ * Pressing keys on keyboard... no, literally. 
+ * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This prototype is to press your keys on a keyboard and see what happens.
+ * 
+ * 
+ * this is to help me visualize my code:
+ * 
+ * if (any key) is pressed, then diff image appears for all of them
+ *  
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-function setup() {
+const keyK{
 
 }
 
 
+
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * this is to create my canvas, once again.
+*/
+function setup() {
+    createCanvas(500, 500)
+}
+
+
+/**
+ * idk yet whta this draw will do, but prob a lot
 */
 function draw() {
+    background("#b31bf9")
 
+    keyK
+}
+
+
+
+
+function keyK(event) {
+    if (keyIsPressed) {
+        ()
+
+    }
 }
