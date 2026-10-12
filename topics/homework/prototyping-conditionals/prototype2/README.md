@@ -10,6 +10,10 @@ This project is about the thing of picking petal and figuring out if someone lov
 
 You can hover over the petals and also click and hold to reveal a message for each of them
 
+
+IMPORTANT!!!
+might need to unzoom to see the full thing, i think my canvas was too big. 
+
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
