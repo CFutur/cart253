@@ -23,15 +23,13 @@ const keyK = {
     }
 }
 
-keys: {
 
-}
 
 /**
  * this is to create my canvas, once again.
 /** */
-async function setup() {
-    createCanvas(500, 500)
+function setup() {
+    createCanvas(1000, 1000)
 }
 
 //idk yet whta this draw will do, but prob a lot
@@ -39,14 +37,17 @@ async function setup() {
 function draw() {
 
     background("#b31bf9")
+
+    //keyK();
 }
 
 
 
 
 function keyPressed(event) {
-    if (event.key === "r") {
+    if (event.keyCode === 75) {
         console.log("lol")
-        keyK.fill = keyK.fills.blue;
+        text("APPEAR PLEASEEE", 500, 500), fill("#0dfd15"), textSize(800);
+        // keyK.fill = keyK.fills.blue;
     }
 }
