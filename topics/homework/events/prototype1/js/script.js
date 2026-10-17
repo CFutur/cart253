@@ -46,6 +46,7 @@ function draw() {
 
 function keyPressed(event) {
     if (event.key === "r") {
+        console.log("lol")
         keyK.fill = keyK.fills.blue;
     }
 }
