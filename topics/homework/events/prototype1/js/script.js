@@ -14,9 +14,18 @@
 "use strict";
 
 const keyK = {
-
+    x: 350,
+    y: 350,
+    size: 200,
+    fill: "#8f0000",
+    fills: {
+        blue: "#001df6"
+    }
 }
 
+keys: {
+
+}
 
 /**
  * this is to create my canvas, once again.
@@ -35,8 +44,8 @@ function draw() {
 
 
 
-function keyPressed()(event) {
-    if (event.keyK === "r") {
-        text('lol')
+function keyPressed(event) {
+    if (event.key === "r") {
+        keyK.fill = keyK.fills.blue;
     }
 }
