@@ -13,35 +13,38 @@
 
 "use strict";
 
-const keyK{
+//const keyK = {
 
-}
-
+//}
+let img;
 
 
 /**
  * this is to create my canvas, once again.
-*/
-function setup() {
+/** */
+async function setup() {
+    //createCanvas(500, 500)
+    img = await
+        loadImage('/topics/images/happy.jpg/');
     createCanvas(500, 500)
+    image(img, 100, 100);
 }
 
+/** idk yet whta this draw will do, but prob a lot
 
-/**
- * idk yet whta this draw will do, but prob a lot
-*/
 function draw() {
-    background("#b31bf9")
 
-    keyK
+background("#b31bf9")
+
+keyK
 }
 
 
 
 
-function keyK(event) {
-    if (keyIsPressed) {
-        ()
+/**function keyK(event) {
+if (keyIsPressed) {
+   ()
 
-    }
 }
+}*/
