@@ -30,16 +30,13 @@ async function setup() {
 function draw() {
 
     background("#b31bf9")
-
-    keyK
 }
 
 
 
 
-function keyK(event) {
-    if (keyIsPressed) {
-
-
+function keyPressed()(event) {
+    if (event.keyK === "r") {
+        text('lol')
     }
 }
