@@ -13,6 +13,27 @@
 
 "use strict";
 
+const ball = {
+    // Position
+    x: 200,
+    y: 200,
+    // Size
+    size: 50,
+    // fill
+    fill: "#ffffff",
+    // fills
+    fills: {
+        white: "#ffffff",
+        red: "#ff0000",
+        blue: "#0000ff"
+    },
+    // Keys that control the ball's colour
+    keys: {
+        redKey: 82, // R
+        blueKey: 66 // B
+    }
+}
+
 const keyK = {
     x: 350,
     y: 350,
@@ -39,15 +60,25 @@ function draw() {
     background("#b31bf9")
 
     //keyK();
+    push();
+    noStroke();
+    fill(ball.fill);
+    ellipse(ball.x, ball.y, ball.size);
+    pop();
 }
 
 
 
 
 function keyPressed(event) {
-    if (event.keyCode === 75) {
-        console.log("lol")
-        text("APPEAR PLEASEEE", 500, 500), fill("#0dfd15"), textSize(800);
-        // keyK.fill = keyK.fills.blue;
+    if (event.keyCode === ball.keys.redKey) {
+        ball.fill = ball.fills.red;
     }
+    else if (event.keyCode === ball.keys.blueKey) {
+        ball.fill = ball.fills.blue;
+    }
+
+    //text("APPEAR PLEASEEE", 500, 500), fill("#0dfd15"), textSize(800);
+    // keyK.fill = keyK.fills.blue;
+}
 }
