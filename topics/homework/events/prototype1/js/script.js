@@ -34,7 +34,9 @@ const ball = {
     }
 }
 
-const keyK = {
+let kMessage = 'Hi, please work!';
+
+/**const keyK = {
     x: 350,
     y: 350,
     size: 200,
@@ -43,7 +45,7 @@ const keyK = {
         blue: "#001df6"
     }
 }
-
+*/
 
 
 /**
@@ -59,26 +61,29 @@ function draw() {
 
     background("#b31bf9")
 
-    //keyK();
+    /**keyK();
     push();
     noStroke();
     fill(ball.fill);
     ellipse(ball.x, ball.y, ball.size);
     pop();
+*/
+
 }
 
 
 
 
 function keyPressed(event) {
-    if (event.keyCode === ball.keys.redKey) {
+    /**if (event.keyCode === ball.keys.redKey) {
         ball.fill = ball.fills.red;
     }
     else if (event.keyCode === ball.keys.blueKey) {
         ball.fill = ball.fills.blue;
+    }*/
+    if (event.keyCode === 75) {
+        console.log("hi")
+        text(kMessage, 500, 500), fill("#0dfd15"), textSize(8000);
     }
-
-    //text("APPEAR PLEASEEE", 500, 500), fill("#0dfd15"), textSize(800);
     // keyK.fill = keyK.fills.blue;
-}
 }
