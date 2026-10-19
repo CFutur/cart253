@@ -183,5 +183,14 @@ function keyReleased(event) {
         text(tMessage, 100, 100)
         pop();
     }
+    else if (event.keyCode === 89) {
+        push();
+        console.log("bye bye69lol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(yMessage, 100, 100)
+        pop();
+    }
 }
 
