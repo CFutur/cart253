@@ -34,7 +34,7 @@ const ball = {
     }
 }
 
-let kMessage = 'Hi, please work!';
+//let kMessage = 'Hi, please work!';
 
 /**const keyK = {
     x: 350,
@@ -52,22 +52,23 @@ let kMessage = 'Hi, please work!';
  * this is to create my canvas, once again.
 /** */
 function setup() {
-    createCanvas(1000, 1000)
+    createCanvas(200, 200)
+    background("#b31bf9")
 }
 
 //idk yet whta this draw will do, but prob a lot
 
 function draw() {
 
-    background("#b31bf9")
 
-    /**keyK();
-    push();
-    noStroke();
-    fill(ball.fill);
-    ellipse(ball.x, ball.y, ball.size);
-    pop();
-*/
+
+    //keyK();
+    // push();
+    // noStroke();
+    // fill(ball.fill);
+    // ellipse(ball.x, ball.y, ball.size);
+    // pop();
+
 
 }
 
@@ -75,15 +76,22 @@ function draw() {
 
 
 function keyPressed(event) {
-    /**if (event.keyCode === ball.keys.redKey) {
+    /*
+    if (event.keyCode === ball.keys.redKey) {
         ball.fill = ball.fills.red;
     }
     else if (event.keyCode === ball.keys.blueKey) {
         ball.fill = ball.fills.blue;
-    }*/
+    }
+    */
     if (event.keyCode === 75) {
         console.log("hi")
-        text(kMessage, 500, 500), fill("#0dfd15"), textSize(8000);
+        text("PLEASE WORK", 100, 50), fill("#0dfd15"), textSize(1000000000),
     }
+    else if (event.keyCode === 69) {
+        console.log("hi")
+        text("test", 100, 50), fill("#0dfd15"), textSize(1000000000);
+    }
+
     // keyK.fill = keyK.fills.blue;
 }
