@@ -158,7 +158,7 @@ function keyReleased(event) {
 
     else if (event.keyCode === 69) {
         push();
-        console.log("bye bye69lol")
+        console.log("bye byelol")
 
         fill("#b31bf9")
         textSize(10)
@@ -167,7 +167,7 @@ function keyReleased(event) {
     }
     else if (event.keyCode === 82) {
         push();
-        console.log("bye bye69lol")
+        console.log("bye byelol")
 
         fill("#b31bf9")
         textSize(10)
@@ -176,7 +176,7 @@ function keyReleased(event) {
     }
     else if (event.keyCode === 84) {
         push();
-        console.log("bye bye69lol")
+        console.log("bye byelol")
 
         fill("#b31bf9")
         textSize(10)
@@ -185,7 +185,7 @@ function keyReleased(event) {
     }
     else if (event.keyCode === 89) {
         push();
-        console.log("bye bye69lol")
+        console.log("bye byelol")
 
         fill("#b31bf9")
         textSize(10)
