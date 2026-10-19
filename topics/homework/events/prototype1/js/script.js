@@ -13,29 +13,32 @@
 
 "use strict";
 
-const ball = {
-    // Position
-    x: 200,
-    y: 200,
-    // Size
-    size: 50,
-    // fill
-    fill: "#ffffff",
-    // fills
-    fills: {
-        white: "#ffffff",
-        red: "#ff0000",
-        blue: "#0000ff"
-    },
-    // Keys that control the ball's colour
-    keys: {
-        redKey: 82, // R
-        blueKey: 66 // B
-    }
-}
-
-//let kMessage = 'Hi, please work!';
-
+let qMessage = 'this is a q...';
+let wMessage = 'this is a WWWWWWW!!!';
+let eMessage = "evaaa, walll-eee, disney don't sue me please";
+let rMessage = 'this is the letter r, i dislike it';
+let tMessage = 't pose';
+let yMessage = 'and it was all YELLOOWWWW';
+let uMessage = 'u are.... my fireee, the one...desire. Believe- blocked for copyright reasons.';
+let iMessage = 'I have been really into song lyrics, I shall stop now.';
+let oMessage = 'this is the letter O!';
+let pMessage = 'papyrus';
+let aMessage = 'AAAAAAAAAAAAAAAA';
+let sMessage = 'thi i the letter  (haha, no s)';
+let dMessage = "don't worry, be happy!";
+let fMessage = 'hey this is my second initial!';
+let gMessage = 'this is a g!!';
+let hMessage = 'this is old boring H';
+let jMessage = 'j, that is the letter.';
+let kMessage = 'Hi, please work!';
+let lMessage = 'L';
+let zMessage = 'zebra!!!';
+let xMessage = 'xylophone?';
+let cMessage = 'hey this is my initial';
+let vMessage = 'v? or not to v';
+let bMessage = 'BBBBZZZZZZZZZ';
+let nMessage = 'this is an m';
+let mMessage = 'this is an n';
 /**const keyK = {
     x: 350,
     y: 350,
@@ -91,14 +94,19 @@ function keyPressed(event) {
 
         fill("#0486ff")
         textSize(10)
-        text("PLEASE WORK", 100, 100)
+        text("Hi, please work!", 100, 100)
         pop();
-    /*}
+    }
     else if (event.keyCode === 69) {
-        console.log("lol")
-        text("test", 100, 50), fill("#0dfd15"), textSize(1000000000);
+        push();
+        console.log("69lol")
 
-    */}
+        fill("#b3fa0f")
+        textSize(10)
+        text("Hi, please work!", 100, 100)
+        pop();
+
+    }
 
     // keyK.fill = keyK.fills.blue;
 }
@@ -111,7 +119,16 @@ function keyReleased(event) {
 
         fill("#b31bf9")
         textSize(10)
-        text("PLEASE WORK", 100, 100)
+        text("Hi, please work!", 100, 100)
+        pop();
+    }
+    else if (event.keyCode === 69) {
+        push();
+        console.log("bye bye69lol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text("Hi, please work!", 100, 100)
         pop();
     }
 }
