@@ -84,14 +84,34 @@ function keyPressed(event) {
         ball.fill = ball.fills.blue;
     }
     */
+
     if (event.keyCode === 75) {
+        push();
         console.log("hi")
-        text("PLEASE WORK", 100, 50), fill("#0dfd15"), textSize(1000000000),
-    }
+
+        fill("#0486ff")
+        textSize(10)
+        text("PLEASE WORK", 100, 100)
+        pop();
+    /*}
     else if (event.keyCode === 69) {
-        console.log("hi")
+        console.log("lol")
         text("test", 100, 50), fill("#0dfd15"), textSize(1000000000);
-    }
+
+    */}
 
     // keyK.fill = keyK.fills.blue;
+}
+
+
+function keyReleased(event) {
+    if (event.keyCode === 75) {
+        push();
+        console.log("bye bye")
+
+        fill("#b31bf9")
+        textSize(10)
+        text("PLEASE WORK", 100, 100)
+        pop();
+    }
 }
