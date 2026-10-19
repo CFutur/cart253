@@ -39,17 +39,6 @@ let vMessage = 'v? or not to v';
 let bMessage = 'BBBBZZZZZZZZZ';
 let nMessage = 'this is an m';
 let mMessage = 'this is an n';
-/**const keyK = {
-    x: 350,
-    y: 350,
-    size: 200,
-    fill: "#8f0000",
-    fills: {
-        blue: "#001df6"
-    }
-}
-*/
-
 
 /**
  * this is to create my canvas, once again.
@@ -62,39 +51,36 @@ function setup() {
 //idk yet whta this draw will do, but prob a lot
 
 function draw() {
+    drawLine();
+}
 
-
-
-    //keyK();
-    // push();
-    // noStroke();
-    // fill(ball.fill);
-    // ellipse(ball.x, ball.y, ball.size);
-    // pop();
-
-
+function drawLine() {
+    push();
+    fill("#89f523")
+    textAlign(CENTER)
+    textSize(13)
+    text("press the letters of your keyboard!", 100, 180)
+    pop();
 }
 
 
-
-
 function keyPressed(event) {
-    /*
-    if (event.keyCode === ball.keys.redKey) {
-        ball.fill = ball.fills.red;
-    }
-    else if (event.keyCode === ball.keys.blueKey) {
-        ball.fill = ball.fills.blue;
-    }
-    */
+    if (event.keyCode === 81) {
+        push();
+        console.log("lol")
 
-    if (event.keyCode === 75) {
+        fill("#b3fa0f")
+        textSize(10)
+        text(qMessage, 100, 100)
+        pop();
+    }
+    else if (event.keyCode === 87) {
         push();
         console.log("hi")
 
         fill("#0486ff")
         textSize(10)
-        text("Hi, please work!", 100, 100)
+        text(wMessage, 100, 100)
         pop();
     }
     else if (event.keyCode === 69) {
@@ -103,32 +89,99 @@ function keyPressed(event) {
 
         fill("#b3fa0f")
         textSize(10)
-        text("Hi, please work!", 100, 100)
+        text(eMessage, 100, 100)
         pop();
 
     }
+    else if (event.keyCode === 82) {
+        push();
+        console.log("lol")
 
-    // keyK.fill = keyK.fills.blue;
+        fill("#b3fa0f")
+        textSize(10)
+        text(rMessage, 100, 100)
+        pop();
+
+    }
+    else if (event.keyCode === 84) {
+        push();
+        console.log("t message")
+
+        fill("#b3fa0f")
+        textSize(10)
+        text(tMessage, 100, 100)
+        pop();
+
+    }
+    else if (event.keyCode === 89) {
+        push();
+        console.log("t message")
+
+        fill("#b3fa0f")
+        textSize(10)
+        text(yMessage, 100, 100)
+        pop();
+
+    }
 }
 
 
+
+
+
+
+
+
+
+//"#b31bf9"
+
+
 function keyReleased(event) {
-    if (event.keyCode === 75) {
+    if (event.keyCode === 81) {
         push();
         console.log("bye bye")
 
         fill("#b31bf9")
         textSize(10)
-        text("Hi, please work!", 100, 100)
+        text(qMessage, 100, 100)
         pop();
     }
+    else if (event.keyCode === 87) {
+        push();
+        console.log("bye bye")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(wMessage, 100, 100)
+        pop();
+    }
+
     else if (event.keyCode === 69) {
         push();
         console.log("bye bye69lol")
 
         fill("#b31bf9")
         textSize(10)
-        text("Hi, please work!", 100, 100)
+        text(eMessage, 100, 100)
+        pop();
+    }
+    else if (event.keyCode === 82) {
+        push();
+        console.log("bye bye69lol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(rMessage, 100, 100)
+        pop();
+    }
+    else if (event.keyCode === 84) {
+        push();
+        console.log("bye bye69lol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(tMessage, 100, 100)
         pop();
     }
 }
+
