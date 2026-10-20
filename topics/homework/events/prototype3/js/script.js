@@ -24,7 +24,8 @@ const circle = {
     x: 500,
     y: 250,
     size: 200,
-    fill: "#975d1b"
+    // fill: "#975d1b"
+    fill: "#f1ee15"
 }
 const spider = {
     x: 250,
@@ -88,7 +89,7 @@ function drawSquare1() {
 //this function checks overlap between circle and spider. And then a square and text pops up if they do overlap
 function checkOverlap() {
     const d = dist(spider.x, spider.y, circle.x, circle.y);
-    const overlap = (d < spider.size / 1.6 + circle.size / 1.6);
+    const overlap = (d < spider.size / 1 + circle.size / 1);
     if (overlap) {
         console.log("hi!!!!!")
         square1.fill = square1.fills.opaque, text("BOOOOOO!", 10, 250), textSize(90), fill("#ffffff"), textFont('Casterllar')
