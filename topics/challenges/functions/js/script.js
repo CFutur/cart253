@@ -9,16 +9,9 @@
 "use strict";
 
 // Our ball
-const ball = {
-    x: 300,
-    y: 20,
-    width: 10,
-    height: 10,
-    velocity: {
-        x: 0,
-        y: 10
-    }
-};
+let ball1 = undefined;
+let ball2 = undefined;
+
 
 // Our paddle
 const paddle = {
@@ -33,6 +26,10 @@ const paddle = {
 */
 function setup() {
     createCanvas(600, 300);
+
+    ball1 = createBall();
+    ball2 = createBall();
+    ball3 = createBall();
 }
 
 
@@ -44,24 +41,42 @@ function draw() {
 
     movePaddle(paddle);
     moveBall(ball);
+    moveBall(ball2);
 
     handleBounce(ball, paddle);
 
     drawPaddle(paddle);
-    drawBall(ball);
+    drawBall(ball1);
+    drawBall(ball2);
+}
+
+function createBall() {
+    let ball = {
+        x: 300,
+        y: 20,
+        width: 10,
+        height: 10,
+        velocity: {
+            x: 0,
+            y: 10
+        }
+    };
+    return ball;
 }
 
 /**
  * Moves the paddle
  */
 function movePaddle(paddle) {
-
+    paddle.x = mouseX
 }
 
 /**
  * Moves the ball passed in as a parameter
  */
 function moveBall(ball) {
+    // ball.velocity.y += ball.y
+    ball.y += ball.velocity.y
 
 }
 
@@ -70,6 +85,10 @@ function moveBall(ball) {
  */
 function handleBounce(ball, paddle) {
 
+    const overlap = checkOverlap(ball, paddle)
+    if (overlap) {
+        ball.velocity.y *= -1;
+    }
 }
 
 /**
@@ -103,6 +122,7 @@ function drawBall(ball) {
  * x,y coordinates.
  */
 function checkOverlap(rectA, rectB) {
+
     return (rectA.x + rectA.width / 2 > rectB.x - rectB.width / 2 &&
         rectA.x - rectA.width / 2 < rectB.x + rectB.width / 2 &&
         rectA.y + rectA.height / 2 > rectB.y - rectB.height / 2 &&
