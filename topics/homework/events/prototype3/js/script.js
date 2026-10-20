@@ -34,23 +34,24 @@ function mouseWheel() {
     ball.size += 0.5;
 }*/
 
-let square1 = {
-    x: 0,
-    y: 0,
+const square1 = {
+    x: 450,
+    y: 5,
     size: 50,
     fill: "#000000",
     fills: {
-        transparent: "#ffffff00"
+        opaque: "#000000",
+        transparent: "#d81717fd"
     }
     //text: ("BOO!", 50, 50)
 }
 
 
 /** */
-let circle = {
+const circle = {
     x: 500,
     y: 250,
-    size: 500,
+    size: 200,
     fill: "#ffdb10"
 }
 const spider = {
@@ -75,7 +76,8 @@ function draw() {
     // Draw the circle
     drawSpider();
     drawCircle();
-    drawSquare();
+    drawSquare1();
+    checkOverlap();
 }
 
 // Increment circleSize when the user scrolls the mouse wheel.
@@ -104,23 +106,21 @@ function drawCircle() {
     pop();
 }
 
-function drawSquare() {
+function drawSquare1() {
     push();
-
-    const d = dist(spider.x, spider.y, circle.x, circle.y);
-    const overlap = (d < spider.size / 50 + circle.size / 50);
-    if (overlap) {
-        square1.fill = square1.fills.transparent
-        console.log("HI!")
-    }
-
     fill(square1.fill);
     square(square1.x, square1.y, square1.size);
-    //textFont(Papyrus)
-    fill("#81b3ec")
-    strokeWeight(100)
-    text("HIIII!")
-    textAlign(CENTER);
     pop();
+}
 
+function checkOverlap() {
+    const d = dist(spider.x, spider.y, circle.x, circle.y);
+    const overlap = (d < spider.size / 1.6 + circle.size / 1.6);
+    if (overlap) {
+        console.log("hi!!!!!")
+        square1.fill = square1.fills.transparent
+    }
+    else {
+        square1.fill = square1.fills.opaque
+    }
 }
