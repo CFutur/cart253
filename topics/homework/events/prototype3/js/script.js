@@ -35,13 +35,13 @@ function mouseWheel() {
 }*/
 
 const square1 = {
-    x: 450,
-    y: 5,
-    size: 50,
-    fill: "#000000",
+    x: 0,
+    y: 0,
+    size: 500,
+    fill: "#ffffff00",
     fills: {
         opaque: "#000000",
-        transparent: "#d81717fd"
+        transparent: "#ffffff00"
     }
     //text: ("BOO!", 50, 50)
 }
@@ -52,7 +52,7 @@ const circle = {
     x: 500,
     y: 250,
     size: 200,
-    fill: "#ffdb10"
+    fill: "#975d1b"
 }
 const spider = {
     x: 250,
@@ -74,8 +74,8 @@ function draw() {
     background("#975d1b");
 
     // Draw the circle
-    drawSpider();
     drawCircle();
+    drawSpider();
     drawSquare1();
     checkOverlap();
 }
@@ -108,6 +108,7 @@ function drawCircle() {
 
 function drawSquare1() {
     push();
+    noStroke();
     fill(square1.fill);
     square(square1.x, square1.y, square1.size);
     pop();
@@ -118,9 +119,9 @@ function checkOverlap() {
     const overlap = (d < spider.size / 1.6 + circle.size / 1.6);
     if (overlap) {
         console.log("hi!!!!!")
-        square1.fill = square1.fills.transparent
+        square1.fill = square1.fills.opaque, text("BOOOOOO!", 10, 250), textSize(90), fill("#ffffff"), textFont('Casterllar')
     }
     else {
-        square1.fill = square1.fills.opaque
+        square1.fill = square1.fills.transparent
     }
 }
