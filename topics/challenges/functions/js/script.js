@@ -29,9 +29,25 @@ function setup() {
 
     ball1 = createBall();
     ball2 = createBall();
-    ball3 = createBall();
 }
 
+function createBall() {
+    let ball = {
+        x: random(50, width - 50),
+        y: -50,
+        width: 10,
+        height: 10,
+        velocity: {
+            x: 0,
+            y: 0,
+        },
+        acceleration: {
+            x: 0,
+            y: 0.5,
+        }
+    };
+    return ball;
+}
 
 /**
  * Move and display the ball and paddle
@@ -40,29 +56,17 @@ function draw() {
     background("#87ceeb");
 
     movePaddle(paddle);
-    moveBall(ball);
+    moveBall(ball1);
     moveBall(ball2);
 
-    handleBounce(ball, paddle);
+    handleBounce(ball1, paddle);
+    handleBounce(ball2, paddle);
 
     drawPaddle(paddle);
     drawBall(ball1);
     drawBall(ball2);
 }
 
-function createBall() {
-    let ball = {
-        x: 300,
-        y: 20,
-        width: 10,
-        height: 10,
-        velocity: {
-            x: 0,
-            y: 10
-        }
-    };
-    return ball;
-}
 
 /**
  * Moves the paddle
@@ -75,8 +79,13 @@ function movePaddle(paddle) {
  * Moves the ball passed in as a parameter
  */
 function moveBall(ball) {
-    // ball.velocity.y += ball.y
+
+    ball.velocity.y += ball.acceleration.y;
+    ball.velocity.x += ball.acceleration.x;
+
     ball.y += ball.velocity.y
+    ball.x += ball.velocity.x
+    //ball.velocity.x += (ball.x) * -0.0005
 
 }
 
