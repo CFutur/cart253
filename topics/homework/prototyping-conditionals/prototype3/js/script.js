@@ -151,3 +151,5 @@ function drawBox() {
     rect(box.x, box.y, box.w, box.h);
     pop();
 }
+
+//need to fix that you can hold down all three and they work but now they dont?
