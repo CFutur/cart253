@@ -1,38 +1,13 @@
 /**
- * Title of Project
- * Author Name
+ * Spooky scary code
+ * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This code is just a jumpscare. simple as that, scroll the wheel from your mouse and you get a jumpscare
  * 
  * help from mousewheel() from p5js
  */
 
 "use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-/** 
-let ballSize = 0;
-
-function setup() {
-    createCanvas(500, 500)
-}
-
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-
-function draw() {
-    background("#6479bdd0")
-
-    circle(ballSize, 350, 350)
-}
-
-function mouseWheel() {
-    ball.size += 0.5;
-}*/
 
 const square1 = {
     x: 0,
@@ -45,9 +20,6 @@ const square1 = {
     }
     //text: ("BOO!", 50, 50)
 }
-
-
-/** */
 const circle = {
     x: 500,
     y: 250,
@@ -65,11 +37,11 @@ const spider = {
     },
     speed: 1
 }
-
+// setting up my canvas
 function setup() {
     createCanvas(500, 500);
 }
-
+//drawing my background and adding my circle, spider, square 1 and a function to check overlap between circle and spider.
 function draw() {
     background("#975d1b");
 
@@ -80,7 +52,7 @@ function draw() {
     checkOverlap();
 }
 
-// Increment circleSize when the user scrolls the mouse wheel.
+// make the circle bigger/smaller as we scroll plus also makes it go forward and backward.
 function mouseWheel(event) {
     spider.velocity.x -= spider.delta
     spider.y += event.delta;
@@ -90,7 +62,7 @@ function mouseWheel(event) {
 
 
 
-
+//function for my spider
 function drawSpider() {
     push();
     fill(spider.fill);
@@ -113,7 +85,7 @@ function drawSquare1() {
     square(square1.x, square1.y, square1.size);
     pop();
 }
-
+//this function checks overlap between circle and spider. And then a square and text pops up if they do overlap
 function checkOverlap() {
     const d = dist(spider.x, spider.y, circle.x, circle.y);
     const overlap = (d < spider.size / 1.6 + circle.size / 1.6);
