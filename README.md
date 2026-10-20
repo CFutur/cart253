@@ -84,6 +84,26 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype3)
 
+
+
+
+
+
+
+
+
+
+
+### Scary BOO! project
+
+![12 prototype](/topics/images/.png)
+
+[View online](https://CFutur.github.io/cart253/topics/homework/events/prototype3)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/events/prototype3)
+
+
+
 -----------------------------------------------------------------------------------------------
 
 This website is simply to show off my amazing skills in coding and present all the prototypes we will be doing in class.
