@@ -107,7 +107,7 @@ function keyPressed(event) {
         push();
         console.log("t message")
 
-        fill("#b3fa0f")
+        fill("#f4a3fc")
         textSize(10)
         text(tMessage, 20, 100)
         pop();
@@ -117,7 +117,7 @@ function keyPressed(event) {
         push();
         console.log("t message")
 
-        fill("#b3fa0f")
+        fill("#fa0fb0")
         textSize(10)
         text(yMessage, 20, 100)
         pop();
@@ -127,7 +127,7 @@ function keyPressed(event) {
         push();
         console.log("u message")
 
-        fill("#b3fa0f")
+        fill("#fa170f")
         textSize(10)
         text(uMessage, 20, 100, 200, 200)
         pop();
@@ -137,7 +137,7 @@ function keyPressed(event) {
         push();
         console.log("i message")
 
-        fill("#b3fa0f")
+        fill("#fa550f")
         textSize(10)
         text(iMessage, 1, 100, 200, 200)
         pop();
@@ -147,7 +147,7 @@ function keyPressed(event) {
         push();
         console.log("o message")
 
-        fill("#b3fa0f")
+        fill("#fac70f")
         textSize(10)
         text(oMessage, 20, 100)
         pop();
@@ -157,7 +157,7 @@ function keyPressed(event) {
         push();
         console.log("p message")
 
-        fill("#b3fa0f")
+        fill("#0ffa1f")
         textSize(10)
         text(pMessage, 20, 100)
         pop();
@@ -167,7 +167,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#d7fa0f")
         textSize(10)
         text(aMessage, 20, 100)
         pop();
@@ -177,7 +177,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#0ffa98")
         textSize(10)
         text(sMessage, 20, 100)
         pop();
@@ -187,7 +187,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#0ffab7")
         textSize(10)
         text(dMessage, 20, 100)
         pop();
@@ -197,7 +197,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#0f52fa")
         textSize(10)
         text(fMessage, 20, 100)
         pop();
@@ -207,7 +207,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#420ffa")
         textSize(10)
         text(gMessage, 20, 100)
         pop();
@@ -217,7 +217,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#fa0ffa")
         textSize(10)
         text(hMessage, 20, 100)
         pop();
@@ -227,7 +227,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#fa0f0fa4")
         textSize(10)
         text(jMessage, 20, 100)
         pop();
@@ -237,7 +237,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#396d6f")
         textSize(10)
         text(kMessage, 20, 100)
         pop();
@@ -247,7 +247,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#69385c")
         textSize(10)
         text(lMessage, 20, 100)
         pop();
@@ -292,7 +292,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#90c1e0")
         textSize(10)
         text(bMessage, 20, 100)
         pop();
@@ -301,7 +301,7 @@ function keyPressed(event) {
         push();
         console.log("a message")
 
-        fill("#b3fa0f")
+        fill("#b15c0c")
         textSize(10)
         text(nMessage, 20, 100)
         pop();
