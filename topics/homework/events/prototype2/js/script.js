@@ -47,7 +47,7 @@ const window2 = {
         normal: "#f4f80d",
         pink: "#db7df8",
     },
-    delay: 1000000000
+    delay: 150
 };
 const window3 = {
     x: 230,
@@ -59,7 +59,7 @@ const window3 = {
         normal: "#f4f80d",
         blue: "#85aedd",
     },
-    delay: 1000000000
+    delay: 100
 };
 const window4 = {
     x: 230,
@@ -71,7 +71,7 @@ const window4 = {
         normal: "#f4f80d",
         red: "#f81561",
     },
-    delay: 1000000000000
+    delay: 100
 };
 
 function drawWindow(theWindow) {
@@ -80,7 +80,6 @@ function drawWindow(theWindow) {
     fill(theWindow.fill)
     square(theWindow.x, theWindow.y, theWindow.size, theWindow.radius);
     pop();
-    delay: 1000000000
 }
 
 /**
@@ -92,8 +91,14 @@ function setup() {
     // Start the traffic light cycle
     //setInterval(changeLight, trafficLight.delay);
     //setInterval(window1, window1.delay);
-    setInterval(changeLightWindow, 150)
-
+    setInterval(changeLightWindow1, window1.delay)
+    setInterval(changeLightWindow2, window2.delay)
+    setInterval(changeLightWindow3, window3.delay)
+    setTimeout(changeLightWindow4, window4.delay)
+    changeLightWindow1();
+    changeLightWindow2();
+    changeLightWindow3();
+    changeLightWindow4();
 }
 
 
@@ -114,18 +119,6 @@ function draw() {
     drawWindow(window2);
     drawWindow(window3);
     drawWindow(window4);
-
-    // drawWindow(130, 290, 70, 10, "#f15feac5", 100000);
-    // drawWindow(230, 290, 70, 10);
-    // drawWindow(230, 190, 70, 10);
-    // changeLightWindow();
-
-    // Traffic light
-    // push();
-    // noStroke();
-    // fill(trafficLight.fill);
-    // ellipse(trafficLight.x, trafficLight.y, trafficLight.size);
-    // pop();
 }
 
 function drawBush() {
@@ -168,8 +161,8 @@ function drawHouse() {
 
 
 
-function changeLightWindow() {
-    // Green goes to orange
+function changeLightWindow1() {
+    // yellow to green, then if green, go back to yellow. loop. exact for the rest of them except pink who stays the same
     if (window1.fill === window1.fills.normal) {
         console.log("win1")
         window1.fill = window1.fills.green;
@@ -178,19 +171,31 @@ function changeLightWindow() {
         console.log("win2")
         window1.fill = window1.fills.normal;
     }
-    // // Orange goes to red
-    // if (window2.fill === window2.fills.normal) {
-    //     console.log("win2")
-    //     window2.fill = window2.fills.pink;
-    // }
-    // // Red goes to green
-    // if (window3.fill === window3.fills.normal) {
-    //     console.log("win3")
-    //     window3.fill = window3.fills.blue;
-    // }
-    // if (window4.fill === window4.fills.normal) {
-    //     console.log("win4")
-    //     window4.fill = window4.fills.red;
-    // }
+}
+function changeLightWindow2() {
+    if (window2.fill === window2.fills.normal) {
+        console.log("win1")
+        window2.fill = window2.fills.pink;
+    }
+    else if (window2.fill === window2.fills.pink) {
+        console.log("win2")
+        window2.fill = window2.fills.normal;
+    }
+}
+function changeLightWindow3() {
+    if (window3.fill === window3.fills.normal) {
+        console.log("win1")
+        window3.fill = window3.fills.blue;
+    }
+    else if (window3.fill === window3.fills.blue) {
+        console.log("win2")
+        window3.fill = window3.fills.normal;
+    }
+}
+function changeLightWindow4() {
+    if (window4.fill === window4.fills.normal) {
+        console.log("win1")
+        window4.fill = window4.fills.red;
+    }
 
 }
