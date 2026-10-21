@@ -104,7 +104,17 @@ function draw() {
     drawWindow(window3);
     drawWindow(window4);
 }
-
+// function drawCloud() {
+//     push();
+//     noStroke();
+//     fill("#2d4d30")
+//     ellipse(55, 390, 90);
+//     fill("#4a7a4d")
+//     ellipse(90, 390, 70);
+//     fill("#1f5222")
+//     ellipse(380, 390, 70);
+//     pop();
+// }
 function drawBush() {
     push();
     noStroke();
