@@ -86,9 +86,8 @@
 
 #Events
 
-[Reflective Journal](https://cfutur.github.io/cart253/journal.html](https://cfutur.github.io/cart253/journal.html)
+[https://cfutur.github.io/cart253/journal.html](https://cfutur.github.io/cart253/journal.html)
 
-https://cfutur.github.io/cart253/journal.html
 ### Pressing keys mindlessly
 
 ![10 prototype](/topics/images/keyboard.png)
