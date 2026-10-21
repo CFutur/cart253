@@ -86,7 +86,7 @@
 
 #Events
 
-[https://cfutur.github.io/cart253/journal.html](https://cfutur.github.io/cart253/journal.html)
+[My journal entry](journal.md)
 
 ### Pressing keys mindlessly
 
