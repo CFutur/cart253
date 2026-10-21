@@ -84,15 +84,25 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype3)
 
+#Events
 
+[My journal entry](journal.md)
 
+### Pressing keys mindlessly
 
+![10 prototype](/topics/images/keyboard.png)
 
+[View online](https://CFutur.github.io/cart253/topics/homework/events/prototype1)
 
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/events/prototype1)
 
+### Party in da house!
 
+![11 prototype](/topics/images/house.png)
 
+[View online](https://CFutur.github.io/cart253/topics/homework/events/prototype2)
 
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/events/prototype2)
 
 ### Scary BOO! project
 
