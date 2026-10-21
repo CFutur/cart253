@@ -84,7 +84,7 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype3)
 
-#Events
+# Events
 
 [My journal entry](journal.md)
 
