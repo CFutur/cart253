@@ -84,6 +84,9 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype3)
 
+#Events
+[Reflective Journal](/journal](https://cfutur.github.io/cart253/journal.html)
+
 ### Pressing keys mindlessly
 
 ![10 prototype](/topics/images/keyboard.png)
