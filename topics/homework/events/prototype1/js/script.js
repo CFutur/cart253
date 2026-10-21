@@ -193,7 +193,66 @@ function keyPressed(event) {
         pop();
 
     }
+    else if (event.keyCode === 70) {
+        push();
+        console.log("a message")
 
+        fill("#b3fa0f")
+        textSize(10)
+        text(fMessage, 20, 100)
+        pop();
+
+    }
+    else if (event.keyCode === 71) {
+        push();
+        console.log("a message")
+
+        fill("#b3fa0f")
+        textSize(10)
+        text(gMessage, 20, 100)
+        pop();
+
+    }
+    else if (event.keyCode === 72) {
+        push();
+        console.log("a message")
+
+        fill("#b3fa0f")
+        textSize(10)
+        text(hMessage, 20, 100)
+        pop();
+
+    }
+    else if (event.keyCode === 74) {
+        push();
+        console.log("a message")
+
+        fill("#b3fa0f")
+        textSize(10)
+        text(jMessage, 20, 100)
+        pop();
+
+    }
+    else if (event.keyCode === 75) {
+        push();
+        console.log("a message")
+
+        fill("#b3fa0f")
+        textSize(10)
+        text(kMessage, 20, 100)
+        pop();
+
+    }
+    else if (event.keyCode === 76) {
+        push();
+        console.log("a message")
+
+        fill("#b3fa0f")
+        textSize(10)
+        text(lMessage, 20, 100)
+        pop();
+
+    }
 }
 
 
@@ -306,6 +365,78 @@ function keyReleased(event) {
         fill("#b31bf9")
         textSize(10)
         text(aMessage, 20, 100)
+        pop();
+    }
+    else if (event.keyCode === 83) {
+        push();
+        console.log("bye byelol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(sMessage, 20, 100)
+        pop();
+    }
+    else if (event.keyCode === 68) {
+        push();
+        console.log("bye byelol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(dMessage, 20, 100)
+        pop();
+    }
+    else if (event.keyCode === 70) {
+        push();
+        console.log("bye byelol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(fMessage, 20, 100)
+        pop();
+    }
+    else if (event.keyCode === 71) {
+        push();
+        console.log("bye byelol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(gMessage, 20, 100)
+        pop();
+    }
+    else if (event.keyCode === 72) {
+        push();
+        console.log("bye byelol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(hMessage, 20, 100)
+        pop();
+    }
+    else if (event.keyCode === 74) {
+        push();
+        console.log("bye byelol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(jMessage, 20, 100)
+        pop();
+    }
+    else if (event.keyCode === 75) {
+        push();
+        console.log("bye byelol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(kMessage, 20, 100)
+        pop();
+    }
+    else if (event.keyCode === 76) {
+        push();
+        console.log("bye byelol")
+
+        fill("#b31bf9")
+        textSize(10)
+        text(lMessage, 20, 100)
         pop();
     }
 }
