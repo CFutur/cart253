@@ -106,7 +106,7 @@
 
 ### Scary BOO! project
 
-![12 prototype](/topics/images/.png)
+![12 prototype](/topics/images/BOO!.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/events/prototype3)
 
