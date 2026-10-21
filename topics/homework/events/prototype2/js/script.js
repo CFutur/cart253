@@ -1,30 +1,17 @@
 /**
- * Title of Project
- * Author Name
+ * Party in the house
+ * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is a project utilizing intervals to create a flashing party in a house through the window
+ * 
+ * 
+ * help from pippin's code with the traffic light
  */
 
 "use strict";
-// // The traffic light
-// const trafficLight = {
-//     // Position and size
-//     x: 200,
-//     y: 200,
-//     size: 100,
-//     fill: "#00ff00", // Starts green
-//     fills: {
-//         stop: "#ff0000", // Red
-//         slow: "#ffbb00", // Orange
-//         go: "#00ff00" // Green
-//     },
-//     delay: 1000// How long between lights
-// };
-// drawWindow(130, 190, 70, 10);
-// drawWindow(130, 290, 70, 10);
-// drawWindow(230, 290, 70, 10);
-// drawWindow(230, 190, 70, 10);
+
+//const for all of my different windows
+
 const window1 = {
     x: 130,
     y: 190,
@@ -83,14 +70,11 @@ function drawWindow(theWindow) {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * this creates a different interval for all my lights and also adds my changeLightWindow(do not think it is necessary)
 */
 function setup() {
     createCanvas(400, 400);
-    //changeLightWindow();
-    // Start the traffic light cycle
-    //setInterval(changeLight, trafficLight.delay);
-    //setInterval(window1, window1.delay);
+
     setInterval(changeLightWindow1, window1.delay)
     setInterval(changeLightWindow2, window2.delay)
     setInterval(changeLightWindow3, window3.delay)
@@ -103,7 +87,7 @@ function setup() {
 
 
 /**
- * Display the traffic light
+ * draws background, the entire house and the windows.
  */
 function draw() {
     background("#192449");
