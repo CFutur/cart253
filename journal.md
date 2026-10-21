@@ -27,6 +27,13 @@ I think the hockey game could be improved by a game where when the ball crosses 
 
 ![ping pong hockey game](/topics/images/ping-pong-hockey.png)
 
+##2026-10-20
+
+Events allow you to allow for more precise actions to happen, which is nice when entering the game scene once again. It allows for more options in not only movements but also like start in a race or anything that needs a timer to rush the player or guide them towards a start.
+
+I think the house code could be cool if it combined the flashing lights with the idea of the player needing to click on them to shut them up, kind of like those dumb desktop games where you need to ensure everything stays the same or else someone gets angry
+
+![house party game](/topics/images/house.png)
 
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
