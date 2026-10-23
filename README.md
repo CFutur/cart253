@@ -10,7 +10,9 @@
 [My reflective journal](journal.md)
 
 ----------------------------------------------------------------------------------------------
-## Instructions prototypes
+## Instructions
+
+[My journal entry](journal.md)
 
 ### Playing around with planets
 
@@ -36,6 +38,11 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/prototypes/prototype-3)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Variables
+
+[My journal entry](journal.md)
+
 ### I'm going to be sick...!
 
 ![4 prototype](/topics/images/vomit-prototype.png)
@@ -59,6 +66,11 @@
 [View online](https://CFutur.github.io/cart253/topics/homework/variables-challenges/prototype-3)
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/variables-challenges/prototype-3)
+
+----------------------------------------------------------------------------------------------------------------
+## Conditionals
+
+[My journal entry](journal.md)
 
 ### Hockey game!
 
@@ -84,7 +96,8 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/prototyping-conditionals/prototype3)
 
-# Events
+----------------------------------------------------------------------------------------------------------------
+## Events
 
 [My journal entry](journal.md)
 
