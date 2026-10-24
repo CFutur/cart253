@@ -12,6 +12,7 @@
 //These buttons are undefined for now, cause we define them both with one singular button parameter
 let button1 = undefined;
 let button2 = undefined;
+let button3 = undefined;
 /**
  * This set up has my canvas size and also all of my buttons who will be randomly placed on my canvas
 */
@@ -19,6 +20,8 @@ function setup() {
     createCanvas(300, 300);
     button1 = createRectButton(); //will make the button 1 appear randomly on the screen once (it will not get covered by background)
     button2 = createRectButton(); //samesies
+
+    button3 = createCircleButton(); //make circular button appear!!
 }
 
 // this function holds the placement (x,y) and the size (w,h) of all my rectangular buttons
@@ -38,28 +41,38 @@ function createCircleButton() {
     let circleButton = {
         x: random(0, width),
         y: random(0, height),
-
-        size
+        size: 30,
     }
+    return circleButton;
 }
 
 /**
  * draws my background and also all of my buttons, no matter the shape or size. 
 */
 function draw() {
-    background("#fdf2507a")
+    background("#faf286")
 
 
-    drawButton(button1) //this is simply to give the appearance of my buttons in draw
-    drawButton(button2)
+    drawRectButton(button1) //this is simply to give the appearance of my buttons in draw
+    drawRectButton(button2)
+    drawCircleButton(button3) //this is to give the appearance of my circular button
 }
 
 
 //this draws my button shape, size, colour, no stroke. 
-function drawButton(rectButton) {
+function drawRectButton(rectButton) {
     push();
     noStroke();
     fill("#a7c6e9")
     rect(rectButton.x, rectButton.y, rectButton.w, rectButton.h);
+    pop();
+}
+
+//this draws my button shape, size, colour, no stroke. 
+function drawCircleButton(circleButton) {
+    push();
+    noStroke();
+    fill("#2ffa6c")
+    ellipse(circleButton.x, circleButton.y, circleButton.size);
     pop();
 }
