@@ -2,14 +2,15 @@ let img;
 
 async function setup() {
     // Load the image.
-    img = await loadImage('/topics/images/ice-cream-mint.png');
+    img = await loadImage('/prototype1/assets/images/ice-cream-mint.png');
 
-    createCanvas(100, 100);
+    createCanvas(500, 500);
 
-    background(50);
-
-    // Draw the image.
+    // Display the image.
+    // background("#f00808aa")
     image(img, 0, 0);
 
-    describe('An image of the underside of a white umbrella with a gridded ceiling above.');
+    describe('An image of a brick wall.');
 }
+
+//C: \Users\clara\OneDrive\Documents\GitHub\cart253\topics\homework\functions\prototype1\assets\images\clown.png
