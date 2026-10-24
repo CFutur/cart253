@@ -130,7 +130,7 @@
 ---------------------------------------------------------------------------------------------
 ## Functions
 
-![12 prototype](/topics/images-prototypes/abstract.png)
+![13 prototype](/topics/images-prototypes/abstract.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/functions/prototype1)
 
