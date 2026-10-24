@@ -18,7 +18,7 @@
 
 ### Playing around with planets
 
-![1 prototype](/topics/prototypes/images-prototypes/abstract-planet.png)
+![1 prototype](/topics/images-prototypes/abstract-planet.png)
 
 [View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-1/)
 
@@ -26,7 +26,7 @@
 
 ### Feeding a bird
 
-![2 prototype](/topics/prototypes/images-prototypes/feeding-bird.png)
+![2 prototype](/topics/images-prototypes/feeding-bird.png)
 
 [View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-2/)
 
@@ -34,7 +34,7 @@
 
 ### Two very creepy eyes
 
-![3 prototype](/topics/prototypes/images-prototypes/scary-eyes.png)
+![3 prototype](/topics/images-prototypes/scary-eyes.png)
 
 [View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-3/)
 
