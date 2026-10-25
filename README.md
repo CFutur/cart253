@@ -140,7 +140,7 @@
 
 ## this is the code !!!
 
-![14 prototype](/topics/images-prototypes/abstract.png)
+![14 prototype](/topics/images-prototypes/photobooth.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/functions/prototype2)
 
