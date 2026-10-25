@@ -1,27 +1,40 @@
-var capture;
-var canvasStatus = true;
-var button;
+// Set the video capture as a global variable.
+let capture;
 
 function setup() {
-    createCanvas(390, 240);
+    describe('Video capture from the device webcam.');
+    createCanvas(720, 400);
+
+    // Use the createCapture() function to access the device's
+    // camera and start capturing video.
     capture = createCapture(VIDEO);
-    capture.size(320, 240);
+
+    // Make the capture frame half of the canvas.
+    capture.size(360, 200);
+
+    // Use capture.hide() to remove the p5.Element object made
+    // using createCapture(). The video will instead be rendered as
+    // an image in draw().
     capture.hide();
-    button = createButton("freeze/unfreeze");
-    button.mousePressed(toggle);
 }
 
 function draw() {
-    background(255);
-    image(capture, 0, 0, 320, 240);
+    // Set the background to gray.
+    background(51);
+
+    // Draw the resulting video capture on the canvas
+    // with the invert filter applied.
+    image(capture, 0, 0, 360, 400);
+    filter(INVERT);
+
+    drawCircle();
 }
 
-function toggle() {
-    if (canvasStatus === true) {
-        canvasStatus = false;
-        noLoop();
-    } else {
-        canvasStatus = true;
-        loop();
-    }
+function drawCircle() {
+    push();
+    fill("#0bf82a")
+    noStroke();
+    ellipse(600, 200, 50, 50);
+    pop();
+
 }
