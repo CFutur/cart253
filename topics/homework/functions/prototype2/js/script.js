@@ -87,9 +87,7 @@ function draw() {
 // }
 
 function mousePressed() {
-    if (mouseIsPressed) {
-        loop();
-    }
+    loop();
 }
 
 function drawPetal(x, y, size) {
