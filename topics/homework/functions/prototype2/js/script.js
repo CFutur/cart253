@@ -72,16 +72,22 @@ function draw() {
     drawPetal(165, 75, 50);
     drawPetal(180, 30, 50);
     drawPetal(220, 30, 50);
-    // drawPetal();
-    // drawPetal();
-    // drawPetal();
-    // drawPetal();
-    // drawPetal();
+    drawPetal();
+    drawPetal();
+    drawPetal();
+    drawPetal();
+    drawPetal();
     drawText();
     noLoop();
 }
-function keyPressed(event) {
-    if (event.keyCode === 83) {
+// function keyPressed(event) {
+//     if (event.keyCode === 83) {
+//         loop();
+//     }
+// }
+
+function mousePressed() {
+    if (mouseIsPressed) {
         loop();
     }
 }
