@@ -140,7 +140,11 @@
 
 ## this is the code !!!
 
+![14 prototype](/topics/images-prototypes/abstract.png)
+
 [View online](https://CFutur.github.io/cart253/topics/homework/functions/prototype2)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/functions/prototype2)
 
 -----------------------------------------------------------------------------------------------
 
