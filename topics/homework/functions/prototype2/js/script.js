@@ -2,15 +2,15 @@
  * Frame for webcam!
  * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is kind of a photobooth project, pose in front of the camera and say cheese!! Then you can screenshot it and keep it as a little pfp of you
+ * 
+ * controls : key S (83)
  * 
  * 
  * GETTING LOTS OF HELP FROM P5JS CODE OF "IMPPORTED MEDIA VIDEO CAPTURE"
  * https://p5js.org/examples/Imported-Media-Video-Capture/
  * 
- * ill also be commenting more what i understood and what it does so i can use a code without understanding it
- * 
+ * ill also be commenting more what i understood and what it does so i can use the code with full understanding 
  *  uses: 
  p5.js
  https://p5js.org/
@@ -18,7 +18,7 @@
  */
 
 "use strict";
-
+//var of my rgba
 var r;
 var g;
 var b;

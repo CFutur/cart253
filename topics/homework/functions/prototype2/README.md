@@ -1,12 +1,14 @@
-# TITLE OF PROJECT
+# Photobooth!
 
-AUTHOR NAME
+Clara Fioramore
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://CFutur.github.io/cart253/topics/homework/functions/prototype2)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This is a prototype that uses webcam and allows each frame to be played with the S key. It creates this kind of photobooth effect with a randomized frame each time.
+
+Control = S key. 
 
 ## Attribution
 
