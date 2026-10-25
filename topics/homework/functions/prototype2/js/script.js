@@ -68,10 +68,10 @@ function draw() {
     image(capture, 130, 100, 450, 350);
 
     drawPetal(200, 100, 50);
-    // drawPetal();
-    // drawPetal();
-    // drawPetal();
-    // drawPetal();
+    drawPetal(235, 75, 50);
+    drawPetal(165, 75, 50);
+    drawPetal(180, 30, 50);
+    drawPetal(220, 30, 50);
     // drawPetal();
     // drawPetal();
     // drawPetal();

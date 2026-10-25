@@ -136,6 +136,12 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/functions/prototype1)
 
+
+
+## this is the code !!!
+
+[View online](https://CFutur.github.io/cart253/topics/homework/functions/prototype2)
+
 -----------------------------------------------------------------------------------------------
 
 This website is simply to show off my amazing skills in coding and present all the prototypes we will be doing in class.
