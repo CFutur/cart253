@@ -39,7 +39,7 @@ let capture;
 // let petal10 = undefined;
 
 /**
- * creating our canvas size and associating our capture variable with function createCapture + capture size + hiding capture + all my flower petals, middle, grass and house
+ * creating our canvas size + background and associating our capture variable with function createCapture + capture size + hiding capture 
 */
 function setup() {
     createCanvas(700, 550);
@@ -57,35 +57,58 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * my draw makes the image capture and all my draw petals, draw middle, draw oval, drawtext and a noloop
 */
 function draw() {
     //background("#bef394")
 
     //draw the video capture, as i said earlier, in the draw function. so we can draw on it and around it :)
-    //i also think this image() will be bale ot help me center my image, instead of the capture.size above, which im afraid will not help me.
+    //i also think this image() will be to help me center my image, instead of the capture.size above, which im afraid will not help me.
     //              x,   y,   width,  height
     image(capture, 130, 100, 450, 350);
 
-    drawPetal(200, 100, 50);
-    drawPetal(235, 75, 50);
-    drawPetal(165, 75, 50);
-    drawPetal(180, 30, 50);
-    drawPetal(220, 30, 50);
-    drawPetal();
-    drawPetal();
-    drawPetal();
-    drawPetal();
-    drawPetal();
+    drawPetal(200, 100, 50);//these are for the left top flower
+    drawPetal(235, 75, 50);//these are for the left top flower
+    drawPetal(165, 75, 50);//these are for the left top flower
+    drawPetal(180, 30, 50);//these are for the left top flower
+    drawPetal(220, 30, 50);//these are for the left top flower
+    drawPetal(520, 420, 50);//these are the bottom right flower
+    drawPetal(550, 385, 50);//these are the bottom right flower
+    drawPetal(535, 460, 50);//these are the bottom right flower
+    drawPetal(585, 415, 50);//these are the bottom right flower
+    drawPetal(580, 460, 50);//these are the bottom right flower
+    drawMiddle(200, 60, 50);//these are the bottom right flower
+    drawMiddle(550, 430, 50);
+    drawOval(100, 300, 100, 50);
+    drawOval(140, 350, 70, 30);
+    drawOval(50, 400, 120, 90);
+    drawOval(500, 100, 70, 30);
+    drawOval(570, 140, 50, 90);
     drawText();
     noLoop();
 }
-function keyPressed(event) || {
-    if(event.keyCode === 83) {
-    loop();
+function keyPressed(event) {
+    if (event.keyCode === 83) {
+        loop();
+    }
 }
+function drawOval(x, y, w, h) {
+    let colour2 = calculateColour2(r, g, b, a)
+    push();
+    noStroke();
+    fill(colour2)
+    //fill("#f8e590")
+    ellipse(x, y, w, h)
+    pop();
 }
 
+function drawMiddle(x, y, size) {
+    push();
+    noStroke();
+    fill("#ffffff")
+    ellipse(x, y, size)
+    pop();
+}
 function drawPetal(x, y, size) {
     let colour = calculateColour(r, g, b, a);
 
@@ -102,13 +125,20 @@ function calculateColour(r, g, b, a) {
     r = random(255, 255);
     g = random(200, 245);
     b = random(209);
-    a = random(200, 255);
+    a = random(255, 255);
 
     let result = color(r, g, b, a)
 
     return result;
 }
-
+function calculateColour2(r, g, b, a) {
+    r = random(0, 209);
+    g = random(123, 231);
+    b = random(255, 255);
+    a = random(255, 255);
+    let result = color(r, g, b, a)
+    return result;
+}
 
 
 
