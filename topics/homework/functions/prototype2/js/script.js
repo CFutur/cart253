@@ -19,26 +19,31 @@
 
 "use strict";
 
+var r;
+var g;
+var b;
+var a;
 
 let capture;
 
-
-let petal1 = undefined;
-let petal2 = undefined;
-let petal3 = undefined;
-let petal4 = undefined;
-let petal5 = undefined;
-let petal6 = undefined;
-let petal7 = undefined;
-let petal8 = undefined;
-let petal9 = undefined;
-let petal10 = undefined;
+//undefined cause we are defining all of them later
+// let petal1 = undefined;
+// let petal2 = undefined;
+// let petal3 = undefined;
+// let petal4 = undefined;
+// let petal5 = undefined;
+// let petal6 = undefined;
+// let petal7 = undefined;
+// let petal8 = undefined;
+// let petal9 = undefined;
+// let petal10 = undefined;
 
 /**
- * creating our canvas size and 
+ * creating our canvas size and associating our capture variable with function createCapture + capture size + hiding capture + all my flower petals, middle, grass and house
 */
 function setup() {
     createCanvas(700, 550);
+    background("#bef394")
 
     //the create capture function will allow us to use the device's webcam to capture the video. 
     //the VIDEO seem to be case sensitive, since it is always in all caps in every website i look at. 
@@ -47,6 +52,7 @@ function setup() {
     capture.size(800, 800);
     //then we use capture.hide() for WHAT I UNDERSTOOD to remove the html element? because apparenrly when there is a createCapture, it creates two webcam, one ontop of the other, but we only wanna keep one and turn it into a draw image. i think. 
     capture.hide()
+
 }
 
 
@@ -54,11 +60,62 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background("#a9f16ebb")
+    //background("#bef394")
 
     //draw the video capture, as i said earlier, in the draw function. so we can draw on it and around it :)
     //i also think this image() will be bale ot help me center my image, instead of the capture.size above, which im afraid will not help me.
     //              x,   y,   width,  height
     image(capture, 130, 100, 450, 350);
 
+    drawPetal(200, 100, 50);
+    // drawPetal();
+    // drawPetal();
+    // drawPetal();
+    // drawPetal();
+    // drawPetal();
+    // drawPetal();
+    // drawPetal();
+    // drawPetal();
+    // drawPetal();
+    drawText();
+    noLoop();
+}
+function keyPressed(event) {
+    if (event.keyCode === 83) {
+        loop();
+    }
+}
+
+function drawPetal(x, y, size) {
+    let colour = calculateColour(r, g, b, a);
+
+    push();
+    noStroke();
+    fill(colour)
+    //fill("#f8e590")
+    ellipse(x, y, size)
+    pop();
+}
+
+
+function calculateColour(r, g, b, a) {
+    r = random(255, 255);
+    g = random(200, 245);
+    b = random(209);
+    a = random(200, 255);
+
+    let result = color(r, g, b, a)
+
+    return result;
+}
+
+
+
+
+
+function drawText() {
+    push();
+    fill("#ff5d5d")
+    textSize(50)
+    text("Pose & Press on the S key", 60, 540)
 }
