@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * Frame for webcam!
+ * Clara Fioramore
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
@@ -10,6 +10,11 @@
  * https://p5js.org/examples/Imported-Media-Video-Capture/
  * 
  * ill also be commenting more what i understood and what it does so i can use a code without understanding it
+ * 
+ *  uses: 
+ p5.js
+ https://p5js.org/
+ * 
  */
 
 "use strict";
