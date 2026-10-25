@@ -18,7 +18,7 @@
 
 ### Playing around with planets
 
-![1 prototype](/topics/prototypes/images/abstract-planet.png)
+![1 prototype](/topics/images-prototypes/abstract-planet.png)
 
 [View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-1/)
 
@@ -26,7 +26,7 @@
 
 ### Feeding a bird
 
-![2 prototype](/topics/prototypes/images/feeding-bird.png)
+![2 prototype](/topics/images-prototypes/feeding-bird.png)
 
 [View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-2/)
 
@@ -34,7 +34,7 @@
 
 ### Two very creepy eyes
 
-![3 prototype](/topics/prototypes/images/scary-eyes.png)
+![3 prototype](/topics/images-prototypes/scary-eyes.png)
 
 [View online](https://CFutur.github.io/cart253/topics/prototypes/prototype-3/)
 
@@ -47,7 +47,7 @@
 
 ### I'm going to be sick...!
 
-![4 prototype](/topics/images/vomit-prototype.png)
+![4 prototype](/topics/images-prototypes/vomit-prototype.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/variables-challenges/prototype-1)
 
@@ -55,7 +55,7 @@
 
 ### Christmas is coming!
 
-![5 prototype](/topics/images/snow-scenery.png)
+![5 prototype](/topics/images-prototypes/snow-scenery.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/variables-challenges/prototype-2)
 
@@ -63,7 +63,7 @@
 
 ### Mouse's ear
 
-![6 prototype](/topics/images/mouse-prototype.png)
+![6 prototype](/topics/images-prototypes/mouse-prototype.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/variables-challenges/prototype-3)
 
@@ -76,7 +76,7 @@
 
 ### Hockey game!
 
-![7 prototype](/topics/images/hockey-game.png)
+![7 prototype](/topics/images-prototypes/hockey-game.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals/prototype1)
 
@@ -84,7 +84,7 @@
 
 ### They love me, they love me not...
 
-![8 prototype](/topics/images/theyloveme-theylovemenot.png)
+![8 prototype](/topics/images-prototypes/theyloveme-theylovemenot.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals/prototype2)
 
@@ -92,7 +92,7 @@
 
 ### READY, SET, GO!
 
-![9 prototype](/topics/images/roadlight-prototype.png)
+![9 prototype](/topics/images-prototypes/roadlight-prototype.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/prototyping-conditionals/prototype3)
 
@@ -105,7 +105,7 @@
 
 ### Pressing keys mindlessly
 
-![10 prototype](/topics/images/keyboard.png)
+![10 prototype](/topics/images-prototypes/keyboard.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/events/prototype1)
 
@@ -113,7 +113,7 @@
 
 ### Party in da house!
 
-![11 prototype](/topics/images/house.png)
+![11 prototype](/topics/images-prototypes/house.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/events/prototype2)
 
@@ -121,13 +121,20 @@
 
 ### Scary BOO! project
 
-![12 prototype](/topics/images/BOO!.png)
+![12 prototype](/topics/images-prototypes/BOO!.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/events/prototype3)
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/events/prototype3)
 
+---------------------------------------------------------------------------------------------
+## Functions
 
+![13 prototype](/topics/images-prototypes/abstract.png)
+
+[View online](https://CFutur.github.io/cart253/topics/homework/functions/prototype1)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/functions/prototype1)
 
 -----------------------------------------------------------------------------------------------
 
