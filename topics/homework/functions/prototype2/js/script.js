@@ -21,6 +21,19 @@
 
 
 let capture;
+
+
+let petal1 = undefined;
+let petal2 = undefined;
+let petal3 = undefined;
+let petal4 = undefined;
+let petal5 = undefined;
+let petal6 = undefined;
+let petal7 = undefined;
+let petal8 = undefined;
+let petal9 = undefined;
+let petal10 = undefined;
+
 /**
  * creating our canvas size and 
 */
