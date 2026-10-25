@@ -5,6 +5,8 @@
  * Clara Fioramore
  * 
  *So were creating abstract art with shapes placed randomly and filling up our canvas. 
+ 
+ only "control" there is is simply the button to refresh for more fancy website instead of having to click the google arrow to refresh
 
  */
 
