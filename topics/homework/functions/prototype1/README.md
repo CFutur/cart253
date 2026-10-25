@@ -1,12 +1,14 @@
-# TITLE OF PROJECT
+# Abstract art
 
-AUTHOR NAME
+Clara Fioramore
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://CFutur.github.io/cart253/topics/homework/functions/prototype1)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This is a website about refreshing the page to get a different abstract art each time you click. The button might sadly not be centered and moving depending on the window size but, it will work anywhere. I have yet to figure out how to keep the button locked, sadly. 
+
+Sooooo, click away!!
 
 ## Attribution
 
