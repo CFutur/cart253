@@ -77,23 +77,26 @@ function draw() {
     drawPetal(535, 460, 50);//these are the bottom right flower
     drawPetal(585, 415, 50);//these are the bottom right flower
     drawPetal(580, 460, 50);//these are the bottom right flower
-    drawMiddle(200, 60, 50);//these are the bottom right flower
-    drawMiddle(550, 430, 50);
-    drawOval(100, 300, 100, 50);
-    drawOval(140, 350, 70, 30);
-    drawOval(50, 400, 120, 90);
-    drawOval(500, 100, 70, 30);
-    drawOval(570, 140, 50, 90);
-    drawText();
-    noLoop();
+    drawMiddle(200, 60, 50);// this one is for the top left middle
+    drawMiddle(550, 430, 50);// this one is for the bottom right flower
+    drawOval(100, 300, 100, 50);//left ovals
+    drawOval(140, 350, 70, 30);//left ovals
+    drawOval(50, 400, 120, 90);//left ovals
+    drawOval(500, 100, 70, 30);//right ovals
+    drawOval(570, 140, 50, 90);//right ovals
+    drawText(); // text at the bottom
+    noLoop(); //make sure it doesnt keep running every second
 }
+
+//when pressing s, let one version of the whole draw play, press again and again for different outcomes
 function keyPressed(event) {
     if (event.keyCode === 83) {
         loop();
     }
 }
+//function to draw my 5 ovals
 function drawOval(x, y, w, h) {
-    let colour2 = calculateColour2(r, g, b, a)
+    let colour2 = calculateColour2(r, g, b, a) //rgba as in the colour RGBA(red, green,blue and then opacity?)
     push();
     noStroke();
     fill(colour2)
@@ -101,7 +104,7 @@ function drawOval(x, y, w, h) {
     ellipse(x, y, w, h)
     pop();
 }
-
+//drawing two of my middles
 function drawMiddle(x, y, size) {
     push();
     noStroke();
@@ -109,6 +112,7 @@ function drawMiddle(x, y, size) {
     ellipse(x, y, size)
     pop();
 }
+//drawing all 10 of my petals with this
 function drawPetal(x, y, size) {
     let colour = calculateColour(r, g, b, a);
 
@@ -120,8 +124,9 @@ function drawPetal(x, y, size) {
     pop();
 }
 
-
+//this function and the one underneath randomize the colour for the flowers and oval
 function calculateColour(r, g, b, a) {
+    //the RGBA here stays in the yellow, orange.
     r = random(255, 255);
     g = random(200, 245);
     b = random(209);
@@ -132,6 +137,7 @@ function calculateColour(r, g, b, a) {
     return result;
 }
 function calculateColour2(r, g, b, a) {
+    //the RGBA here stays in the blue, purple.
     r = random(0, 209);
     g = random(123, 231);
     b = random(255, 255);
@@ -142,7 +148,7 @@ function calculateColour2(r, g, b, a) {
 
 
 
-
+//this is to draw my text at the bottom indicating to the user what to do
 function drawText() {
     push();
     fill("#ff5d5d")
