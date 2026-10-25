@@ -80,14 +80,10 @@ function draw() {
     drawText();
     noLoop();
 }
-// function keyPressed(event) {
-//     if (event.keyCode === 83) {
-//         loop();
-//     }
-// }
-
-function mousePressed() {
+function keyPressed(event) || {
+    if(event.keyCode === 83) {
     loop();
+}
 }
 
 function drawPetal(x, y, size) {
