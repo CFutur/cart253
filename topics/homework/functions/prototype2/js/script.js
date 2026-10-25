@@ -1,24 +1,27 @@
-/**
- * Title of Project
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
- */
+var capture;
+var canvasStatus = true;
+var button;
 
-"use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 function setup() {
-
+    createCanvas(390, 240);
+    capture = createCapture(VIDEO);
+    capture.size(320, 240);
+    capture.hide();
+    button = createButton("freeze/unfreeze");
+    button.mousePressed(toggle);
 }
 
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
 function draw() {
+    background(255);
+    image(capture, 0, 0, 320, 240);
+}
 
+function toggle() {
+    if (canvasStatus === true) {
+        canvasStatus = false;
+        noLoop();
+    } else {
+        canvasStatus = true;
+        loop();
+    }
 }
