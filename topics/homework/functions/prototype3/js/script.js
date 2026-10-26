@@ -19,7 +19,7 @@ function setup() {
 
 
 /**
- * 
+ *  drawing all of the building than drawing all of the windows. 
 */
 function draw() {
     //building on the left
