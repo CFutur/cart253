@@ -7,13 +7,14 @@
  */
 
 "use strict";
-
+let capture;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+
 function setup() {
-    createCanvas(700, 550);
-    background("#bef394")
+    createCanvas(700, 600);
+    background("#9bc6ff")
 
     //the create capture function will allow us to use the device's webcam to capture the video. 
     //the VIDEO seem to be case sensitive, since it is always in all caps in every website i look at. 
@@ -22,10 +23,15 @@ function setup() {
     capture.size(800, 800);
     //then we use capture.hide() for WHAT I UNDERSTOOD to remove the html element? because apparenrly when there is a createCapture, it creates two webcam, one ontop of the other, but we only wanna keep one and turn it into a draw image. i think. 
     capture.hide()
-
+    strokeWeight(10);
+    mouseDragged();
 }
 
-
+function mouseDragged() {
+    let lineHue = mouseX - mouseY;
+    stroke(lineHue, 90, 90);
+    line(pmouseX, pmouseY, mouseX, mouseY);
+}
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
@@ -34,6 +40,13 @@ function draw() {
     //draw the video capture, as i said earlier, in the draw function. so we can draw on it and around it :)
     //i also think this image() will be to help me center my image, instead of the capture.size above, which im afraid will not help me.
     //              x,   y,   width,  height
-    image(capture, 130, 100, 450, 350);
+    image(capture, 25, 20, 650, 450);
+    drawTest();
+}
 
+function drawTest() {
+    push();
+    fill("#ddff1f")
+    ellipse(350, 300, 100)
+    pop();
 }
