@@ -23,14 +23,15 @@ function setup() {
 */
 function draw() {
     //building on the left
-    //drawBuilding1();
-    //
+    drawBuilding1();
+    //draw the big darker building on the right
     drawBuilding2();
     //had to put these window here so they would be behind the other building
     drawWindowBuilding3(230, 60, 50, 90);
     drawWindowBuilding3(320, 60, 50, 90);
     drawWindowBuilding3(230, 180, 50, 90);
     drawWindowBuilding3(320, 180, 50, 90);
+    //draw the small pale grey building on the right
     drawBuilding3();
     //                       x,  y,   w,  h
     drawWindowBuilding1(35, 170, 40, 40);
@@ -52,7 +53,9 @@ function draw() {
     drawWindowBuilding2(300, 500, 70, 40);
 
 }
-
+/**
+ * these window functions are all mostly the same except the colour, going darker the further we go back
+*/
 function drawWindowBuilding3(x, y, w, h) {
 
 
@@ -84,6 +87,9 @@ function drawWindowBuilding1(x, y, w, h) {
     fill("#6779aa")
     rect(x, y, w, h)
 }
+/**
+ * these three buildings are all different, easily differentiable with the colour of them. they're all written in quad, but one of them is a rectangle
+*/
 function drawBuilding1() {
     push();
     noStroke();
