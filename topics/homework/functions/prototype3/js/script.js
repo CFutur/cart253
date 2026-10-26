@@ -3,13 +3,13 @@
  * 
  * Clara Fioramore
  * 
- * This project is just to 
+ * This project is simply to pratice parameters, a very simple skyscraper landscape. nothing more. simplicity is sometimes beautiful
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * creating my canvas and made my background sky colour (blue)
 */
 
 function setup() {
@@ -19,27 +19,63 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * 
 */
 function draw() {
-    drawBuilding1();
+    //building on the left
+    //drawBuilding1();
+    //
     drawBuilding2();
+    //had to put these window here so they would be behind the other building
+    drawWindowBuilding3(230, 60, 50, 90);
+    drawWindowBuilding3(320, 60, 50, 90);
+    drawWindowBuilding3(230, 180, 50, 90);
+    drawWindowBuilding3(320, 180, 50, 90);
     drawBuilding3();
+    //                       x,  y,   w,  h
+    drawWindowBuilding1(35, 170, 40, 40);
+    drawWindowBuilding1(95, 170, 40, 40);
+    drawWindowBuilding1(35, 240, 40, 40);
+    drawWindowBuilding1(95, 240, 40, 40);
+    drawWindowBuilding1(35, 330, 40, 40);
+    drawWindowBuilding1(95, 330, 40, 40);
+    drawWindowBuilding1(35, 420, 40, 40);
+    drawWindowBuilding1(95, 420, 40, 40);
+    drawWindowBuilding1(35, 510, 40, 40);
+    drawWindowBuilding1(95, 510, 40, 40);
 
-    drawWindowBuilding(35, 170, 40, 40);
-    drawWindowBuilding(95, 170, 40, 40);
-    drawWindowBuilding(35, 240, 40, 40);
-    drawWindowBuilding(95, 240, 40, 40);
-    drawWindowBuilding(35, 330, 40, 40);
-    drawWindowBuilding(95, 330, 40, 40);
-    drawWindowBuilding(35, 420, 40, 40);
-    drawWindowBuilding(95, 420, 40, 40);
-    drawWindowBuilding(35, 510, 40, 40);
-    drawWindowBuilding(95, 510, 40, 40);
+    drawWindowBuilding2(200, 300, 70, 40);
+    drawWindowBuilding2(300, 300, 70, 40);
+    drawWindowBuilding2(200, 400, 70, 40);
+    drawWindowBuilding2(300, 400, 70, 40);
+    drawWindowBuilding2(200, 500, 70, 40);
+    drawWindowBuilding2(300, 500, 70, 40);
 
 }
 
-function drawWindowBuilding(x, y, w, h) {
+function drawWindowBuilding3(x, y, w, h) {
+
+
+    push();
+    strokeWeight(1);
+    stroke("#010233")
+    fill("#3f4a68")
+    rect(x, y, w, h)
+}
+function drawWindowBuilding2(x, y, w, h) {
+
+
+    push();
+    strokeWeight(1);
+    stroke("#010233")
+    fill("#9aaad6")
+    rect(x, y, w, h)
+}
+
+
+
+
+function drawWindowBuilding1(x, y, w, h) {
 
 
     push();
