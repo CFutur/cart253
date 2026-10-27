@@ -140,7 +140,7 @@
 
 ### Photobooth!
 
-![14 prototype](/topics/images-prototypes/photobooth.png)
+![14 prototype](/topics/images-prototypes/teacher-photobooth.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/functions/prototype2)
 
