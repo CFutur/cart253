@@ -41,7 +41,7 @@ function setup() {
     shape7 = createCircleShape();
 
 
-    let btn = createButton('Refresh page'); //create the button and the text on it
+    let btn = createButton('Refresh page to draw!'); //create the button and the text on it
     btn.position(500, 450); //position the button under the canvas
     //when clicking on the button with mouse, reload the entire window to create new abstract art
     btn.mousePressed(() => {
