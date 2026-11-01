@@ -154,6 +154,29 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/functions/prototype3)
 
+### prot. 1 (to be changed)
+
+![16 prototype](/topics/images-prototypes/.png)
+
+[View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype1)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/arrays/prototype1)
+
+### prot. 2 (to be changed)
+
+![17 prototype](/topics/images-prototypes/.png)
+
+[View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype2)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/arrays/prototype2)
+
+### prot. 3 (to be changed)
+
+![18 prototype](/topics/images-prototypes/.png)
+
+[View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype3)
+
+[View code](https://github.com/CFutur/cart253/tree/main/topics/homework/arrays/prototype3)
 
 -----------------------------------------------------------------------------------------------
 
