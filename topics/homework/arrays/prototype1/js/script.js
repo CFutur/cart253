@@ -1,18 +1,18 @@
 /**
- * Title of Project
- * Author Name
+ * Ominous voice...
+ * Clara Fioramore
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This prototype is to get used to using arrays in a code of my own, by having an ominous voice speak to the user a they click on their mouse. 
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * 
 */
 function setup() {
-
+    createCanvas(windowWidth, windowHeight);
+    background("#5b1313")
 }
 
 
