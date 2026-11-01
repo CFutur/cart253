@@ -46,7 +46,8 @@ If ever I'd like to expand on this photobooth idea more, I could create multiple
 
 Here's a little snippet of what halloween might look like, draw by hand cause it is hard drawing on the computer. 
 
+![halloween photobooth idea](/topics/images-prototypes/halloween-photobooth-idea.png);
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
- ![halloween photobooth idea](/topics/images-prototypes/halloween-photobooth-idea.png);
+ ![halloween photobooth idea](/topics/prototypes/images/screenshot.png.png);
