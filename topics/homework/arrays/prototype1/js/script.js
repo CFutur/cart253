@@ -41,7 +41,7 @@ let glitchSquares = [
 function setup() {
     createCanvas(400, 400);
     //this slows down the framr rate so that the user is able to read the text on screen, since it was going too fast before.
-    frameRate(8);
+    frameRate(7);
 }
 
 
@@ -57,8 +57,8 @@ function drawVoiceLine() {
     //telling the code that the line appearing on screen is the 0 (aka first line) in the index of voice lines. 
     let currentLine = voice[voiceIndex]
     //lets the position of my x and y be randomized and placed between 100 and 300 on my canvas. (these numbers allow the voice lines to be always be fully readable and actually appear on canvas, not off canvas.)
-    let x = random(100, 300)
-    let y = random(100, 300)
+    let x = random(100, 200)
+    let y = random(100, 200)
     push();
     fill("#1a1515") //makes my voice lines almost fully black.
     textSize(20); //makes the voice lines small enough to always fully show on canvas but big enough to read
