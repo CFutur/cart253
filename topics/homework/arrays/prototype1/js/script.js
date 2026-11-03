@@ -6,7 +6,8 @@
  */
 
 "use strict";
-let voice = ["Good evening subject 2418",
+let voice = [
+    "Good evening subject 2418",
     "Welcome to test 25.",
     "We have been waiting for you",
     "OH? Are you not subject 2418?",
@@ -20,7 +21,8 @@ let voice = ["Good evening subject 2418",
     "How are you still here?",
     "Were you... meant t=o be?",
     "0h- w3l|...",
-    "St4y $4f3 0ut th^er3..."];
+    "St4y $4f3 0ut th^er3..."
+];
 let voiceIndex = 0;
 /**
  * 
@@ -28,6 +30,7 @@ let voiceIndex = 0;
 function setup() {
     createCanvas(400, 400);
     background("#5b1313")
+    drawVoiceLine();
 }
 
 
@@ -35,25 +38,26 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    let currentLine = voice[voiceIndex]
 
-    push();
-    fill("#1a1515")
-    textSize(40);
-    // textAlign(CENTER, CENTER);
-    textAlign(random([1], [300]), random([1], [400]));
-    text(currentLine, random, random);
-    pop();
-    // drawLine();
+}
+function mousePressed() {
+    voiceIndex = voiceIndex + 1;
+    // Or: speechIndex += 1;
+    // Or: speechIndex++;
 }
 
+const currentLine = voice[voiceIndex]
+function drawVoiceLine() {
+    let x = random(1, 100)
+    let y = random(1, 300)
+    console.log(x)
+    push();
+    fill("#1a1515")
+    textSize(20);
+    //textAlign(CENTER, CENTER);
+    //textAlign(x, y);
+    //text(currentLine, random(1, 100), random(1, 400));
+    text(currentLine, x, y);
+    pop();
 
-// function drawLine() {
-//     push();
-//     fill("#1a1515")
-//     textSize(40);
-//     textAlign(CENTER, CENTER);
-//     // textAlign(random([1], [300]), random([1], [400]));
-//     text(currentLine, width / 2, height / 2);
-//     pop();
-// }
+}
