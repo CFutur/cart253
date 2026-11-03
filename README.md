@@ -156,7 +156,7 @@
 
 ### Ominous voice...
 
-![16 prototype](/topics/images-prototypes/ominous-voice.png.png)
+![16 prototype](/topics/images-prototypes/ominous-voice.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype1)
 
