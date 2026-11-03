@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Ominous voice. 
 
-AUTHOR NAME
+Clara Fioramore
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype1)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This prototype is an ominous voice speaking to you with a bit of glitching. The only control required is a keyboard, mouse or maybe even just tapping on mobile. 
 
 ## Attribution
 

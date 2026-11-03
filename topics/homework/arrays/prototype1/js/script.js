@@ -3,6 +3,7 @@
  * Clara Fioramore
  * 
  * This prototype is to get used to using arrays in a code of my own, by having an ominous voice speak to the user as they click on their mouse. 
+ * helped by code of Pippin Barr on notes of "Sequential arrays in pratice" and also by "Array" in p5js
  */
 
 "use strict";
