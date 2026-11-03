@@ -60,7 +60,9 @@ function drawVoiceLine() {
     let x = random(100, 200)
     let y = random(100, 200)
     push();
-    fill("#1a1515") //makes my voice lines almost fully black.
+    fill("#909090") //makes my voice lines grey.
+    stroke("#4e0d0d"); // made the stroke around the letters red and oversized to make the kind of glitchy effect
+    strokeWeight(20);//and make the stroke oversized to make the kind of glitchy effect around my letters
     textSize(20); //makes the voice lines small enough to always fully show on canvas but big enough to read
     textAlign(CENTER, CENTER); //centers it in the middle so it doesnt go off the side and user cant read text
     text(currentLine, x, y); // text currentline = whichever number in my array (0 to start), random x and random y
