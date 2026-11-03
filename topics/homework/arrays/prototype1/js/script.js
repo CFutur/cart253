@@ -2,7 +2,7 @@
  * Ominous voice...
  * Clara Fioramore
  * 
- * This prototype is to get used to using arrays in a code of my own, by having an ominous voice speak to the user a they click on their mouse. 
+ * This prototype is to get used to using arrays in a code of my own, by having an ominous voice speak to the user as they click on their mouse. 
  */
 
 "use strict";
@@ -21,15 +21,23 @@ let voice = [
     "How are you still here?",
     "Were you... meant t=o be?",
     "0h- w3l|...",
-    "St4y $4f3 0ut th^er3..."
+    "St4y $4f3 0ut th^er3...",
+    "...",
+    "...",
+    "...",
+    "..."
 ];
 let voiceIndex = 0;
+
+let glitchSquares = [
+
+]
 /**
  * 
 */
 function setup() {
     createCanvas(400, 400);
-    frameRate(10);
+    frameRate(8);
     // background("#5b1313")
     // drawVoiceLine();
 }
@@ -43,12 +51,6 @@ function draw() {
     drawVoiceLine();
     // const currentLine = voice[voiceIndex]
 }
-function mousePressed() {
-    voiceIndex = voiceIndex + 1;
-    // Or: speechIndex += 1;
-    // Or: speechIndex++;
-}
-
 
 function drawVoiceLine() {
     let currentLine = voice[voiceIndex]
@@ -65,4 +67,13 @@ function drawVoiceLine() {
     // text(currentLine, 200, 200);
     pop();
 
+}
+function mousePressed() {
+    // voiceIndex = voiceIndex + 1;
+    // Or: speechIndex += 1;
+    voiceIndex++;
+
+    if (voiceIndex >= voice.length) {
+        voiceIndex = 0;
+    }
 }
