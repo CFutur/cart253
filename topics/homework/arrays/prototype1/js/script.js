@@ -26,7 +26,7 @@ let voiceIndex = 0;
  * 
 */
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(400, 400);
     background("#5b1313")
 }
 
@@ -35,5 +35,25 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    let currentLine = voice[voiceIndex]
 
+    push();
+    fill("#1a1515")
+    textSize(40);
+    // textAlign(CENTER, CENTER);
+    textAlign(random([1], [300]), random([1], [400]));
+    text(currentLine, random, random);
+    pop();
+    // drawLine();
 }
+
+
+// function drawLine() {
+//     push();
+//     fill("#1a1515")
+//     textSize(40);
+//     textAlign(CENTER, CENTER);
+//     // textAlign(random([1], [300]), random([1], [400]));
+//     text(currentLine, width / 2, height / 2);
+//     pop();
+// }
