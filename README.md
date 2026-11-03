@@ -156,7 +156,7 @@
 
 ### prot. 1 (to be changed)
 
-![16 prototype](/topics/images-prototypes/.png)
+![16 prototype](/topics/images-prototypes/ominous-voice.png.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype1)
 
