@@ -28,52 +28,49 @@ let voice = [
     "...",
     "..."
 ];
+// lets the first index in my array appear on screen 0 =  "Good evening subject 2418"
 let voiceIndex = 0;
 
+//this is to add some random squares glitching in colour if I have time to expand on this prototype.
 let glitchSquares = [
 
 ]
 /**
- * 
+ * This sets up my canvas, and also my frame rate of my voice lines "glitching out"
 */
 function setup() {
     createCanvas(400, 400);
+    //this slows down the framr rate so that the user is able to read the text on screen, since it was going too fast before.
     frameRate(8);
-    // background("#5b1313")
-    // drawVoiceLine();
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * this draws my background in a dark red colour, and also draws my voice line(s) by inserting a function named drawVoiceLine();
 */
 function draw() {
     background("#5b1313")
     drawVoiceLine();
-    // const currentLine = voice[voiceIndex]
 }
 
 function drawVoiceLine() {
+    //telling the code that the line appearing on screen is the 0 (aka first line) in the index of voice lines. 
     let currentLine = voice[voiceIndex]
+    //lets the position of my x and y be randomized and placed between 100 and 300 on my canvas. (these numbers allow the voice lines to be always be fully readable and actually appear on canvas, not off canvas.)
     let x = random(100, 300)
     let y = random(100, 300)
-    console.log("hi!")
     push();
-    fill("#1a1515")
-    textSize(20);
-    textAlign(CENTER, CENTER);
-    //textAlign(x, y);
-    //text(currentLine, random(1, 100), random(1, 400));
-    text(currentLine, x, y);
-    // text(currentLine, 200, 200);
+    fill("#1a1515") //makes my voice lines almost fully black.
+    textSize(20); //makes the voice lines small enough to always fully show on canvas but big enough to read
+    textAlign(CENTER, CENTER); //centers it in the middle so it doesnt go off the side and user cant read text
+    text(currentLine, x, y); // text currentline = whichever number in my array (0 to start), random x and random y
     pop();
 
 }
 function mousePressed() {
-    // voiceIndex = voiceIndex + 1;
-    // Or: speechIndex += 1;
+    // add one more to my index everytime i click, so start from 0 +1 = 1+1 =2, etc to go through the entire array
     voiceIndex++;
-
+    //if the number in my index is past the lenght of my array (19), then make the voice line in the middle go back to 0 (so the first voice line)
     if (voiceIndex >= voice.length) {
         voiceIndex = 0;
     }
