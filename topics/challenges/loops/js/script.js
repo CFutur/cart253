@@ -28,13 +28,13 @@ function draw() {
     let lineThick = 0;
     let strokeColor2 = 0;
     let lineThick2 = 0;
-    // for (let i = 0; i <= width; i += 2) {
-    //     push();
-    //     let strokeColor3 = map(i, 0, width, 50, 200);
-    //     stroke(strokeColor3);
-    //     line(i, 0, i, height);
-    //     pop();
-    // }
+    for (let i = 0; i <= width; i += 2) {
+        push();
+        let strokeColor3 = map(i, 0, width, 50, 200);
+        stroke(strokeColor3);
+        line(i, 0, i, height);
+        pop();
+    }
     for (let a = 0; a <= height; a += 2) {
         push();
         let strokeColor4 = map(a, 0, height, 0, 100);
@@ -42,25 +42,25 @@ function draw() {
         line(width, a, 0, a);
         pop();
     }
-    // while (x <= width) {
-    //     push();
-    //     stroke(strokeColor)
-    //     strokeWeight(lineThick);
-    //     line(x, 0, x, height);
-    //     x += 50;
-    //     strokeColor += 25;
-    //     lineThick += 3;
-    //     pop();
-    // }
-    // while (y <= height) {
-    //     push();
-    //     stroke(strokeColor2);
-    //     strokeWeight(lineThick2);
-    //     line(width, y, 0, y);
-    //     y += 50;
-    //     strokeColor2 += 25;
-    //     lineThick2 += 3;
-    //     pop();
-    // }
+    while (x <= width) {
+        push();
+        stroke(strokeColor)
+        strokeWeight(lineThick);
+        line(x, 0, x, height);
+        x += 50;
+        strokeColor += 25;
+        lineThick += 3;
+        pop();
+    }
+    while (y <= height) {
+        push();
+        stroke(strokeColor2);
+        strokeWeight(lineThick2);
+        line(width, y, 0, y);
+        y += 50;
+        strokeColor2 += 25;
+        lineThick2 += 3;
+        pop();
+    }
 
 }
