@@ -172,7 +172,7 @@
 
 ### prot. 3 (to be changed)
 
-![18 prototype](/topics/images-prototypes/.png)
+![18 prototype](/topics/images-prototypes/abstract-planet-rework.png.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype3)
 
