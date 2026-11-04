@@ -36,12 +36,38 @@ let planets = [
         y: 220,
         size: 150,
         colour: "#281c3c"
-    }
+    },
     {
         x: 500,
         y: 150,
         size: 200,
         colour: "#1f3e5a"
+    }
+]
+let moons = [
+    {
+        x: 820,
+        y: 400,
+        size: 300,
+        colour: "#c8c8c8"
+    },
+    {
+        x: 760,
+        y: 330,
+        size: 50,
+        colour: "#969696"
+    },
+    {
+        x: 740,
+        y: 450,
+        size: 70,
+        colour: "#969696"
+    },
+    {
+        x: 870,
+        y: 400,
+        size: 50,
+        colour: "#969696"
     }
 ]
 
@@ -68,6 +94,10 @@ function draw() {
     for (let planet of planets) {
         drawPlanets(planet);
     }
+    for (let moons of moon) {
+        drawMoons(moon);
+    }
+}
 }
 drawMoon();
 
@@ -88,6 +118,12 @@ function createStars() {
     }
     return star;
 }
+function drawPlanets(planet) {
+    push();
+    fill(planet.colour)
+    ellipse(planet.x, planet.y, planet.size);
+    pop();
+}
 function createPlanets() {
     let planet = {
         x: planets.x,
@@ -97,18 +133,6 @@ function createPlanets() {
     }
     return planet;
 }
-//Now drawing some planets that will not move on the background
-function drawPlanets() {
-    push();
-    //purple planet bottom right corner
-    fill(40, 28, 60);
-    ellipse(900, 220, 150, 150);
-    //blue bigger planet middle up
-    fill(31, 62, 90);
-    ellipse(500, 150, 200, 200);
-    pop();
-}
-
 /*Now I'll be adding a moon that is shadowing a star (the sun) to create an eclipse
 *
 *the star (sun) will be created in the star function. 
