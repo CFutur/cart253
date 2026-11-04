@@ -60,7 +60,7 @@ But oh well, I find them very useful and will find them even better as I continu
 
 Also my first prototype, I'd love to be able to like, enter answers like two buttons and you get a different answer each time. 
 
-![Dialogue option idea](/topics/images-prototypes/ominous-voice-idea.png.png)
+![Dialogue option idea](/topics/images-prototypes/ominous-voice-idea.png)
 
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
