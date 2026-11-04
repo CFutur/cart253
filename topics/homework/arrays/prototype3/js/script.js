@@ -52,16 +52,16 @@ let mousePlanets = [
         colour: "#145051"
     },
     {
-        x: 500,
-        y: 150,
-        size: 200,
-        colour: "#1f3e5a"
+        x: mouseX,
+        y: mouseY,
+        size: 150,
+        colour: "#1c253c"
     },
     {
         x: mouseX,
         y: mouseY,
-        size: 110,
-        colour: "#145051"
+        size: 80,
+        colour: "#3c1c31"
     },
 ]
 let moons = [
