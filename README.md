@@ -164,7 +164,7 @@
 
 ### Selfie in a snow storm
 
-![17 prototype](/topics/images-prototypes/snow-photo.png.png)
+![17 prototype](/topics/images-prototypes/snow-photo.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype2)
 
@@ -172,7 +172,7 @@
 
 ### Rework of galactical experience
 
-![18 prototype](/topics/images-prototypes/abstract-planet-rework.png.png)
+![18 prototype](/topics/images-prototypes/abstract-planet-rework.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype3)
 
