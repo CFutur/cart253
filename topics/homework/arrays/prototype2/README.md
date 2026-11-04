@@ -1,12 +1,14 @@
-# TITLE OF PROJECT
+# Selfie in a snow storm!
 
-AUTHOR NAME
+Clara Fioramore
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype2)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This is to have your webcam open with a snow storm infront of you, without getting cold or wet!
+
+Click or press down on mouse to start (and continue) the snow storm!
 
 ## Attribution
 
