@@ -130,6 +130,8 @@
 ---------------------------------------------------------------------------------------------
 ## Functions
 
+[My journal entry](journal.md)
+
 ### Abstract art
 
 ![13 prototype](/topics/images-prototypes/abstract.png)
@@ -157,6 +159,8 @@
 -----------------------------------------------------------------------------------
 
 ## Functions
+
+[My journal entry](journal.md)
 
 ### Ominous voice...
 
