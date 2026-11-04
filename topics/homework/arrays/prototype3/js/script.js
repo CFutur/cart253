@@ -44,6 +44,26 @@ let planets = [
         colour: "#1f3e5a"
     }
 ]
+let mousePlanets = [
+    {
+        x: mouseX,
+        y: mouseY,
+        size: 110,
+        colour: "#145051"
+    },
+    {
+        x: 500,
+        y: 150,
+        size: 200,
+        colour: "#1f3e5a"
+    },
+    {
+        x: mouseX,
+        y: mouseY,
+        size: 110,
+        colour: "#145051"
+    },
+]
 let moons = [
     {
         x: 820,
@@ -94,14 +114,10 @@ function draw() {
     for (let planet of planets) {
         drawPlanets(planet);
     }
-    for (let moons of moon) {
+    for (let moon of moons) {
         drawMoons(moon);
     }
 }
-}
-drawMoon();
-
-
 
 function drawStars(star) {
     push();
@@ -133,24 +149,18 @@ function createPlanets() {
     }
     return planet;
 }
-/*Now I'll be adding a moon that is shadowing a star (the sun) to create an eclipse
-*
-*the star (sun) will be created in the star function. 
-*/
-function drawMoon() {
+function drawMoons(moon) {
     push();
-    //Adding big moon light grey bottom right
-    fill(200, 200, 200);
-    ellipse(820, 400, 300, 300);
-    //now adding the smaller darker grey circles for craters
-    //small top left crater
-    fill(150, 150, 150);
-    ellipse(760, 330, 50, 50);
-    //less small crater bottom left
-    fill(150, 150, 150);
-    ellipse(740, 450, 70, 70);
-    //smallest crater middle right
-    fill(150, 150, 150);
-    ellipse(870, 400, 50, 50);
+    fill(moon.colour)
+    ellipse(moon.x, moon.y, moon.size);
     pop();
+}
+function createMoons() {
+    let moon = {
+        x: moons.x,
+        y: moons.y,
+        size: moons.size,
+        fill: moons.colour,
+    }
+    return moon;
 }
