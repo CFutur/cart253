@@ -162,9 +162,9 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/arrays/prototype1)
 
-### prot. 2 (to be changed)
+### Selfie in a snow storm
 
-![17 prototype](/topics/images-prototypes/.png)
+![17 prototype](/topics/images-prototypes/snow-photo.png.png)
 
 [View online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype2)
 
