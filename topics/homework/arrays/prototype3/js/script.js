@@ -44,26 +44,6 @@ let planets = [
         colour: "#1f3e5a"
     }
 ]
-let mousePlanets = [
-    {
-        x: mouseX,
-        y: mouseY,
-        size: 110,
-        colour: "#145051"
-    },
-    {
-        x: mouseX,
-        y: mouseY,
-        size: 150,
-        colour: "#1c253c"
-    },
-    {
-        x: mouseX,
-        y: mouseY,
-        size: 80,
-        colour: "#3c1c31"
-    },
-]
 let moons = [
     {
         x: 820,
@@ -89,6 +69,26 @@ let moons = [
         size: 50,
         colour: "#969696"
     }
+]
+let mousePlanets = [
+    {
+        x: 0,
+        y: 0,
+        size: 110,
+        colour: "#145051"
+    },
+    {
+        x: 0,
+        y: 0,
+        size: 150,
+        colour: "#1c253c"
+    },
+    {
+        x: 0,
+        y: 0,
+        size: 80,
+        colour: "#3c1c31"
+    },
 ]
 
 /**
@@ -117,7 +117,27 @@ function draw() {
     for (let moon of moons) {
         drawMoons(moon);
     }
+    for (let mousePlanet of mousePlanets) {
+        drawMousePlanets(mousePlanet);
+    }
 }
+
+function drawMousePlanets(mousePlanet) {
+    push();
+    fill(mousePlanet.colour)
+    ellipse(mousePlanet.x, mousePlanet.y, mousePlanet.size);
+    pop();
+}
+function createMousePlanet() {
+    let mousePlanet = {
+        x: mouseX,
+        y: mouseY,
+        size: mousePlanets.size,
+        fill: mousePlanets.colour,
+    }
+    return mousePlanet;
+}
+
 
 function drawStars(star) {
     push();
