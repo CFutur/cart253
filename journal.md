@@ -65,4 +65,4 @@ Also my first prototype, I'd love to be able to like, enter answers like two but
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
- ![halloween photobooth idea](/topics/prototypes/images/screenshot.png.png);
+ ![Wesbite screenshot](/topics/prototypes/images/screenshot.png);
