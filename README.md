@@ -154,6 +154,10 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/functions/prototype3)
 
+-----------------------------------------------------------------------------------
+
+## Functions
+
 ### Ominous voice...
 
 ![16 prototype](/topics/images-prototypes/ominous-voice.png)
