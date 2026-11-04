@@ -1,12 +1,14 @@
-# TITLE OF PROJECT
+# Galactical experience!
 
-AUTHOR NAME
+Clara Fioramore
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://CFutur.github.io/cart253/topics/homework/arrays/prototype3)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This is simply a bunch of planet, stars and a moon. Move your mouse around to see some planets flying.
+
+This is a rework of my first ever prototype. 
 
 ## Attribution
 
