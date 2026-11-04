@@ -11,10 +11,11 @@
 
 "use strict";
 let capture;
+//array of snowflakes with non in it yet because we will be adding them with push
 let snowflakes = [];
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * this creates my canvas, captures with webcam, hides it and also contains the "if the amount of snowflakes is less or equal than 2500, add one more with each click."
 */
 function setup() {
     createCanvas(windowWidth, windowHeight)
@@ -26,6 +27,7 @@ function setup() {
     // capture.size(400, 500);
     //then we use capture.hide() for WHAT I UNDERSTOOD to remove the html element? because apparenrly when there is a createCapture, it creates two webcam, one ontop of the other, but we only wanna keep one and turn it into a draw image. i think. 
     capture.hide()
+
     for (let i = 0; i <= 2500; i++) {
         snowflakes.push();
     }
@@ -45,16 +47,19 @@ function draw() {
         moveSnowflake(snowflake);
         drawSnowflake(snowflake);
     }
-
+    checkMouse();
 }
-function mousePressed() {
+function checkMouse() {
     console.log("hi")
-    let snowflake = createSnowflake();
-    snowflakes.push(snowflake);
+    if (mouseIsPressed === true) {
+        let snowflake = createSnowflake();
+        snowflakes.push(snowflake);
+    }
+    else { let snowflake = 0; }
 }
 
 function moveSnowflake(snowflake) {
-    let ySpeed = 100 / snowflake.size;
+    let ySpeed = 200 / snowflake.size;
     snowflake.y += ySpeed;
 
 }
@@ -71,9 +76,9 @@ function drawSnowflake(snowflake) {
 
 function createSnowflake() {
     let snowflake = {
-        x: random(0, width),
+        x: random(50, width),
         y: random(-height, 0),
-        size: random(5, 25),
+        size: random(5, 20),
     };
     // Return the random fly
     return snowflake;
