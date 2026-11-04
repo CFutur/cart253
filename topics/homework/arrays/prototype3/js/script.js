@@ -7,11 +7,14 @@
  * This first prototype will have a space theme playing around with the object ontop of the cursor
  * 
  * ANDDD since this is the last prototype as homework, I thought it would almost be nostalgic to go back and make this code way shorter and cleaner!
+ * 
+ * Here's what I changed: 
+ * put all of my repetive ellipse into arrays and then placed the planets that were drawn directly in draw, in an event and then only had to write the push and pop thing once. 
  */
 
 "use strict";
 
-let stars = [
+let stars = [ //arrays for my 3 white and off white stars 
     {
         x: 850,
         y: 50,
@@ -31,7 +34,7 @@ let stars = [
         colour: "#fdf4dc"
     }
 ]
-let planets = [
+let planets = [ //array for my two big planet that dont move
     {
         x: 900,
         y: 220,
@@ -45,7 +48,7 @@ let planets = [
         colour: "#1f3e5a"
     }
 ]
-let moons = [
+let moons = [ //array for the big moon and its tiny craters. 
     {
         x: 820,
         y: 400,
@@ -98,12 +101,12 @@ function draw() {
     for (let moon of moons) {
         drawMoons(moon);
     }
-
+    // 3 different planets, following my mouse, their sizes and their colours.
     drawMousePlanets(mouseX, mouseY, 110, "#145051");
     drawMousePlanets(mouseX, mouseX, 150, "#1c253c");
     drawMousePlanets(mouseY, mouseY, 80, "#3c1c31");
 }
-
+//                         (this is the event with my parameters in them)
 function drawMousePlanets(x, y, size, colour) {
     push();
     noStroke();
@@ -111,49 +114,55 @@ function drawMousePlanets(x, y, size, colour) {
     ellipse(x, y, size);
     pop();
 }
-
+//this function takes the star, places it in my fill, ellipse, etc. then, brings it upstairs in the loop let star of stars, then takes the parameters of stars in my array and inserts it on canvas. 
 function drawStars(star) {
     push();
     fill(star.colour)
     ellipse(star.x, star.y, star.size);
     pop();
 }
-function createStars() {
-    let star = {
-        x: stars.x,
-        y: stars.y,
-        size: stars.size,
-        fill: stars.colour,
-    }
-    return star;
-}
+
+// FOR ALL OF MY FUNCTIONS CREATE STARS, I REALIZED I DIDNT NEED THEM, SINCE MY OBJECTS ARE NOT MOVING. REALIZED IT TOO LATE SO IM JUST COMMENTING THEM, IN CASE I EVER WANNA MAKE MY PLANET MOVE
+// function createStars() {
+//     let star = {
+//         x: stars.x,
+//         y: stars.y,
+//         size: stars.size,
+//         fill: stars.colour,
+//     }
+//     return star;
+// }
+
+//same process as stars
 function drawPlanets(planet) {
     push();
     fill(planet.colour)
     ellipse(planet.x, planet.y, planet.size);
     pop();
 }
-function createPlanets() {
-    let planet = {
-        x: planets.x,
-        y: planets.y,
-        size: planets.size,
-        fill: planets.colour,
-    }
-    return planet;
-}
+// function createPlanets() {
+//     let planet = {
+//         x: planets.x,
+//         y: planets.y,
+//         size: planets.size,
+//         fill: planets.colour,
+//     }
+//     return planet;
+// }
+
+//same process as stars and planets. 
 function drawMoons(moon) {
     push();
     fill(moon.colour)
     ellipse(moon.x, moon.y, moon.size);
     pop();
 }
-function createMoons() {
-    let moon = {
-        x: moons.x,
-        y: moons.y,
-        size: moons.size,
-        fill: moons.colour,
-    }
-    return moon;
-}
+// function createMoons() {
+//     let moon = {
+//         x: moons.x,
+//         y: moons.y,
+//         size: moons.size,
+//         fill: moons.colour,
+//     }
+//     return moon;
+// }
