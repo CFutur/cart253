@@ -46,7 +46,22 @@ If ever I'd like to expand on this photobooth idea more, I could create multiple
 
 Here's a little snippet of what halloween might look like, draw by hand cause it is hard drawing on the computer. 
 
-![halloween photobooth idea](/topics/images-prototypes/halloween-photobooth-idea.png);
+![halloween photobooth idea](/topics/images-prototypes/halloween-photobooth-idea.png)
+
+## 2026-11-03
+
+Arrays are SOMETIMES a pain in my BUTT. I totally see why they're useful and why I will cherish them later on, but right now, it feels harder to do things that was easier to do before, weirdly enough. 
+
+Like in my third prototype, when I took my planets that followed my mouse and tried turning it into an array, it just WAS NOT WORKING. And it is so frustrating because, well, it evidently worked before in a messier but easier to create code. And then I had to do research to figure out that, the mouseX can only be called after my draw, to get the complete library of p5js, so it calling it before in my arrays was useless and js just could not understand what I was talking about. 
+
+Now, I know this pain will not last and I will be so grateful for building good habits when coding, but BOY OH BOY, do I sometimes wish I could be placing like 15 push(); and pop(); and everything in between and watch this code be hell for everyone using it.
+
+But oh well, I find them very useful and will find them even better as I continue using them, and I honestly am very excited to try loops, they sound like a LOT of fun. 
+
+Also my first prototype, I'd love to be able to like, enter answers like two buttons and you get a different answer each time. 
+
+![Dialogue option idea](/topics/images-prototypes/ominous-voice-idea.png.png)
+
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
