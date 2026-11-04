@@ -170,7 +170,7 @@
 
 [View code](https://github.com/CFutur/cart253/tree/main/topics/homework/arrays/prototype2)
 
-### prot. 3 (to be changed)
+### Rework of galactical experience
 
 ![18 prototype](/topics/images-prototypes/abstract-planet-rework.png.png)
 
