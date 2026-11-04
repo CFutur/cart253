@@ -11,6 +11,8 @@
 
 "use strict";
 let capture;
+let snowflakes = [];
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -24,6 +26,9 @@ function setup() {
     // capture.size(400, 500);
     //then we use capture.hide() for WHAT I UNDERSTOOD to remove the html element? because apparenrly when there is a createCapture, it creates two webcam, one ontop of the other, but we only wanna keep one and turn it into a draw image. i think. 
     capture.hide()
+    for (let i = 0; i <= 2500; i++) {
+        snowflakes.push();
+    }
 }
 
 
@@ -35,4 +40,41 @@ function draw() {
     //imageMode(CENTER) uses the second and third parameters of the image as a center point, if two additional parameters are added, they're used to set the image's width and height
     imageMode(CENTER)
     image(capture, 630, 270, 600, 400);
+
+    for (let snowflake of snowflakes) {
+        moveSnowflake(snowflake);
+        drawSnowflake(snowflake);
+    }
+
+}
+function mousePressed() {
+    console.log("hi")
+    let snowflake = createSnowflake();
+    snowflakes.push(snowflake);
+}
+
+function moveSnowflake(snowflake) {
+    let ySpeed = 100 / snowflake.size;
+    snowflake.y += ySpeed;
+
+}
+
+function drawSnowflake(snowflake) {
+    push();
+    noStroke();
+    fill(255);
+    // ellipse(200, 200, 300)
+    ellipse(snowflake.x, snowflake.y, snowflake.size)
+    pop();
+}
+
+
+function createSnowflake() {
+    let snowflake = {
+        x: random(0, width),
+        y: random(-height, 0),
+        size: random(5, 25),
+    };
+    // Return the random fly
+    return snowflake;
 }
