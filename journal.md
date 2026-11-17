@@ -66,24 +66,35 @@ Also my first prototype, I'd love to be able to like, enter answers like two but
 
 This is my first journal entry for our final prototype! 
 
-Truthfully, this week I did not work much on my progress but I did get an idea I'm going to be sticking with and even thought of ideas to add to my hangman as it is evolving. I will start with the basic hangman idea, having list of words as data in a JSON file and then having it randomized everytime someone wants to play. Then the expands of the game could include :
-- Having longer and shorter words instead of alwyas having the same amount of letters
+Truthfully, this week I did not work much on my progress, but I did get an idea I'm going to be sticking with and even thought of ideas to add to my hangman as it is evolving. I will start with the basic hangman idea, having list of words as data in a JSON file and then having it randomized every time someone wants to play. Then the expands of the game could include:
+- Having longer and shorter words instead of always having the same amount of letters
 - Having words containing hyphens
 - Giving categories to the player (or not...)
-- Including a difficulty homepage where the words can be longer or shorter and with or whithout categories. The two extreme difficulty choices will probably be goofier than anything, but I do think it is fun to allow the user to choose their own experience.
+- Including a difficulty homepage where the words can be longer or shorter and with or without categories. The two extreme difficulty choices will probably be goofier than anything, but I do think it is fun to allow the user to choose their own experience.
 I still have some stuff I am unsure how I will want to go about it, like will I have the keys on the screen and allow the user to press on them with their mouse, or should I use the keyboard and input the keys directly on the hangman line.
+
 Cons and pros of the keys on the screen:
-Mobile friendly, clearer to see which one you pressed(the "keys" could change colour if already pressed), seems more childish, takes up more space.
+Mobile friendly, clearer to see which one you pressed (the "keys" could change colour if already pressed), seems more childish, takes up more space.
 Cons and pros of the keyboard keys:
 NOT mobile friendly (duh), less childish, takes up less space, (I could make the letters appear underneath the hangman bar).
 
-The thought of the hangman came to seeing what a lot of people who just began coding did as their projects. My dad's was ping-pong, and I've seen snake, a simple calculator, etc. I then thought of hangman and went to see online if the idea had been done. (It had...) BUT, I did not care since I honestly want to have my own little project that I can call my bigger beginnner one. And by adding stuff to it, I could make it even a bit more fancy than a simple hangman. 
+The thought of the hangman came to seeing what a lot of people who just began coding did as their projects. My dad's was ping-pong, and I've seen snake, a simple calculator, etc. I then thought of hangman and went to see online if the idea had been done. (It had...) BUT I did not care since I honestly want to have my own little project that I can call my bigger beginner one. And by adding stuff to it, I could make it even a bit fancier than a simple hangman. 
 
-I drew some sketches as to what I think the layout could be and also what every add ons could serve as a purpose. 
+I drew some sketches as to what I think the layout could be and what every add ons could serve as a purpose. 
 
- ![homepage](/final-prototype/assets/homepage.jpeg)
- ![hangman](/final-prototype/assets/hangman.jpeg)
+![homepage](/final-prototype/assets/homepage.jpeg)
+Disgustingly difficult: Data of longest words + no categories
+Very difficult: No categories + normal length words and words that use hyphens
+Medium: category given + normal length word
+Easy (I'm a baby): Very small words and given categories (Or it could be very fun if the easy category just slowly made the letters appear as time passed or if the word was written in tiny on the screen somewhere)
+I don't feel like playing: Just a blank page or if I were to expand on this in the future, another totally different game. 
+![hangman](/final-prototype/assets/hangman.jpeg)
+Category given in the middle top
+Six lives given with just the lines of the hangman, but it could be nine lives if I were to include the 3 lines from the pole. (The nine lives could be for the very difficult one...? or the disgustingly hard one...?)
+The underscore for each letter would appear at random for the length of the word, maybe even the number of letters needed written underneath the lines. (That is not drawn in the picture, I just thought of it)
+Draw on keyboard on the screen that when you press, they change colour or darkening them to signify that you have used them OR you use the keyboard letters and if they are correct, they appear on the lines (like usual) but if they aren't, they're written underneath.
 
- Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
+
+Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
  ![Wesbite screenshot](/topics/prototypes/images/screenshot.png)
