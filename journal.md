@@ -81,8 +81,8 @@ The thought of the hangman came to seeing what a lot of people who just began co
 
 I drew some sketches as to what I think the layout could be and also what every add ons could serve as a purpose. 
 
- ![homepage](/final-prototype/assets/homepage.png)
-  ![hangman](/final-prototype/assets/hangman.png)
+ ![homepage](/final-prototype/assets/homepage.jpeg)
+ ![hangman](/final-prototype/assets/hangman.jpeg)
 
  Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
