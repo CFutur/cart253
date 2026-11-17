@@ -62,7 +62,7 @@ Also my first prototype, I'd love to be able to like, enter answers like two but
 
 ![Dialogue option idea](/topics/images-prototypes/ominous-voice-idea.png)
 
-## 2026-11-17
+## 2026-11-17 First week of final prototype
 
 This is my first journal entry for our final prototype! 
 
@@ -94,7 +94,7 @@ Six lives given with just the lines of the hangman, but it could be nine lives i
 The underscore for each letter would appear at random for the length of the word, maybe even the number of letters needed written underneath the lines. (That is not drawn in the picture, I just thought of it)
 Draw on keyboard on the screen that when you press, they change colour or darkening them to signify that you have used them OR you use the keyboard letters and if they are correct, they appear on the lines (like usual) but if they aren't, they're written underneath.
 
-
+-------------------------------------------------------------------------------
 Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
  ![Wesbite screenshot](/topics/prototypes/images/screenshot.png)
