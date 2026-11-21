@@ -7,11 +7,39 @@
  */
 
 "use strict";
+let poles = [
+    {
+        x1: 50,
+        y1: 580,
+        x2: 350,
+        y2: 580,
+        size: 10,
+        colour: "#000000",
+    },
+    {
+        x1: 100,
+        y1: 125,
+        x2: 200,
+        y2: 225,
+        size: 14,
+        colour: "#000000",
+    },
+    {
+        x1: 100,
+        y1: 125,
+        x2: 200,
+        y2: 225,
+        size: 5,
+        colour: "#000000",
+    }
+];
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background("#acced4")
 
 }
 
@@ -20,5 +48,37 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-
+    // Display each fly in the array
+    for (let lines of poles) {
+        drawHangmanPole(lines);
+    }
 }
+
+function drawHangmanPole(lines) {
+    push();
+    stroke(lines.colour);
+    strokeWeight(lines.size)
+    line(lines.x1, lines.y1, lines.x2, lines.y2);
+    pop();
+}
+
+
+// function draw() {
+//     background("#87ceed");
+
+//     // Display each fly in the array
+//     for (let fly of flies) {
+//         drawFly(fly);
+//     }
+// }
+
+// /**
+//  * Draws the provided fly to the canvas
+//  */
+// function drawFly(fly) {
+//     push();
+//     noStroke();
+//     fill(fly.colour);
+//     ellipse(fly.x, fly.y, fly.size);
+//     pop();
+// }
