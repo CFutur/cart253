@@ -7,9 +7,9 @@
  */
 
 "use strict";
-let tarot;
+let word;
 // A global variable to store our fortune in
-let fortune;
+let threeLetterWord;
 
 let poles = [
     {
@@ -45,8 +45,53 @@ let poles = [
         colour: "#000000",
     }
 ];
+
+
+let bonhomme = [
+    { //Head
+        x: 300,
+        y: 280,
+        size: 50,
+        colour: "#000000",
+    },
+    { //torso
+        x1: 300,
+        y1: 330,
+        x2: 300,
+        y2: 500,
+        size: 9,
+        colour: "#000000",
+    },
+    { // left arm
+        x1: 300,
+        y1: 225,
+        x2: 280,
+        y2: 200,
+        size: 9,
+        colour: "#000000",
+    },
+    {
+        x1: 300,
+        y1: 200,
+        x2: 300,
+        y2: 250,
+        size: 9,
+        colour: "#000000",
+    },
+    {
+        x1: 300,
+        y1: 200,
+        x2: 300,
+        y2: 250,
+        size: 9,
+        colour: "#000000",
+    }
+];
+
+
+
 async function preload() {
-    tarot = await loadJSON("assets/hangmanWords.json");
+    word = await loadJSON("assets/hangmanWords.json");
 }
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
@@ -57,11 +102,10 @@ async function setup() {
 
     await preload();
 
-    // Choose a random card
-    let card = random(tarot.hangmanWords);
-    // Choose a random fortune
-    fortune = random(card.three);
-    // threeLetterWords = random(words.three)
+    // choose a random word
+    let randomWord = random(word.hangmanWords);
+    // choose a random 3 letter word
+    threeLetterWord = random(randomWord.three);
 
 
 }
@@ -76,13 +120,17 @@ function draw() {
         drawHangmanPole(lines);
     }
 
-    // Display the fortune
-    push();
-    textSize(18);
-    textAlign(CENTER, CENTER);
-    fill(255, 255, 0);
-    text(fortune, width / 2, height / 2);
-    pop();
+    for (let outlines of bonhomme) {
+        drawHangman(outlines);
+    }
+
+    // // this display is just to test if my data works, the word will not appear like that during hangman.
+    // push();
+    // textSize(18);
+    // textAlign(CENTER, CENTER);
+    // fill(255, 255, 0);
+    // text(threeLetterWord, width / 2, height / 2);
+    // pop();
 }
 
 function drawHangmanPole(lines) {
@@ -94,22 +142,11 @@ function drawHangmanPole(lines) {
 }
 
 
-// function draw() {
-//     background("#87ceed");
-
-//     // Display each fly in the array
-//     for (let fly of flies) {
-//         drawFly(fly);
-//     }
-// }
-
-// /**
-//  * Draws the provided fly to the canvas
-//  */
-// function drawFly(fly) {
-//     push();
-//     noStroke();
-//     fill(fly.colour);
-//     ellipse(fly.x, fly.y, fly.size);
-//     pop();
-// }
+function drawHangman(outlines) {
+    push();
+    stroke(outlines.colour);
+    strokeWeight(outlines.size)
+    line(outlines.x1, outlines.y1, outlines.x2, outlines.y2);
+    ellipse(outlines.x, outlines.y, outlines.size)
+    pop();
+}
