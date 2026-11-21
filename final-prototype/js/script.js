@@ -7,9 +7,11 @@
  */
 
 "use strict";
+let stringOfLetters = "abcdefghijklmnopqrstuvwxyz";
 let word;
 // A global variable to store our fortune in
 let threeLetterWord;
+const fiveRandomWords = ["piano", "store", "global", "please", "whisky"]
 
 let poles = [
     {
@@ -110,11 +112,22 @@ async function setup() {
 
     await preload();
 
-    // choose a random word
-    let randomWord = random(word.hangmanWords);
-    // choose a random 3 letter word
-    threeLetterWord = random(randomWord.three);
+    let randomWord = random(fiveRandomWords)
+    console.log(randomWord)
 
+
+    // // choose a random word
+    // let randomWord = fiveRandomWords[random([1, 5])];
+    // console.log(randomWord);
+    // // choose a random 3 letter word
+    // threeLetterWord = random(randomWord.three);
+
+    // let btn = createButton('Refresh page to draw!'); //create the button and the text on it
+    // btn.position(500, 450); //position the button under the canvas
+    // //when clicking on the button with mouse, reload the entire window to create new abstract art
+    // btn.mousePressed(() => {
+    //     window.location.reload();
+    // });
 
 }
 
@@ -128,10 +141,10 @@ function draw() {
         drawHangmanPole(lines);
     }
 
-    for (let outlines of bonhomme) {
-        drawHangman(outlines);
-    }
-
+    // for (let outlines of bonhomme) {
+    //     drawHangman(outlines);
+    // }
+    // drawHangman(bonhomme[0])
     // // this display is just to test if my data works, the word will not appear like that during hangman.
     // push();
     // textSize(18);
@@ -139,6 +152,9 @@ function draw() {
     // fill(255, 255, 0);
     // text(threeLetterWord, width / 2, height / 2);
     // pop();
+    push();
+    text(stringOfLetters, 100, 100, 200, 200)
+    pop();
 }
 
 function drawHangmanPole(lines) {
@@ -150,11 +166,12 @@ function drawHangmanPole(lines) {
 }
 
 
-function drawHangman(outlines) {
+function drawHangman(bodyPart) {
     push();
-    stroke(outlines.colour);
-    strokeWeight(outlines.size)
-    line(outlines.x1, outlines.y1, outlines.x2, outlines.y2);
-    ellipse(outlines.x, outlines.y, outlines.size)
+    stroke(bodyPart.colour);
+    strokeWeight(bodyPart.size)
+    line(bodyPart.x1, bodyPart.y1, bodyPart.x2, bodyPart.y2);
+    ellipse(bodyPart.x, bodyPart.y, bodyPart.size)
     pop();
 }
+
