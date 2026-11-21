@@ -12,6 +12,7 @@ let word;
 // A global variable to store our fortune in
 let threeLetterWord;
 const fiveRandomWords = ["piano", "store", "global", "please", "whisky"]
+let randomWord;
 
 let poles = [
     {
@@ -112,10 +113,16 @@ async function setup() {
 
     await preload();
 
-    let randomWord = random(fiveRandomWords)
+    randomWord = random(fiveRandomWords)
     console.log(randomWord)
 
+    for (let lines of poles) {
+        drawHangmanPole(lines);
+    }
 
+    push();
+    text(stringOfLetters, 100, 100, 200, 200)
+    pop();
     // // choose a random word
     // let randomWord = fiveRandomWords[random([1, 5])];
     // console.log(randomWord);
@@ -136,11 +143,6 @@ async function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    // Display each fly in the array
-    for (let lines of poles) {
-        drawHangmanPole(lines);
-    }
-
     // for (let outlines of bonhomme) {
     //     drawHangman(outlines);
     // }
@@ -152,9 +154,11 @@ function draw() {
     // fill(255, 255, 0);
     // text(threeLetterWord, width / 2, height / 2);
     // pop();
-    push();
-    text(stringOfLetters, 100, 100, 200, 200)
-    pop();
+
+
+    // let theLetter = keyPressed;
+    console.log(randomWord[1])
+
 }
 
 function drawHangmanPole(lines) {
@@ -175,3 +179,12 @@ function drawHangman(bodyPart) {
     pop();
 }
 
+function keyPressed() {
+    console.log(key)
+
+    for (let i = 0; i < (randomWord.length); i++) {
+        if (key == randomWord[i]) {
+            console.log("bingo")
+        }
+    }
+}
