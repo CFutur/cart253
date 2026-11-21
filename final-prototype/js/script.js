@@ -7,6 +7,10 @@
  */
 
 "use strict";
+let tarot;
+// A global variable to store our fortune in
+let fortune;
+
 let poles = [
     {
         x1: 50,
@@ -41,13 +45,24 @@ let poles = [
         colour: "#000000",
     }
 ];
-
+async function preload() {
+    tarot = await loadJSON("assets/hangmanWords.json");
+}
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-function setup() {
+async function setup() {
     createCanvas(windowWidth, windowHeight);
     background("#acced4")
+
+    await preload();
+
+    // Choose a random card
+    let card = random(tarot.hangmanWords);
+    // Choose a random fortune
+    fortune = random(card.three);
+    // threeLetterWords = random(words.three)
+
 
 }
 
@@ -60,6 +75,14 @@ function draw() {
     for (let lines of poles) {
         drawHangmanPole(lines);
     }
+
+    // Display the fortune
+    push();
+    textSize(18);
+    textAlign(CENTER, CENTER);
+    fill(255, 255, 0);
+    text(fortune, width / 2, height / 2);
+    pop();
 }
 
 function drawHangmanPole(lines) {
