@@ -178,35 +178,46 @@ function drawHangmanPole(lines) {
 
 function drawHangman(bodyPart) {
     push();
-    stroke(bodyPart.colour);
-    strokeWeight(bodyPart.size)
-    line(bodyPart.x1, bodyPart.y1, bodyPart.x2, bodyPart.y2);
+    // stroke(bodyPart.colour);
+    // strokeWeight(bodyPart.size)
+    // line(bodyPart.x1, bodyPart.y1, bodyPart.x2, bodyPart.y2);
     ellipse(bodyPart.x, bodyPart.y, bodyPart.size)
+    fill(bodyPart.colour);
     pop();
 }
 
 function keyPressed() {
     console.log(key)
     let chosenWord = stringOfLetters.split('');
-    let toto = theWord.split('');
+    let underscore = theWord.split('');
     //this for let loop lets the code register whether or not we clicked a key on our keyboard that was in the random word taken from our list above
     for (let i = 0; i < (randomWord.length); i++) {
+        for (let y = 0; y < (chosenWord.length); y++) {
+            if (key == chosenWord[y]) {
+                // console.log(chosenWord);
+                chosenWord[y] = "_";
+                // console.log(chosenWord);
+                stringOfLetters = chosenWord.join('');
+            }
+
+        }
         if (key == randomWord[i]) {
             // drawHangman(bonhomme[limb])
             // limb++;
             //this for let loops registers "oh, you clicked a key that the random word contained, so remove the letter from the whole alphabetical string and put a "_" instead."
-            for (let y = 0; y < (chosenWord.length); y++) {
-                if (key == chosenWord[y]) {
-                    console.log(chosenWord);
-                    chosenWord[y] = "_";
-                    console.log(chosenWord);
-
-                    stringOfLetters = chosenWord.join('');
-
-
+            for (let z = 0; z < (underscore.length); z++) {
+                if (key == randomWord[z]) {
+                    // console.log(underscore);
+                    underscore[z] = key;
+                    // console.log(underscore);
+                    theWord = underscore.join('');
+                    console.log("sigma");
                 }
             }
         }
+
+
+
     }
 }
 
