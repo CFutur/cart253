@@ -12,7 +12,7 @@ let theWord = "_____";
 let word;
 // A global variable to store our fortune in
 let threeLetterWord;
-const fiveRandomWords = ["piano", "store", "global", "please", "whisky", "boo"]
+const fiveRandomWords = ["piano", "store", "global", "please", "whisky"]
 let randomWord;
 let limb = 0;
 let poles = [
@@ -160,7 +160,7 @@ function draw() {
     // pop();
     push();
     textSize(25)
-    clear();
+    // clear();
     text(stringOfLetters, 100, 100)
     text(theWord, 100, 150, 100, 100)
     pop();
@@ -168,7 +168,6 @@ function draw() {
         drawHangmanPole(lines);
     }
     // let theLetter = keyPressed;
-    console.log(randomWord[1])
 
 }
 
@@ -192,40 +191,77 @@ function drawHangman(bodyPart) {
 }
 
 function keyPressed() {
-    console.log(key)
     let chosenWord = stringOfLetters.split('');
     let underscore = theWord.split('');
-    //this "for" loop will loop the lenght of the word to find
-    for (let i = 0; i < (randomWord.length); i++) {
-        console.log("wordLength");
-        //this one loops the 26 letter of our string
-        for (let y = 0; y < (chosenWord.length); y++) {
-            console.log("Alphabetical");
-            //if a key is pressed, the letter pressed in the string of letters gets replaced by a "_"
-            if (key == chosenWord[y]) {
-                console.log("underscore");
-                // console.log(chosenWord);
-                chosenWord[y] = "_";
-                // console.log(chosenWord);
-                stringOfLetters = chosenWord.join('');
-            }
 
+    //this one loops the 26 letter of our string
+    for (let y = 0; y < (chosenWord.length); y++) {
+        console.log("Alphabetical");
+        //if a key is pressed, the letter pressed in the string of letters gets replaced by a "_"
+        if (key == chosenWord[y]) {
+            console.log("underscore");
+            // console.log(chosenWord);
+            chosenWord[y] = "_";
+            // console.log(chosenWord);
+            stringOfLetters = chosenWord.join('');
         }
-        if (key == randomWord[i]) {
-            // drawHangman(bonhomme[limb])
-            // limb++;
-            //this for let loops registers "oh, you clicked a key that the random word contained, so remove the letter from the whole alphabetical string and put a "_" instead."
-            for (let z = 0; z < (underscore.length); z++) {
-                if (key == randomWord[z]) {
-                    // console.log(underscore);
-                    underscore[z] = key;
-                    // console.log(underscore);
-                    theWord = underscore.join('');
-                    console.log("sigma");
-                }
-            }
-        }
+
     }
+
+    //this for let loops registers "oh, you clicked a key that the random word contained, so remove the letter from the whole alphabetical string and put a "_" instead."
+    for (let z = 0; z < (underscore.length); z++) {
+        if (key == randomWord[z]) {
+            // console.log(underscore);
+            underscore[z] = key;
+            // console.log(underscore);
+            theWord = underscore.join('');
+            console.log("writtenWord");
+        }
+
+
+    }
+
+
+
+
+
+
+    let zozo = false;
+
+    console.log(randomWord);
+
+    for (let x = 0; x < (randomWord.length); x++) {
+        console.log("for");
+        if (key == randomWord[x]) {
+            console.log("true");
+            zozo = true
+        }
+
+        // else {
+        //     console.log("drawHangMan");
+        //     // drawHangman(bonhomme[limb])
+        //     // limb++;
+
+        // }
+
+    }
+
+
+    if (!zozo) {
+        console.log("ooga booga");
+        drawHangman(bonhomme[limb])
+        limb++;
+    }
+
+
+
+    // //this "for" loop will loop the lenght of the word to find
+    // for (let i = 0; i < (randomWord.length); i++) {
+    //     console.log("wordLength");
+
+
+    //     
+    // }
 }
 
 // stringOfLetters
