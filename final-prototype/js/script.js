@@ -7,12 +7,13 @@
  */
 
 "use strict";
+let stupidArray = [false, false, false, false, false, false]
 let stringOfLetters = "abcdefghijklmnopqrstuvwxyz";
 let theWord = "_____";
 let word;
 // A global variable to store our fortune in
 let threeLetterWord;
-const fiveRandomWords = ["piano", "store", "global", "please", "whisky"]
+const fiveRandomWords = ["piano", "store", "water", "ideas", "mario"]
 let randomWord;
 let limb = 0;
 let poles = [
@@ -53,16 +54,16 @@ let poles = [
 
 let bonhomme = [
     { //Head
-        // x: 300,
-        // y: 280,
-        // size: 50,
-        // colour: "#000000",
-        x1: 300,
-        y1: 330,
-        x2: 300,
-        y2: 450,
-        size: 9,
-        colour: "#000000"
+        x: 300,
+        y: 280,
+        size: 50,
+        colour: "#000000",
+        // x1: 300,
+        // y1: 330,
+        // x2: 300,
+        // y2: 450,
+        // size: 9,
+        // colour: "#000000"
     },
     { //torso
         x1: 300,
@@ -147,6 +148,8 @@ async function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    // clear();
+    background("#b8edf7")
     // for (let outlines of bonhomme) {
     //     drawHangman(outlines);
     // }
@@ -160,15 +163,24 @@ function draw() {
     // pop();
     push();
     textSize(25)
-    // clear();
-    text(stringOfLetters, 100, 100)
     text(theWord, 100, 150, 100, 100)
     pop();
     for (let lines of poles) {
         drawHangmanPole(lines);
     }
     // let theLetter = keyPressed;
+    push();
+    textSize(25)
+    text(stringOfLetters, 100, 100)
+    pop();
 
+
+    for (let y = 0; y < 6; y++) {
+        if (stupidArray[y] == true) {
+            drawHangman(bonhomme[y]);
+        }
+    }
+    // if (limb == 6) { alert("LOSER!") }
 }
 
 function drawHangmanPole(lines) {
@@ -185,8 +197,8 @@ function drawHangman(bodyPart) {
     stroke(bodyPart.colour);
     strokeWeight(bodyPart.size)
     line(bodyPart.x1, bodyPart.y1, bodyPart.x2, bodyPart.y2);
-    // ellipse(bodyPart.x, bodyPart.y, bodyPart.size)
-    // fill(bodyPart.colour);
+    ellipse(bodyPart.x, bodyPart.y, bodyPart.size)
+    fill(bodyPart.colour);
     pop();
 }
 
@@ -250,6 +262,7 @@ function keyPressed() {
     if (!zozo) {
         console.log("ooga booga");
         drawHangman(bonhomme[limb])
+        stupidArray[limb] = true;
         limb++;
     }
 
