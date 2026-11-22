@@ -53,10 +53,16 @@ let poles = [
 
 let bonhomme = [
     { //Head
-        x: 300,
-        y: 280,
-        size: 50,
-        colour: "#000000",
+        // x: 300,
+        // y: 280,
+        // size: 50,
+        // colour: "#000000",
+        x1: 300,
+        y1: 330,
+        x2: 300,
+        y2: 450,
+        size: 9,
+        colour: "#000000"
     },
     { //torso
         x1: 300,
@@ -110,7 +116,7 @@ async function preload() {
 */
 async function setup() {
     createCanvas(windowWidth, windowHeight);
-
+    background("#acced4")
 
     await preload();
 
@@ -141,7 +147,6 @@ async function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background("#acced4")
     // for (let outlines of bonhomme) {
     //     drawHangman(outlines);
     // }
@@ -155,7 +160,7 @@ function draw() {
     // pop();
     push();
     textSize(25)
-    // clear();
+    clear();
     text(stringOfLetters, 100, 100)
     text(theWord, 100, 150, 100, 100)
     pop();
@@ -178,11 +183,11 @@ function drawHangmanPole(lines) {
 
 function drawHangman(bodyPart) {
     push();
-    // stroke(bodyPart.colour);
-    // strokeWeight(bodyPart.size)
-    // line(bodyPart.x1, bodyPart.y1, bodyPart.x2, bodyPart.y2);
-    ellipse(bodyPart.x, bodyPart.y, bodyPart.size)
-    fill(bodyPart.colour);
+    stroke(bodyPart.colour);
+    strokeWeight(bodyPart.size)
+    line(bodyPart.x1, bodyPart.y1, bodyPart.x2, bodyPart.y2);
+    // ellipse(bodyPart.x, bodyPart.y, bodyPart.size)
+    // fill(bodyPart.colour);
     pop();
 }
 
@@ -190,10 +195,15 @@ function keyPressed() {
     console.log(key)
     let chosenWord = stringOfLetters.split('');
     let underscore = theWord.split('');
-    //this for let loop lets the code register whether or not we clicked a key on our keyboard that was in the random word taken from our list above
+    //this "for" loop will loop the lenght of the word to find
     for (let i = 0; i < (randomWord.length); i++) {
+        console.log("wordLength");
+        //this one loops the 26 letter of our string
         for (let y = 0; y < (chosenWord.length); y++) {
+            console.log("Alphabetical");
+            //if a key is pressed, the letter pressed in the string of letters gets replaced by a "_"
             if (key == chosenWord[y]) {
+                console.log("underscore");
                 // console.log(chosenWord);
                 chosenWord[y] = "_";
                 // console.log(chosenWord);
@@ -215,9 +225,6 @@ function keyPressed() {
                 }
             }
         }
-
-
-
     }
 }
 
