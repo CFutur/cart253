@@ -8,12 +8,13 @@
 
 "use strict";
 let stringOfLetters = "abcdefghijklmnopqrstuvwxyz";
+let theWord = "_____";
 let word;
 // A global variable to store our fortune in
 let threeLetterWord;
-const fiveRandomWords = ["piano", "store", "global", "please", "whisky"]
+const fiveRandomWords = ["piano", "store", "global", "please", "whisky", "boo"]
 let randomWord;
-
+let limb = 0;
 let poles = [
     {
         x1: 50,
@@ -109,19 +110,16 @@ async function preload() {
 */
 async function setup() {
     createCanvas(windowWidth, windowHeight);
-    background("#acced4")
+
 
     await preload();
 
     randomWord = random(fiveRandomWords)
     console.log(randomWord)
 
-    for (let lines of poles) {
-        drawHangmanPole(lines);
-    }
-
     push();
-    text(stringOfLetters, 100, 100, 200, 200)
+    textSize(25);
+
     pop();
     // // choose a random word
     // let randomWord = fiveRandomWords[random([1, 5])];
@@ -143,6 +141,7 @@ async function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#acced4")
     // for (let outlines of bonhomme) {
     //     drawHangman(outlines);
     // }
@@ -154,8 +153,15 @@ function draw() {
     // fill(255, 255, 0);
     // text(threeLetterWord, width / 2, height / 2);
     // pop();
-
-
+    push();
+    textSize(25)
+    // clear();
+    text(stringOfLetters, 100, 100)
+    text(theWord, 100, 150, 100, 100)
+    pop();
+    for (let lines of poles) {
+        drawHangmanPole(lines);
+    }
     // let theLetter = keyPressed;
     console.log(randomWord[1])
 
@@ -181,10 +187,27 @@ function drawHangman(bodyPart) {
 
 function keyPressed() {
     console.log(key)
-
+    let chosenWord = stringOfLetters.split('');
+    let toto = theWord.split('');
+    //this for let loop lets the code register whether or not we clicked a key on our keyboard that was in the random word taken from our list above
     for (let i = 0; i < (randomWord.length); i++) {
         if (key == randomWord[i]) {
-            console.log("bingo")
+            // drawHangman(bonhomme[limb])
+            // limb++;
+            //this for let loops registers "oh, you clicked a key that the random word contained, so remove the letter from the whole alphabetical string and put a "_" instead."
+            for (let y = 0; y < (chosenWord.length); y++) {
+                if (key == chosenWord[y]) {
+                    console.log(chosenWord);
+                    chosenWord[y] = "_";
+                    console.log(chosenWord);
+
+                    stringOfLetters = chosenWord.join('');
+
+
+                }
+            }
         }
     }
 }
+
+// stringOfLetters
