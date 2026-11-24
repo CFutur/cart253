@@ -8,7 +8,9 @@
 
 "use strict";
 let stupidArray = [false, false, false, false, false, false]
-let stringOfLetters = "abcdefghijklmnopqrstuvwxyz";
+// (this is the correct line of code)
+let stringOfLettersFill = "abcdefghijklmnopqrstuvwxyz";
+let stringOfLetters = "__________________________";
 let theWord = "_____";
 let word;
 // A global variable to store our fortune in
@@ -150,6 +152,18 @@ async function setup() {
 function draw() {
     // clear();
     background("#b8edf7")
+    push();
+    textSize(50)
+    textStyle(BOLD)
+    fill("#f6f885")
+    textFont('Courier New')
+    text('Hangman game', 502, 102)
+    textSize(50)
+    textStyle(BOLD)
+    fill("#496399")
+    textFont('Courier New')
+    text('Hangman game', 500, 100)
+    pop();
     // for (let outlines of bonhomme) {
     //     drawHangman(outlines);
     // }
@@ -170,8 +184,11 @@ function draw() {
     }
     // let theLetter = keyPressed;
     push();
-    textSize(25)
-    text(stringOfLetters, 100, 100)
+    textSize(35)
+    // textStyle(ITALIC);
+    fill("#21386b")
+    textFont('Berlin Sans Fb')
+    text(stringOfLetters, 400, 550)
     pop();
 
 
@@ -180,7 +197,7 @@ function draw() {
             drawHangman(bonhomme[y]);
         }
     }
-    // if (limb == 6) { alert("LOSER!") }
+    if (limb == 6) { text("Game Over"); }
 }
 
 function drawHangmanPole(lines) {
@@ -203,24 +220,29 @@ function drawHangman(bodyPart) {
 }
 
 function keyPressed() {
-    let chosenWord = stringOfLetters.split('');
-    let underscore = theWord.split('');
+    //these lets us split our strings to remove or add individual letters in our game
+    let chosenLetter = stringOfLettersFill.split('');
+    let chosenLetterPlacement = stringOfLetters.split('');
 
     //this one loops the 26 letter of our string
-    for (let y = 0; y < (chosenWord.length); y++) {
+    for (let y = 0; y < (chosenLetter.length); y++) {
         console.log("Alphabetical");
         //if a key is pressed, the letter pressed in the string of letters gets replaced by a "_"
-        if (key == chosenWord[y]) {
+        if (key == chosenLetter[y]) {
             console.log("underscore");
             // console.log(chosenWord);
-            chosenWord[y] = "_";
+            // (this is the correct line of code)
+            // chosenLetter[y] = "_";
+            chosenLetterPlacement[y] = key;
             // console.log(chosenWord);
-            stringOfLetters = chosenWord.join('');
+            stringOfLetters = chosenLetterPlacement.join('');
         }
 
     }
 
-    //this for let loops registers "oh, you clicked a key that the random word contained, so remove the letter from the whole alphabetical string and put a "_" instead."
+    // stringOfLettersFill
+    let underscore = theWord.split('');
+    // this for loop lets my code write on the underscore the letter if it was guessed correctly
     for (let z = 0; z < (underscore.length); z++) {
         if (key == randomWord[z]) {
             // console.log(underscore);
@@ -235,7 +257,7 @@ function keyPressed() {
 
 
 
-
+    //hangman drawing
 
 
     let zozo = false;
