@@ -94,6 +94,29 @@ Six lives given with just the lines of the hangman, but it could be nine lives i
 The underscore for each letter would appear at random for the length of the word, maybe even the number of letters needed written underneath the lines. (That is not drawn in the picture, I just thought of it)
 Draw on keyboard on the screen that when you press, they change colour or darkening them to signify that you have used them OR you use the keyboard letters and if they are correct, they appear on the lines (like usual) but if they aren't, they're written underneath.
 
+## 2026-11-24 Second week of the final prototype
+
+This journal entry will be about the beginning of my path in the hangman game. I chose hangman because it felt like a very nostalgic easy-ish game to create. I was so wrong holy. 
+I first started this journey by searching online for people who had also done a hangman in JavaScript. As I searched and I searched, I only found a couple of examples of people who made hangman game. And to add on to the lack of hangman games, they were all mostly made with a lot more html and CSS than I wanted to dip myself in for this project. And as a third problem in my research, I stared at most of the JavaScript code like a lost toddler. 
+
+As embarrassing as it is, I ended up mindless researching and truthfully not understanding anything and being stuck as to where to begin. But then I begin, I made the little hangman pole that does not move and then also managed to make words of 3 letters in my Json file appear randomly. Then, I got stuck again… Not much progress. 
+My dad then asked me where I was in my progress and saw I hadn’t advanced much, so he helped me.
+
+One skill I realized I hadn’t acquired was the ability to know how to begin any project. With smaller prototypes, it was easier because my project had to revolve around a skill we learned, so I’d start putting stuff down and try because it was smaller and I had more of a clear picture of what I needed to accomplish. So, my dad walked me through the process, let me do what I think I needed to do and helped me when I was feeling stuck.
+With him sitting next to me, we advance a lot more. We managed to use “for loops” to recreate how a hangman works, I fixed some issues, he helped me fix some bigger issues and now it could be a very very small hangman game 😊.
+
+Just alone, I changed the fact that the letters used now appear on screen, instead of disappearing. This change alone took me more than four hours because I still have yet to have the brain of knowing what will work and what will not. So, I try a lot of things, most of them don’t work, I gain a tiny bit of insight on how I might fix it, and then I continue in this direction. It is a tiring process, and a very very long one, but it’s a really great feeling when something works. Works in the non intended way, so you learn from it, until it works in the intended way and you’re so happy. 
+I’ll just include a photo of what my game looks like now, a bit more stylized and proper. It’s slow advancement, but it is very rewarding. 
+
+Before the photo, I’ll include here some stuff I’d like to add now or later depending on the time:
+-	Use a Json file for many lengths of words (difficulty = having underscore be random depending on the length of letters)
+-	Have a Win/Lose pop up and incorporate a try again button instead of refreshing the page (try again button could be there the entire time, to ease the task)
+-	I don’t think I’ll have time, but I want to polish my game way more after and make categories and a main menu to choose the desired category. (difficulty = multiple JS file connected through html)
+
+Okay, now photo time!
+
+![hangmanSecondWeek](/final-prototype/assets/hangmanSecondWeek.png)
+
 -------------------------------------------------------------------------------
 Here's a little screen of the beginning of this website, which, like a pokemon, will evolve with work done on it:
 
