@@ -237,7 +237,6 @@ function keyPressed() {
             // console.log(chosenWord);
             stringOfLetters = chosenLetterPlacement.join('');
         }
-
     }
 
     // stringOfLettersFill
