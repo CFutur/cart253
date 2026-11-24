@@ -116,7 +116,7 @@ async function preload() {
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 async function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(900, 600);
     background("#acced4")
 
     await preload();
@@ -163,7 +163,7 @@ function draw() {
     // pop();
     push();
     textSize(25)
-    text(theWord, 100, 150, 100, 100)
+    text(theWord, 400, 450, 100, 100)
     pop();
     for (let lines of poles) {
         drawHangmanPole(lines);
