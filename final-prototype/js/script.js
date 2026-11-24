@@ -10,7 +10,9 @@
 let stupidArray = [false, false, false, false, false, false]
 // (this is the correct line of code)
 let stringOfLettersFill = "abcdefghijklmnopqrstuvwxyz";
-let stringOfLetters = "__________________________";
+// let stringOfLetters = "__________________________";
+let stringOfLetters = "                          ";
+
 let theWord = "_____";
 let word;
 // A global variable to store our fortune in
@@ -112,7 +114,7 @@ let bonhomme = [
 
 
 async function preload() {
-    word = await loadJSON("assets/hangmanWords.json");
+    // word = await loadJSON("assets/hangmanWords.json");
 }
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
