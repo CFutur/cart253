@@ -66,7 +66,7 @@ function draw() {
 
     push();
     textSize(50)
-    text(theWord, 400, 480)
+    text(theWord.join(' '), 400, 480)
     pop();
 }
 function newGame() {
