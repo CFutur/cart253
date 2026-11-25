@@ -7,6 +7,10 @@
  */
 
 "use strict";
+let randomWord;
+let theWord;
+let allLimbs = 6;
+let noLimbs = allLimbs;
 let poles = [
     {
         x1: 50,
@@ -46,6 +50,7 @@ let poles = [
 */
 function setup() {
     createCanvas(900, 600);
+    newGame();
 }
 
 
@@ -58,8 +63,24 @@ function draw() {
     for (let lines of poles) {
         drawHangmanPole(lines);
     }
-}
 
+    push();
+    textSize(50)
+    text(theWord, 400, 480)
+    pop();
+}
+function newGame() {
+    let words = ["piano", "store", "water", "ideas", "mario", "boo", "headphones", "sandstone"]
+
+    // choose a word on random and splice it up already
+    randomWord = random(words).split('');
+    //the word chosen is getting taken and depending on its length, theres _ getting drawn where the letters will appear
+    theWord = Array(randomWord.length).fill('_');
+    console.log(theWord)
+
+
+    noLimbs = allLimbs;
+}
 
 function drawHangmanPole(lines) {
     push();
@@ -67,4 +88,23 @@ function drawHangmanPole(lines) {
     strokeWeight(lines.size)
     line(lines.x1, lines.y1, lines.x2, lines.y2);
     pop();
+}
+
+function checkGuessedWord(letter) {
+    let correctGuess = false;
+    for (let i = 0; i < theWord.length; i++) {
+        if (theWord[i] == letter) {
+            rightGuess[i] = letter;
+            correctGuess = true;
+        }
+    }
+}
+
+function keyPressed() {
+    if (key === 'Enter') {
+        newGame();
+    }
+    else if (key >= 'a' && key <= 'z') {
+        checkGuessedWord(key);
+    }
 }
