@@ -4,6 +4,9 @@
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * 
+ * help from hangman by tt2273 on P5JS
+ * https://editor.p5js.org/tt2273/sketches/CHaaGPg8u
  */
 
 "use strict";
@@ -13,11 +16,11 @@ let stringOfLettersFill = "abcdefghijklmnopqrstuvwxyz";
 // let stringOfLetters = "__________________________";
 let stringOfLetters = "                          ";
 
-let theWord = "_____";
+let theWord = "     ";
 let word;
 // A global variable to store our fortune in
 let threeLetterWord;
-const fiveRandomWords = ["piano", "store", "water", "ideas", "mario"]
+const fiveRandomWords = ["piano", "store", "water", "ideas", "mario", "boo", "headphones"]
 let randomWord;
 let limb = 0;
 let poles = [
@@ -123,9 +126,14 @@ async function setup() {
     createCanvas(900, 600);
     background("#acced4")
 
-    await preload();
+    // await preload();
 
-    randomWord = random(fiveRandomWords)
+    // let fiveRandomWords = ["piano", "store", "water", "ideas", "mario"]
+
+    // choose a word on random and splice it up already
+    randomWord = random(fiveRandomWords).split('');
+
+    theWord = Array(randomWord.length).fill('_');
     console.log(randomWord)
 
     push();
@@ -201,7 +209,17 @@ function draw() {
     }
     if (limb == 6) { text("Game Over"); }
 }
+// function NewGame() {
+//     let fiveRandomWords = ["piano", "store", "water", "ideas", "mario"]
 
+//     // choose a word on random and splice it up already
+//     randomWord = random(fiveRandomWords).split('');
+
+//     guessedWord = Array(word.lenght).fill('_');
+
+
+
+// }
 function drawHangmanPole(lines) {
     push();
     stroke(lines.colour);
@@ -222,6 +240,14 @@ function drawHangman(bodyPart) {
 }
 
 function keyPressed() {
+    // if (keyCode = 13) {
+    //     newGame();
+    // }
+
+    if (keyCode < 65 || keyCode > 90) {
+        console.log(keyCode)
+        return
+    };
     //these lets us split our strings to remove or add individual letters in our game
     let chosenLetter = stringOfLettersFill.split('');
     let chosenLetterPlacement = stringOfLetters.split('');
@@ -242,28 +268,35 @@ function keyPressed() {
     }
 
     // stringOfLettersFill
-    let underscore = theWord.split('');
+    // let underscore = theWord.split('');
     // this for loop lets my code write on the underscore the letter if it was guessed correctly
-    for (let z = 0; z < (underscore.length); z++) {
-        if (key == randomWord[z]) {
-            // console.log(underscore);
-            underscore[z] = key;
-            // console.log(underscore);
-            theWord = underscore.join('');
-            console.log("writtenWord");
-        }
+    // for (let z = 0; z < (theWord.length); z++) {
+    //     if (key == randomWord[z]) {
+    //         // console.log(underscore);
+    //         theWord[z] = key;
+    //         // console.log(underscore);
+    //         randomWord = theWord.join('');
+    //         console.log("writtenWord");
+    //     }
 
 
-    }
+    // }
 
 
+    // let fiveRandomWords = ["piano", "store", "water", "ideas", "mario"]
+
+    // choose a word on random and splice it up already
+    // randomWord = random(fiveRandomWords).split('');
+
+    // theWord = Array(randomWord.length).fill('_');
+    // console.log(randomWord)
 
     //hangman drawing
 
 
     let zozo = false;
 
-    console.log(randomWord);
+    // console.log(randomWord);
 
     for (let x = 0; x < (randomWord.length); x++) {
         console.log("for");
