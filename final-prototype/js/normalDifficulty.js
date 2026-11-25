@@ -10,6 +10,9 @@
  */
 
 "use strict";
+function myFunc() {
+    window.location = "index.html";
+}
 let stupidArray = [false, false, false, false, false, false]
 // (this is the correct line of code)
 let stringOfLettersFill = "abcdefghijklmnopqrstuvwxyz";
@@ -114,19 +117,15 @@ let bonhomme = [
     }
 ];
 
-
-
-async function preload() {
-    // word = await loadJSON("assets/hangmanWords.json");
-}
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-async function setup() {
+    function setup() {
     createCanvas(900, 600);
     background("#acced4")
+    newGame();
 
-    // await preload();
+   
 
     // let fiveRandomWords = ["piano", "store", "water", "ideas", "mario"]
 
@@ -208,6 +207,12 @@ function draw() {
         }
     }
     if (limb == 6) { text("Game Over"); }
+    
+    
+    push();
+    textSize(20);
+    text(rightGuess.join(' '), 400, 400);
+    pop();
 }
 // function NewGame() {
 //     let fiveRandomWords = ["piano", "store", "water", "ideas", "mario"]
@@ -239,6 +244,18 @@ function drawHangman(bodyPart) {
     pop();
 }
 
+
+function checkForWord(letter) {
+    let guess = false;
+    for (let i = 0; i < word.length; i++){
+        if (word[i] == letter) {
+            rightGuess[i] = letter;
+            guess = true;
+        }
+    }
+    
+    
+}
 function keyPressed() {
     // if (keyCode = 13) {
     //     newGame();
@@ -248,24 +265,36 @@ function keyPressed() {
         console.log(keyCode)
         return
     };
+
+}
+
+// let fiveRandomWords = ["piano", "store", "water", "ideas", "mario"]
+
+// choose a word on random and splice it up already
+// randomWord = random(fiveRandomWords).split('');
+
+// theWord = Array(randomWord.length).fill('_');
+// console.log(randomWord)
+    
+    
     //these lets us split our strings to remove or add individual letters in our game
-    let chosenLetter = stringOfLettersFill.split('');
-    let chosenLetterPlacement = stringOfLetters.split('');
+    // let chosenLetter = stringOfLettersFill.split('');
+    // let chosenLetterPlacement = stringOfLetters.split('');
 
     //this one loops the 26 letter of our string
-    for (let y = 0; y < (chosenLetter.length); y++) {
-        console.log("Alphabetical");
-        //if a key is pressed, the letter pressed in the string of letters gets replaced by a "_"
-        if (key == chosenLetter[y]) {
-            console.log("underscore");
-            // console.log(chosenWord);
-            // (this is the correct line of code)
-            // chosenLetter[y] = "_";
-            chosenLetterPlacement[y] = key;
-            // console.log(chosenWord);
-            stringOfLetters = chosenLetterPlacement.join('');
-        }
-    }
+    // for (let y = 0; y < (chosenLetter.length); y++) {
+    //     console.log("Alphabetical");
+    //     //if a key is pressed, the letter pressed in the string of letters gets replaced by a "_"
+    //     if (key == chosenLetter[y]) {
+    //         console.log("underscore");
+    //         // console.log(chosenWord);
+    //         // (this is the correct line of code)
+    //         // chosenLetter[y] = "_";
+    //         chosenLetterPlacement[y] = key;
+    //         // console.log(chosenWord);
+    //         stringOfLetters = chosenLetterPlacement.join('');
+    //     }
+    // }
 
     // stringOfLettersFill
     // let underscore = theWord.split('');
@@ -294,33 +323,33 @@ function keyPressed() {
     //hangman drawing
 
 
-    let zozo = false;
+    // let zozo = false;
 
     // console.log(randomWord);
 
-    for (let x = 0; x < (randomWord.length); x++) {
-        console.log("for");
-        if (key == randomWord[x]) {
-            console.log("true");
-            zozo = true
-        }
+    // for (let x = 0; x < (randomWord.length); x++) {
+    //     console.log("for");
+    //     if (key == randomWord[x]) {
+    //         console.log("true");
+    //         zozo = true
+    //     }
 
         // else {
         //     console.log("drawHangMan");
         //     // drawHangman(bonhomme[limb])
         //     // limb++;
 
-        // }
+    //     // }
 
-    }
+    // }
 
 
-    if (!zozo) {
-        console.log("ooga booga");
-        drawHangman(bonhomme[limb])
-        stupidArray[limb] = true;
-        limb++;
-    }
+    // if (!zozo) {
+    //     console.log("ooga booga");
+    //     drawHangman(bonhomme[limb])
+    //     stupidArray[limb] = true;
+    //     limb++;
+    // }
 
 
 
@@ -331,6 +360,6 @@ function keyPressed() {
 
     //     
     // }
-}
+// }
 
 // stringOfLetters
