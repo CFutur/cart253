@@ -11,6 +11,9 @@ let randomWord;
 let theWord;
 let allLimbs = 6;
 let noLimbs = allLimbs;
+// let pressedLetters = "______";
+let pressedLetters = [];
+
 let poles = [
     {
         x1: 50,
@@ -45,6 +48,62 @@ let poles = [
         colour: "#000000",
     }
 ];
+
+let bonhomme = [
+    { //Head
+        x: 300,
+        y: 280,
+        size: 50,
+        colour: "#000000",
+        // x1: 300,
+        // y1: 330,
+        // x2: 300,
+        // y2: 450,
+        // size: 9,
+        // colour: "#000000"
+    },
+    { //torso
+        x1: 300,
+        y1: 330,
+        x2: 300,
+        y2: 450,
+        size: 9,
+        colour: "#000000",
+    },
+    { // left arm
+        x1: 300,
+        y1: 350,
+        x2: 250,
+        y2: 320,
+        size: 9,
+        colour: "#000000",
+    },
+    { //right arm
+        x1: 300,
+        y1: 350,
+        x2: 350,
+        y2: 320,
+        size: 9,
+        colour: "#000000",
+    },
+    { // left leg
+        x1: 300,
+        y1: 450,
+        x2: 250,
+        y2: 500,
+        size: 9,
+        colour: "#000000",
+    },
+    { // right leg
+        x1: 300,
+        y1: 450,
+        x2: 350,
+        y2: 500,
+        size: 9,
+        colour: "#000000",
+    }
+];
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -64,10 +123,22 @@ function draw() {
         drawHangmanPole(lines);
     }
 
-    push();
+    // push();
     textSize(50)
     text(theWord.join(' '), 400, 480)
-    pop();
+    textSize(30)
+    text(`${pressedLetters.join(', ')}`, 350, 550);
+    // pop();
+
+    // for (let y = 0; y < 6; y++) {
+    //     if (stupidArray[y] == true) {
+    //         drawHangman(bonhomme[y]);
+    //     }
+    // }
+    if (allLimbs == 6 || theWord.indexOf('_') == -1) {
+        endGame();
+    }
+
 }
 function newGame() {
     let words = ["piano", "store", "water", "ideas", "mario", "boo", "headphones", "sandstone"]
@@ -80,6 +151,8 @@ function newGame() {
 
 
     noLimbs = allLimbs;
+
+    pressedLetters = [];
 }
 
 function drawHangmanPole(lines) {
@@ -91,6 +164,8 @@ function drawHangmanPole(lines) {
 }
 
 function checkGuessedWord(letter) {
+    pressedLetters.push(letter)
+
     let correctGuess = false;
     for (let i = 0; i < theWord.length; i++) {
         if (theWord[i] == letter) {
@@ -100,11 +175,16 @@ function checkGuessedWord(letter) {
     }
 }
 
-function keyPressed() {
-    if (key === 'Enter') {
+function keyPressed(event) {
+    if (event.keyCode === 13) {
         newGame();
     }
-    else if (key >= 'a' && key <= 'z') {
+    else if (event.keyCode >= 65 && event.keyCode <= 90 && !pressedLetters.includes(key)) {
         checkGuessedWord(key);
     }
+}
+
+
+function endGame() {
+    if ()
 }
