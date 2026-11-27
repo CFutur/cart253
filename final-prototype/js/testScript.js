@@ -105,8 +105,8 @@ function setup() {
     createCanvas(900, 600);
     textFont('Berlin Sans Fb')
     newEasyGame();
-    newMediumGame();
-    newHardGame();
+    // newMediumGame();
+    // newHardGame();
 }
 
 
@@ -161,7 +161,8 @@ function draw() {
 
 }
 function newEasyGame() {
-    let words = ["piano", "store", "water", "ideas", "mario", "boo", "headphones", "sandstone"]
+    // let words = ["piano", "store", "water", "ideas", "mario", "boo", "headphones", "sandstone"]
+    let words = ['balloon', 'banana', 'bear', 'boat', 'boots', 'brother', 'butter', 'carrot', 'cheese', 'coat', 'cookie', 'door', 'grass', 'horse', 'house', 'kite', 'easy', 'kitten', 'lion', 'moon', 'mouse', 'orange', 'potato', 'present', ' rabbit', 'rain', 'robot', 'sand', 'sheep', ' shirt', 'shoes', 'sister', 'snake', 'soap', ' star', 'story', 'sweets', 'teacher', 'tiger', ' train', 'tree', 'water']
 
     // choose a word on random and splice it up already
     randomWord = random(words).split('');
@@ -219,7 +220,7 @@ function endGame() {
         text("Yay! You won :)", 400, 300)
     }
     else {
-        text("You lost... better luck next time!", 400, 300)
+        text("You lost... better luck next time! \nThe word was " + randomWord.join(''), 400, 300)
 
     }
 }
