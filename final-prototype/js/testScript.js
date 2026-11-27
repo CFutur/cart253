@@ -21,7 +21,7 @@ let poles = [
         x2: 300,
         y2: 580,
         size: 10,
-        colour: "#000000",
+        colour: "#5b5d81",
     },
     {
         x1: 150,
@@ -29,7 +29,7 @@ let poles = [
         x2: 150,
         y2: 225,
         size: 9,
-        colour: "#000000",
+        colour: "#5b5d81",
     },
     {
         x1: 150,
@@ -37,7 +37,7 @@ let poles = [
         x2: 300,
         y2: 200,
         size: 9,
-        colour: "#000000",
+        colour: "#5b5d81",
     },
     {
         x1: 300,
@@ -45,7 +45,7 @@ let poles = [
         x2: 300,
         y2: 250,
         size: 9,
-        colour: "#000000",
+        colour: "#5b5d81",
     }
 ];
 
@@ -55,12 +55,6 @@ let bonhomme = [
         y: 280,
         size: 50,
         colour: "#000000",
-        // x1: 300,
-        // y1: 330,
-        // x2: 300,
-        // y2: 450,
-        // size: 9,
-        // colour: "#000000"
     },
     { //torso
         x1: 300,
@@ -109,7 +103,10 @@ let bonhomme = [
 */
 function setup() {
     createCanvas(900, 600);
-    newGame();
+    textFont('Berlin Sans Fb')
+    newEasyGame();
+    newMediumGame();
+    newHardGame();
 }
 
 
@@ -117,11 +114,27 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background("#192191")
+    background("#d4eff5")
+    push();
+    textSize(50)
+    textStyle(BOLD)
+    fill("#f6f885")
+    textFont('Courier New')
+    text('Hangman game', 502, 102)
+    textSize(50)
+    textStyle(BOLD)
+    fill("#496399")
+    textFont('Courier New')
+    text('Hangman game', 500, 100)
+    pop();
+
+    drawHangman();
 
     for (let lines of poles) {
         drawHangmanPole(lines);
     }
+
+    drawHangman();
 
     // push();
     textSize(50)
@@ -135,12 +148,19 @@ function draw() {
     //         drawHangman(bonhomme[y]);
     //     }
     // }
-    if (allLimbs == 6 || theWord.indexOf('_') == -1) {
+
+    // for (let y = 0; y < 6; y++) {
+    //     if (correctGuess[y] = false; == true) {
+    //         drawHangman(bonhomme[y]);
+    //     }
+    // }
+
+    if (noLimbs == 0 || theWord.indexOf('_') == -1) {
         endGame();
     }
 
 }
-function newGame() {
+function newEasyGame() {
     let words = ["piano", "store", "water", "ideas", "mario", "boo", "headphones", "sandstone"]
 
     // choose a word on random and splice it up already
@@ -167,17 +187,26 @@ function checkGuessedWord(letter) {
     pressedLetters.push(letter)
 
     let correctGuess = false;
-    for (let i = 0; i < theWord.length; i++) {
-        if (theWord[i] == letter) {
-            rightGuess[i] = letter;
+    for (let i = 0; i < randomWord.length; i++) {
+        if (randomWord[i] == letter) {
+            theWord[i] = letter;
             correctGuess = true;
         }
+    }
+    if (!correctGuess) {
+        noLimbs--;
     }
 }
 
 function keyPressed(event) {
-    if (event.keyCode === 13) {
-        newGame();
+    if (event.keyCode === 49) {
+        newEasyGame();
+    }
+    else if (event.keyCode === 50) {
+        newMediumGame();
+    }
+    else if (event.keyCode === 51) {
+        newHardGame();
     }
     else if (event.keyCode >= 65 && event.keyCode <= 90 && !pressedLetters.includes(key)) {
         checkGuessedWord(key);
@@ -186,5 +215,58 @@ function keyPressed(event) {
 
 
 function endGame() {
-    if ()
+    if (theWord.indexOf('_') === -1) {
+        text("Yay! You won :)", 400, 300)
+    }
+    else {
+        text("You lost... better luck next time!", 400, 300)
+
+    }
+}
+
+function drawHangman() {
+    //this draws the head when one wrong
+    if (noLimbs < allLimbs) {
+        fill("#000000")
+        ellipse(300, 280, 100)
+    }
+    //this draws the torso
+    if (noLimbs + 1 < allLimbs) {
+        push();
+        stroke("#000000")
+        strokeWeight(9)
+        line(300, 330, 300, 450)
+        pop();
+    }
+    //left arm
+    if (noLimbs + 2 < allLimbs) {
+        push();
+        stroke("#000000")
+        strokeWeight(9)
+        line(300, 350, 250, 320)
+        pop();
+    }
+    //right arm
+    if (noLimbs + 3 < allLimbs) {
+        push();
+        stroke("#000000")
+        strokeWeight(9)
+        line(300, 350, 350, 320)
+        pop();
+    }
+    //left leg
+    if (noLimbs + 4 < allLimbs) {
+        push();
+        stroke("#000000")
+        strokeWeight(9)
+        line(300, 450, 250, 500)
+        pop();
+    }
+    if (noLimbs + 5 < allLimbs) {
+        push();
+        stroke("#000000")
+        strokeWeight(9)
+        line(300, 450, 350, 500)
+        pop();
+    }
 }
